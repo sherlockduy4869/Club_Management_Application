@@ -26,9 +26,9 @@ namespace Project_OOP_Final.DAL
             }
             return null;
         }
-        public int addNew(string id, string name, string clas, string phone)
+        public int addNew(string name, string clas, string phone)
         {
-            string sql = "Insert into Info_Mentor(Id,Name,Class,Phone) VALUES('" + id + "','" + name + "','" + clas + "','" + phone + "')";
+            string sql = "Insert into Info_Mentor(Id,Name,Class,Phone) VALUES('" + name + "','" + clas + "','" + phone + "')";
 
             int i = DataProvider.Instance.ExecuteNonQuery(sql);
             return i;

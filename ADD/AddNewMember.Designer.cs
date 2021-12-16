@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txbID = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,45 +43,22 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.txbRole = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.txbTeam = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.txbID);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(50, 52);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(746, 88);
-            this.panel1.TabIndex = 1;
-            // 
-            // txbID
-            // 
-            this.txbID.Location = new System.Drawing.Point(208, 24);
-            this.txbID.Name = "txbID";
-            this.txbID.Size = new System.Drawing.Size(524, 39);
-            this.txbID.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(15, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.txbName);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(50, 240);
+            this.panel2.Location = new System.Drawing.Point(50, 123);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(746, 88);
             this.panel2.TabIndex = 3;
@@ -110,7 +84,7 @@
             // 
             this.panel3.Controls.Add(this.txbPhone);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(50, 334);
+            this.panel3.Location = new System.Drawing.Point(50, 217);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(746, 88);
             this.panel3.TabIndex = 4;
@@ -136,7 +110,7 @@
             // 
             this.panel4.Controls.Add(this.txbClass);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(50, 428);
+            this.panel4.Location = new System.Drawing.Point(50, 311);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(746, 88);
             this.panel4.TabIndex = 5;
@@ -162,10 +136,10 @@
             // 
             this.panel5.Controls.Add(this.btnExit);
             this.panel5.Controls.Add(this.btnAdd);
-            this.panel5.Location = new System.Drawing.Point(426, 537);
+            this.panel5.Location = new System.Drawing.Point(426, 518);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(370, 102);
-            this.panel5.TabIndex = 6;
+            this.panel5.TabIndex = 7;
             // 
             // btnExit
             // 
@@ -191,7 +165,7 @@
             // 
             this.panel6.Controls.Add(this.txbRole);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(50, 146);
+            this.panel6.Location = new System.Drawing.Point(50, 29);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(746, 88);
             this.panel6.TabIndex = 2;
@@ -213,24 +187,48 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Role";
             // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.txbTeam);
+            this.panel7.Controls.Add(this.label6);
+            this.panel7.Location = new System.Drawing.Point(50, 405);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(746, 88);
+            this.panel7.TabIndex = 6;
+            // 
+            // txbTeam
+            // 
+            this.txbTeam.Location = new System.Drawing.Point(208, 24);
+            this.txbTeam.Name = "txbTeam";
+            this.txbTeam.Size = new System.Drawing.Size(524, 39);
+            this.txbTeam.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(15, 24);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 45);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Team";
+            // 
             // AddNewMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(831, 661);
+            this.ClientSize = new System.Drawing.Size(831, 647);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Name = "AddNewMember";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New";
             this.Load += new System.EventHandler(this.AddNew_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -240,15 +238,13 @@
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Panel panel1;
-        private TextBox txbID;
-        private Label label1;
         private Panel panel2;
         private TextBox txbName;
         private Label label2;
@@ -264,5 +260,8 @@
         private Panel panel6;
         private TextBox txbRole;
         private Label label5;
+        private Panel panel7;
+        private TextBox txbTeam;
+        private Label label6;
     }
 }

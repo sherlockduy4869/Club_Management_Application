@@ -25,7 +25,6 @@ namespace Project_OOP_Final
         #region Method
         void ReFresh()
         {
-            txbId.Text = string.Empty;
             txbName.Text = string.Empty;
             txbDateStart.Text = string.Empty;
             txbDateEnd.Text = string.Empty;
@@ -47,14 +46,13 @@ namespace Project_OOP_Final
     
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string id = txbId.Text;
             string name = txbName.Text;
             string dateStart = txbDateStart.Text;
             string dateEnd = txbDateEnd.Text;
             try
             {
 
-                    int i = ActivityDAL.Instance.addNew(id,name, dateStart, dateEnd);
+                    int i = ActivityDAL.Instance.addNew(name, dateStart, dateEnd);
 
                     if (i != 0)
                     {

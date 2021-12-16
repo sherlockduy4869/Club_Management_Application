@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txbId = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.Name = new System.Windows.Forms.Label();
             this.txbName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,39 +40,11 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(27, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Id";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txbId
-            // 
-            this.txbId.Location = new System.Drawing.Point(190, 23);
-            this.txbId.Name = "txbId";
-            this.txbId.Size = new System.Drawing.Size(499, 39);
-            this.txbId.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.txbId);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(36, 56);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(715, 90);
-            this.panel1.TabIndex = 0;
             // 
             // Name
             // 
@@ -98,7 +67,7 @@
             // 
             this.panel2.Controls.Add(this.txbName);
             this.panel2.Controls.Add(this.Name);
-            this.panel2.Location = new System.Drawing.Point(36, 152);
+            this.panel2.Location = new System.Drawing.Point(36, 33);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(715, 90);
             this.panel2.TabIndex = 1;
@@ -124,7 +93,7 @@
             // 
             this.panel3.Controls.Add(this.txbDateStart);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(36, 248);
+            this.panel3.Location = new System.Drawing.Point(36, 129);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(715, 90);
             this.panel3.TabIndex = 2;
@@ -150,7 +119,7 @@
             // 
             this.panel4.Controls.Add(this.txbDateEnd);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(36, 348);
+            this.panel4.Location = new System.Drawing.Point(36, 229);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(715, 90);
             this.panel4.TabIndex = 3;
@@ -179,7 +148,7 @@
             // 
             this.panel5.Controls.Add(this.btnExit);
             this.panel5.Controls.Add(this.btnAdd);
-            this.panel5.Location = new System.Drawing.Point(445, 454);
+            this.panel5.Location = new System.Drawing.Point(445, 335);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(362, 91);
             this.panel5.TabIndex = 4;
@@ -188,17 +157,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(821, 560);
+            this.ClientSize = new System.Drawing.Size(821, 447);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New Activity";
             this.Load += new System.EventHandler(this.AddNewActivity_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -211,10 +177,6 @@
         }
 
         #endregion
-
-        private Label label1;
-        private TextBox txbId;
-        private Panel panel1;
         private Label Name;
         private TextBox txbName;
         private Panel panel2;

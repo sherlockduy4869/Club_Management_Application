@@ -17,9 +17,9 @@ namespace Project_OOP_Final.DAL
             private set { instance = value; }
         }
         private ActivityDAL() { }
-        public int addNew(string id, string name, string dateStart, string dateEnd)
+        public int addNew(string name, string dateStart, string dateEnd)
         {
-            string sql = "Insert into Info_Activity (Id,Name,DateStart,DateEnd) VALUES('" + id + "','" + name + "','" + dateStart + "','" + dateEnd + "')";
+            string sql = "Insert into Info_Activity (Name,DateStart,DateEnd) VALUES('" + name + "','" + dateStart + "','" + dateEnd + "')";
             int i = DataProvider.Instance.ExecuteNonQuery(sql);
             return i;
         }

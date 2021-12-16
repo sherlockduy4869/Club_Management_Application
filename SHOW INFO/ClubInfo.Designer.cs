@@ -33,7 +33,6 @@
             this.dtgvActivity = new System.Windows.Forms.DataGridView();
             this.pnLeader = new System.Windows.Forms.Panel();
             this.btnAdjust = new System.Windows.Forms.Button();
-            this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.tpFinance = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -103,32 +102,21 @@
             // pnLeader
             // 
             this.pnLeader.Controls.Add(this.btnAdjust);
-            this.pnLeader.Controls.Add(this.btnRemove);
             this.pnLeader.Controls.Add(this.btnAdd);
-            this.pnLeader.Location = new System.Drawing.Point(491, 538);
+            this.pnLeader.Location = new System.Drawing.Point(593, 538);
             this.pnLeader.Name = "pnLeader";
-            this.pnLeader.Size = new System.Drawing.Size(613, 80);
+            this.pnLeader.Size = new System.Drawing.Size(404, 80);
             this.pnLeader.TabIndex = 1;
             // 
             // btnAdjust
             // 
-            this.btnAdjust.Location = new System.Drawing.Point(425, 16);
+            this.btnAdjust.Location = new System.Drawing.Point(224, 16);
             this.btnAdjust.Name = "btnAdjust";
             this.btnAdjust.Size = new System.Drawing.Size(150, 46);
             this.btnAdjust.TabIndex = 2;
             this.btnAdjust.Text = "Adjust";
             this.btnAdjust.UseVisualStyleBackColor = true;
             this.btnAdjust.Click += new System.EventHandler(this.btnAdjust_Click);
-            // 
-            // btnRemove
-            // 
-            this.btnRemove.Location = new System.Drawing.Point(230, 16);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(150, 46);
-            this.btnRemove.TabIndex = 1;
-            this.btnRemove.Text = "Remove";
-            this.btnRemove.UseVisualStyleBackColor = true;
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnAdd
             // 
@@ -357,7 +345,6 @@
         private TabPage tpActivity;
         private Panel pnLeader;
         private Button btnAdjust;
-        private Button btnRemove;
         private Button btnAdd;
         private Button btnExit;
         private DataGridView dtgvActivity;

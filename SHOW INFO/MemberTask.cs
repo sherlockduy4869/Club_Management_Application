@@ -29,7 +29,7 @@ namespace Project_OOP_Final
         void loadMemberTask(string id)
         {
 
-            dtgvMemberTask.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM Info_Task WHERE Id_Member = '" + id + "' AND Status = 'Working' OR Status = 'Re-do task'");
+            dtgvMemberTask.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM Info_Task WHERE Id_Member = '" + id + "' AND (Status = 'Working' OR Status = 'Re-do task')");
         }
         #endregion
 

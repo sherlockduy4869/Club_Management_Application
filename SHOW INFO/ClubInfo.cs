@@ -97,13 +97,6 @@ namespace Project_OOP_Final
 
         }
 
-        private void btnRemove_Click(object sender, EventArgs e)
-        {
-            RemoveActivity removeActivity = new RemoveActivity();
-            
-            removeActivity.Show();
-        }
-
         private void btnAdjust_Click(object sender, EventArgs e)
         {
             AdjustActivity adjustActivity = new AdjustActivity();
