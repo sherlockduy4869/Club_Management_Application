@@ -16,3 +16,4 @@
 - When deleting a Member/Mentor/Leader, the system will automatically delete the account of that object
 - We can change the password of account only when user enter new_password = re-enter_new_password
 - When Member submit his/her task, he/she can not see the submited task. Only Leader could see that
+- ID is automatically generated
