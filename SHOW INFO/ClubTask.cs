@@ -53,8 +53,6 @@ namespace Project_OOP_Final
             removeTask.Show();
             
         }
-        #endregion
-
         private void btnRedo_Click(object sender, EventArgs e)
         {
             ReDoTask redotask = new ReDoTask();
@@ -65,5 +63,8 @@ namespace Project_OOP_Final
         {
             dtgvClubTask.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id_Member, Task_Id, Task_Name, Deadline, Status, Note FROM Info_Task WHERE Task_Name like '" + txbSearch.Text + "%'");
         }
+        #endregion
+
+
     }
 }

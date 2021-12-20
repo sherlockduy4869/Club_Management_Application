@@ -30,6 +30,7 @@
         {
             this.tcClubInfo = new System.Windows.Forms.TabControl();
             this.tpActivity = new System.Windows.Forms.TabPage();
+            this.txbSearch = new System.Windows.Forms.TextBox();
             this.dtgvActivity = new System.Windows.Forms.DataGridView();
             this.pnLeader = new System.Windows.Forms.Panel();
             this.btnAdjust = new System.Windows.Forms.Button();
@@ -54,7 +55,6 @@
             this.Quantity = new System.Windows.Forms.ColumnHeader();
             this.TotalPrice = new System.Windows.Forms.ColumnHeader();
             this.btnExit = new System.Windows.Forms.Button();
-            this.txbSearch = new System.Windows.Forms.TextBox();
             this.tcClubInfo.SuspendLayout();
             this.tpActivity.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvActivity)).BeginInit();
@@ -71,29 +71,38 @@
             // 
             this.tcClubInfo.Controls.Add(this.tpActivity);
             this.tcClubInfo.Controls.Add(this.tpFinance);
-            this.tcClubInfo.Location = new System.Drawing.Point(36, 214);
+            this.tcClubInfo.Location = new System.Drawing.Point(36, 73);
             this.tcClubInfo.Name = "tcClubInfo";
             this.tcClubInfo.SelectedIndex = 0;
-            this.tcClubInfo.Size = new System.Drawing.Size(1555, 678);
+            this.tcClubInfo.Size = new System.Drawing.Size(1555, 769);
             this.tcClubInfo.TabIndex = 0;
             // 
             // tpActivity
             // 
+            this.tpActivity.Controls.Add(this.txbSearch);
             this.tpActivity.Controls.Add(this.dtgvActivity);
             this.tpActivity.Controls.Add(this.pnLeader);
             this.tpActivity.Location = new System.Drawing.Point(8, 46);
             this.tpActivity.Name = "tpActivity";
             this.tpActivity.Padding = new System.Windows.Forms.Padding(3);
-            this.tpActivity.Size = new System.Drawing.Size(1539, 624);
+            this.tpActivity.Size = new System.Drawing.Size(1539, 715);
             this.tpActivity.TabIndex = 0;
             this.tpActivity.Text = "Activity";
             this.tpActivity.UseVisualStyleBackColor = true;
+            // 
+            // txbSearch
+            // 
+            this.txbSearch.Location = new System.Drawing.Point(327, 18);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.Size = new System.Drawing.Size(898, 39);
+            this.txbSearch.TabIndex = 5;
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
             // dtgvActivity
             // 
             this.dtgvActivity.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvActivity.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvActivity.Location = new System.Drawing.Point(3, 0);
+            this.dtgvActivity.Location = new System.Drawing.Point(3, 67);
             this.dtgvActivity.Name = "dtgvActivity";
             this.dtgvActivity.RowHeadersWidth = 82;
             this.dtgvActivity.RowTemplate.Height = 41;
@@ -104,7 +113,7 @@
             // 
             this.pnLeader.Controls.Add(this.btnAdjust);
             this.pnLeader.Controls.Add(this.btnAdd);
-            this.pnLeader.Location = new System.Drawing.Point(593, 538);
+            this.pnLeader.Location = new System.Drawing.Point(593, 619);
             this.pnLeader.Name = "pnLeader";
             this.pnLeader.Size = new System.Drawing.Size(404, 80);
             this.pnLeader.TabIndex = 1;
@@ -136,7 +145,7 @@
             this.tpFinance.Location = new System.Drawing.Point(8, 46);
             this.tpFinance.Name = "tpFinance";
             this.tpFinance.Padding = new System.Windows.Forms.Padding(3);
-            this.tpFinance.Size = new System.Drawing.Size(1539, 624);
+            this.tpFinance.Size = new System.Drawing.Size(1539, 715);
             this.tpFinance.TabIndex = 1;
             this.tpFinance.Text = "Finance";
             this.tpFinance.UseVisualStyleBackColor = true;
@@ -305,7 +314,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1433, 922);
+            this.btnExit.Location = new System.Drawing.Point(1427, 859);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 46);
             this.btnExit.TabIndex = 2;
@@ -313,20 +322,11 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // txbSearch
-            // 
-            this.txbSearch.Location = new System.Drawing.Point(375, 147);
-            this.txbSearch.Name = "txbSearch";
-            this.txbSearch.Size = new System.Drawing.Size(898, 39);
-            this.txbSearch.TabIndex = 5;
-            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
-            // 
             // ClubInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1621, 976);
-            this.Controls.Add(this.txbSearch);
+            this.ClientSize = new System.Drawing.Size(1621, 926);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tcClubInfo);
             this.Name = "ClubInfo";
@@ -335,6 +335,7 @@
             this.Load += new System.EventHandler(this.ClubInfo_Load);
             this.tcClubInfo.ResumeLayout(false);
             this.tpActivity.ResumeLayout(false);
+            this.tpActivity.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvActivity)).EndInit();
             this.pnLeader.ResumeLayout(false);
             this.tpFinance.ResumeLayout(false);
@@ -346,7 +347,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nmCount)).EndInit();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

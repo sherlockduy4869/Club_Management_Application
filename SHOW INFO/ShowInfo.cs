@@ -62,14 +62,14 @@ namespace Project_OOP_Final
             this.Hide();
             fAddNew.ShowDialog();
         }
-
-        #endregion
-
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, Role, Team FROM Info_Member WHERE Name like '" + txbSearch.Text + "%'");
             dtgvShowLeader.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, Role, Team FROM Info_Leader WHERE Name like '" + txbSearch.Text + "%'");
             dtgvShowMentor.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, Role FROM Info_Mentor WHERE Name like '" + txbSearch.Text + "%'");
         }
+        #endregion
+
+
     }
 }

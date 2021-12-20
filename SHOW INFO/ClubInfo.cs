@@ -131,14 +131,13 @@ namespace Project_OOP_Final
                 MessageBox.Show("Only accept numeric values and backspace");
             }
         }
-
-
-
-        #endregion
-
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             dtgvActivity.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM Info_Activity WHERE Name like '" + txbSearch.Text + "%'");
         }
+
+        #endregion
+
+
     }
 }
