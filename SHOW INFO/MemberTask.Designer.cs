@@ -39,7 +39,7 @@
             // 
             this.dtgvMemberTask.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvMemberTask.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvMemberTask.Location = new System.Drawing.Point(12, 141);
+            this.dtgvMemberTask.Location = new System.Drawing.Point(12, 204);
             this.dtgvMemberTask.Name = "dtgvMemberTask";
             this.dtgvMemberTask.RowHeadersWidth = 82;
             this.dtgvMemberTask.RowTemplate.Height = 41;
@@ -50,7 +50,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(644, 75);
+            this.label1.Location = new System.Drawing.Point(623, 112);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(238, 50);
             this.label1.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // btnSubmitTask
             // 
-            this.btnSubmitTask.Location = new System.Drawing.Point(677, 638);
+            this.btnSubmitTask.Location = new System.Drawing.Point(677, 701);
             this.btnSubmitTask.Name = "btnSubmitTask";
             this.btnSubmitTask.Size = new System.Drawing.Size(150, 46);
             this.btnSubmitTask.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1335, 742);
+            this.btnExit.Location = new System.Drawing.Point(1335, 805);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 46);
             this.btnExit.TabIndex = 3;
@@ -80,7 +80,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1497, 800);
+            this.ClientSize = new System.Drawing.Size(1497, 859);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSubmitTask);
             this.Controls.Add(this.label1);

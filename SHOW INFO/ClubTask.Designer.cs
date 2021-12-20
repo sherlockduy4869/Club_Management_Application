@@ -35,13 +35,14 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRedo = new System.Windows.Forms.Button();
+            this.txbSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvClubTask)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1501, 736);
+            this.btnExit.Location = new System.Drawing.Point(1501, 868);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 46);
             this.btnExit.TabIndex = 7;
@@ -53,7 +54,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(765, 46);
+            this.label1.Location = new System.Drawing.Point(780, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 50);
             this.label1.TabIndex = 5;
@@ -63,7 +64,7 @@
             // 
             this.dtgvClubTask.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvClubTask.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvClubTask.Location = new System.Drawing.Point(12, 112);
+            this.dtgvClubTask.Location = new System.Drawing.Point(12, 244);
             this.dtgvClubTask.Name = "dtgvClubTask";
             this.dtgvClubTask.RowHeadersWidth = 82;
             this.dtgvClubTask.RowTemplate.Height = 41;
@@ -95,7 +96,7 @@
             this.panel1.Controls.Add(this.btnRedo);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.btnRemove);
-            this.panel1.Location = new System.Drawing.Point(587, 598);
+            this.panel1.Location = new System.Drawing.Point(587, 730);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(569, 78);
             this.panel1.TabIndex = 11;
@@ -110,11 +111,20 @@
             this.btnRedo.UseVisualStyleBackColor = true;
             this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
             // 
+            // txbSearch
+            // 
+            this.txbSearch.Location = new System.Drawing.Point(415, 172);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.Size = new System.Drawing.Size(898, 39);
+            this.txbSearch.TabIndex = 12;
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
+            // 
             // ClubTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1663, 794);
+            this.ClientSize = new System.Drawing.Size(1663, 922);
+            this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
@@ -140,5 +150,6 @@
         private Button btnAdjust;
         private Panel panel1;
         private Button btnRedo;
+        private TextBox txbSearch;
     }
 }

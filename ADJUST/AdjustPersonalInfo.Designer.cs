@@ -182,9 +182,9 @@
             this.panel1.Location = new System.Drawing.Point(39, 64);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(746, 88);
-            this.panel1.TabIndex = 7;
+            this.panel1.TabIndex = 12;
             // 
-            // fAdjustPersonalInfo
+            // AdjustPersonalInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -194,7 +194,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "fAdjustPersonalInfo";
+            this.Name = "AdjustPersonalInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fAdjustPersonalInfo";
             this.Load += new System.EventHandler(this.AdjustPersonalInfo_Load);

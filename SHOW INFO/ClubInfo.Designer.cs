@@ -54,6 +54,7 @@
             this.Quantity = new System.Windows.Forms.ColumnHeader();
             this.TotalPrice = new System.Windows.Forms.ColumnHeader();
             this.btnExit = new System.Windows.Forms.Button();
+            this.txbSearch = new System.Windows.Forms.TextBox();
             this.tcClubInfo.SuspendLayout();
             this.tpActivity.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvActivity)).BeginInit();
@@ -70,7 +71,7 @@
             // 
             this.tcClubInfo.Controls.Add(this.tpActivity);
             this.tcClubInfo.Controls.Add(this.tpFinance);
-            this.tcClubInfo.Location = new System.Drawing.Point(36, 59);
+            this.tcClubInfo.Location = new System.Drawing.Point(36, 214);
             this.tcClubInfo.Name = "tcClubInfo";
             this.tcClubInfo.SelectedIndex = 0;
             this.tcClubInfo.Size = new System.Drawing.Size(1555, 678);
@@ -304,7 +305,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1433, 767);
+            this.btnExit.Location = new System.Drawing.Point(1433, 922);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 46);
             this.btnExit.TabIndex = 2;
@@ -312,11 +313,20 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // txbSearch
+            // 
+            this.txbSearch.Location = new System.Drawing.Point(375, 147);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.Size = new System.Drawing.Size(898, 39);
+            this.txbSearch.TabIndex = 5;
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
+            // 
             // ClubInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1621, 825);
+            this.ClientSize = new System.Drawing.Size(1621, 976);
+            this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tcClubInfo);
             this.Name = "ClubInfo";
@@ -336,6 +346,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nmCount)).EndInit();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -367,5 +378,6 @@
         private Label label3;
         private Label label2;
         private TextBox txbPrice;
+        private TextBox txbSearch;
     }
 }

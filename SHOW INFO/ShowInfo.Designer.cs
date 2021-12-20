@@ -40,6 +40,7 @@
             this.dtgvShowLeader = new System.Windows.Forms.DataGridView();
             this.tpMentor = new System.Windows.Forms.TabPage();
             this.dtgvShowMentor = new System.Windows.Forms.DataGridView();
+            this.txbSearch = new System.Windows.Forms.TextBox();
             this.pnForLeader.SuspendLayout();
             this.dtgvShowInfoMentor.SuspendLayout();
             this.tpMember.SuspendLayout();
@@ -54,7 +55,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(547, 58);
+            this.label1.Location = new System.Drawing.Point(537, 93);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(267, 50);
             this.label1.TabIndex = 1;
@@ -64,7 +65,7 @@
             // 
             this.pnForLeader.Controls.Add(this.btnRemove);
             this.pnForLeader.Controls.Add(this.btnAddnew);
-            this.pnForLeader.Location = new System.Drawing.Point(456, 672);
+            this.pnForLeader.Location = new System.Drawing.Point(456, 817);
             this.pnForLeader.Name = "pnForLeader";
             this.pnForLeader.Size = new System.Drawing.Size(440, 109);
             this.pnForLeader.TabIndex = 2;
@@ -91,7 +92,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1127, 798);
+            this.btnExit.Location = new System.Drawing.Point(1127, 943);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 46);
             this.btnExit.TabIndex = 2;
@@ -104,7 +105,7 @@
             this.dtgvShowInfoMentor.Controls.Add(this.tpMember);
             this.dtgvShowInfoMentor.Controls.Add(this.tpLeader);
             this.dtgvShowInfoMentor.Controls.Add(this.tpMentor);
-            this.dtgvShowInfoMentor.Location = new System.Drawing.Point(3, 131);
+            this.dtgvShowInfoMentor.Location = new System.Drawing.Point(3, 276);
             this.dtgvShowInfoMentor.Name = "dtgvShowInfoMentor";
             this.dtgvShowInfoMentor.SelectedIndex = 0;
             this.dtgvShowInfoMentor.Size = new System.Drawing.Size(1330, 535);
@@ -176,11 +177,20 @@
             this.dtgvShowMentor.Size = new System.Drawing.Size(1313, 475);
             this.dtgvShowMentor.TabIndex = 0;
             // 
+            // txbSearch
+            // 
+            this.txbSearch.Location = new System.Drawing.Point(216, 181);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.Size = new System.Drawing.Size(898, 39);
+            this.txbSearch.TabIndex = 4;
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
+            // 
             // ShowInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1335, 869);
+            this.ClientSize = new System.Drawing.Size(1335, 1000);
+            this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.dtgvShowInfoMentor);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pnForLeader);
@@ -215,5 +225,6 @@
         private DataGridView dtgvShowMember;
         private DataGridView dtgvShowLeader;
         private DataGridView dtgvShowMentor;
+        private TextBox txbSearch;
     }
 }
