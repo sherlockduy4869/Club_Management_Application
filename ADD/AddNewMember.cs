@@ -88,7 +88,7 @@ namespace Project_OOP_Final
                 }
                 else
                 {
-                    MessageBox.Show("Please enter right Role");
+                    MessageBox.Show("Please enter Role = Member/Leader/Mentor");
                 }
             }
             catch (Exception ex)
