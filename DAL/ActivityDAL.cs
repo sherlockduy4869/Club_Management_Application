@@ -23,12 +23,6 @@ namespace Project_OOP_Final.DAL
             int i = DataProvider.Instance.ExecuteNonQuery(sql);
             return i;
         }
-        public int remove(string id)
-        {
-            string sql = "EXEC dbo.DeLete_Activity @id ='" + id + "'";
-            int i = DataProvider.Instance.ExecuteNonQuery(sql);
-            return i;
-        }
         public int adjust(string id, string name, string dateStart, string dateEnd)
         {
             string sql = "UPDATE Info_Activity SET Name = '" + name + "', DateStart='" + dateStart + "', DateEnd='" + dateEnd + "' WHERE Id='" + id + "'";

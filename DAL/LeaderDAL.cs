@@ -28,7 +28,7 @@ namespace Project_OOP_Final.DAL
         }
         public int addNew(string name, string clas, string phone, string team)
         {
-            string sql = "Insert into Info_Leader(Id,Name,Class,Phone,Team) VALUES('" + name + "','" + clas + "','" + phone + "', '" + team + "')";
+            string sql = "Insert into Info_Leader(Name,Class,Phone,Team) VALUES('" + name + "','" + clas + "','" + phone + "', '" + team + "')";
             int i = DataProvider.Instance.ExecuteNonQuery(sql);
             return i;
         }
