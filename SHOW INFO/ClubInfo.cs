@@ -52,7 +52,7 @@ namespace Project_OOP_Final
                 btn.Tag = activity;
                 btn.Width = 180;
                 btn.Height = 180;
-                btn.BackColor = Color.Aqua;
+                btn.BackColor = Color.YellowGreen;
                 btn.Text = activity.Name;
                 flpActivity.Controls.Add(btn);
             }
