@@ -101,7 +101,6 @@ namespace Project_OOP_Final
             if(loginAccount.Role == "Member")
             {
                 MemberTask membertask = new MemberTask(loginAccount.Id);
-                
                 this.Hide();
                 membertask.ShowDialog();
                 this.Show();

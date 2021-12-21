@@ -51,7 +51,6 @@ namespace Project_OOP_Final.REMOVE
 
         private void RemoveTask_Load(object sender, EventArgs e)
         {
-
         }
         #endregion
     }
