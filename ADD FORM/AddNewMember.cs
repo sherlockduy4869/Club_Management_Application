@@ -31,6 +31,7 @@ namespace Project_OOP_Final
             txbRole.Text = string.Empty;
             txbTeam.Text = string.Empty;
         }
+
         #endregion
         #region Event
         private void btnAdd_Click(object sender, EventArgs e)
@@ -53,10 +54,7 @@ namespace Project_OOP_Final
                         reFresh();
                         MessageBox.Show("Added");
                     }
-                    else
-                    {
-                        MessageBox.Show("Failed");
-                    }
+                    
                 }
                 else if (role == "Leader")
                 {
