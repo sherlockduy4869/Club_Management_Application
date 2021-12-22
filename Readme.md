@@ -17,3 +17,4 @@
 - We can change the password of account only when user enter new_password = re-enter_new_password
 - When Member submit his/her task, he/she can not see the submited task. Only Leader could see that
 - ID is automatically generated
+- Price Textbox in Finace only accepts numeric and backspace values. Character is not allowed
