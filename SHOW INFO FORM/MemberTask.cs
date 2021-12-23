@@ -1,4 +1,5 @@
 ﻿using Project_OOP_Final.DAL;
+using Project_OOP_Final.SHOW_INFO_FORM;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -52,5 +53,12 @@ namespace Project_OOP_Final
         }
         #endregion
 
+        private void btnHistoryTask_Click(object sender, EventArgs e)
+        {
+            MemberHistoryTask memberHistoryTask = new MemberHistoryTask(_id);
+            this.Hide();
+            memberHistoryTask.ShowDialog();
+            this.Show();
+        }
     }
 }
