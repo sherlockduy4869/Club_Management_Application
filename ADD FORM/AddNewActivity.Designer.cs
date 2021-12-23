@@ -32,11 +32,11 @@
             this.txbName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.txbDateStart = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dtpkStart = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.txbDateEnd = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.dtpkEnd = new System.Windows.Forms.DateTimePicker();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -60,16 +60,16 @@
             // 
             this.txbName.Location = new System.Drawing.Point(190, 29);
             this.txbName.Name = "txbName";
-            this.txbName.Size = new System.Drawing.Size(499, 39);
+            this.txbName.Size = new System.Drawing.Size(400, 39);
             this.txbName.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.txbName);
             this.panel2.Controls.Add(this.Name);
-            this.panel2.Location = new System.Drawing.Point(36, 33);
+            this.panel2.Location = new System.Drawing.Point(21, 33);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(715, 90);
+            this.panel2.Size = new System.Drawing.Size(616, 90);
             this.panel2.TabIndex = 1;
             // 
             // label3
@@ -82,21 +82,22 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Date Start";
             // 
-            // txbDateStart
-            // 
-            this.txbDateStart.Location = new System.Drawing.Point(190, 30);
-            this.txbDateStart.Name = "txbDateStart";
-            this.txbDateStart.Size = new System.Drawing.Size(499, 39);
-            this.txbDateStart.TabIndex = 1;
-            // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.txbDateStart);
+            this.panel3.Controls.Add(this.dtpkStart);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(36, 129);
+            this.panel3.Location = new System.Drawing.Point(21, 129);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(715, 90);
+            this.panel3.Size = new System.Drawing.Size(616, 90);
             this.panel3.TabIndex = 2;
+            // 
+            // dtpkStart
+            // 
+            this.dtpkStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkStart.Location = new System.Drawing.Point(190, 23);
+            this.dtpkStart.Name = "dtpkStart";
+            this.dtpkStart.Size = new System.Drawing.Size(400, 39);
+            this.dtpkStart.TabIndex = 1;
             // 
             // label4
             // 
@@ -108,21 +109,22 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Date End";
             // 
-            // txbDateEnd
-            // 
-            this.txbDateEnd.Location = new System.Drawing.Point(190, 29);
-            this.txbDateEnd.Name = "txbDateEnd";
-            this.txbDateEnd.Size = new System.Drawing.Size(499, 39);
-            this.txbDateEnd.TabIndex = 1;
-            // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.txbDateEnd);
+            this.panel4.Controls.Add(this.dtpkEnd);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(36, 229);
+            this.panel4.Location = new System.Drawing.Point(21, 229);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(715, 90);
+            this.panel4.Size = new System.Drawing.Size(616, 90);
             this.panel4.TabIndex = 3;
+            // 
+            // dtpkEnd
+            // 
+            this.dtpkEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkEnd.Location = new System.Drawing.Point(190, 23);
+            this.dtpkEnd.Name = "dtpkEnd";
+            this.dtpkEnd.Size = new System.Drawing.Size(400, 39);
+            this.dtpkEnd.TabIndex = 2;
             // 
             // btnAdd
             // 
@@ -148,7 +150,7 @@
             // 
             this.panel5.Controls.Add(this.btnExit);
             this.panel5.Controls.Add(this.btnAdd);
-            this.panel5.Location = new System.Drawing.Point(445, 335);
+            this.panel5.Location = new System.Drawing.Point(275, 335);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(362, 91);
             this.panel5.TabIndex = 4;
@@ -157,7 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(821, 447);
+            this.ClientSize = new System.Drawing.Size(667, 447);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -181,13 +183,13 @@
         private TextBox txbName;
         private Panel panel2;
         private Label label3;
-        private TextBox txbDateStart;
         private Panel panel3;
         private Label label4;
-        private TextBox txbDateEnd;
         private Panel panel4;
         private Button btnAdd;
         private Button btnExit;
         private Panel panel5;
+        private DateTimePicker dtpkStart;
+        private DateTimePicker dtpkEnd;
     }
 }

@@ -27,7 +27,6 @@ namespace Project_OOP_Final
         {
             txbIdMember.Text = string.Empty;
             txbTaskName.Text = string.Empty;
-            txbDeadline.Text = string.Empty;
             txbNote.Text = string.Empty;
         }
         void loadPriority()
@@ -44,7 +43,7 @@ namespace Project_OOP_Final
         {
             string idMember = txbIdMember.Text;
             string taskName = txbTaskName.Text;
-            string deadline = txbDeadline.Text;
+            string deadline = dtpkDeadline.Text;
             string note = txbNote.Text;
             string priority = cbPriority.Text;
 

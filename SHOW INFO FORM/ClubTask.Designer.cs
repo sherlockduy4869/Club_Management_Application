@@ -42,7 +42,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1501, 868);
+            this.btnExit.Location = new System.Drawing.Point(1719, 864);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 46);
             this.btnExit.TabIndex = 7;
@@ -54,7 +54,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(780, 96);
+            this.label1.Location = new System.Drawing.Point(914, 100);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 50);
             this.label1.TabIndex = 5;
@@ -68,7 +68,7 @@
             this.dtgvClubTask.Name = "dtgvClubTask";
             this.dtgvClubTask.RowHeadersWidth = 82;
             this.dtgvClubTask.RowTemplate.Height = 41;
-            this.dtgvClubTask.Size = new System.Drawing.Size(1640, 480);
+            this.dtgvClubTask.Size = new System.Drawing.Size(1857, 480);
             this.dtgvClubTask.TabIndex = 4;
             this.dtgvClubTask.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvClubTask_CellFormatting);
             // 
@@ -97,7 +97,7 @@
             this.panel1.Controls.Add(this.btnRedo);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.btnRemove);
-            this.panel1.Location = new System.Drawing.Point(587, 730);
+            this.panel1.Location = new System.Drawing.Point(706, 746);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(569, 78);
             this.panel1.TabIndex = 11;
@@ -114,7 +114,7 @@
             // 
             // txbSearch
             // 
-            this.txbSearch.Location = new System.Drawing.Point(415, 172);
+            this.txbSearch.Location = new System.Drawing.Point(535, 170);
             this.txbSearch.Name = "txbSearch";
             this.txbSearch.Size = new System.Drawing.Size(898, 39);
             this.txbSearch.TabIndex = 12;
@@ -124,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1663, 922);
+            this.ClientSize = new System.Drawing.Size(1881, 922);
             this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnExit);

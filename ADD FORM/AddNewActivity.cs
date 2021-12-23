@@ -22,15 +22,6 @@ namespace Project_OOP_Final
 
         }
 
-        #region Method
-        void ReFresh()
-        {
-            txbName.Text = string.Empty;
-            txbDateStart.Text = string.Empty;
-            txbDateEnd.Text = string.Empty;
-        }
-        #endregion
-
         #region Event
         private void label1_Click(object sender, EventArgs e)
         {
@@ -47,8 +38,9 @@ namespace Project_OOP_Final
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string name = txbName.Text;
-            string dateStart = txbDateStart.Text;
-            string dateEnd = txbDateEnd.Text;
+            string dateStart = dtpkStart.Text;
+            string dateEnd = dtpkEnd.Text;
+
             try
             {
 
@@ -56,7 +48,7 @@ namespace Project_OOP_Final
 
                     if (i != 0)
                     {
-                        ReFresh();
+                        txbName.Text = string.Empty;
                         MessageBox.Show("Added");
                     }
                     else
@@ -71,6 +63,7 @@ namespace Project_OOP_Final
             }
         }
         #endregion
+
     }
 
 }

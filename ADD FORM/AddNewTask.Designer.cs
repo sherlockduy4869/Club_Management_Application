@@ -35,7 +35,7 @@
             this.txbTaskName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txbDeadline = new System.Windows.Forms.TextBox();
+            this.dtpkDeadline = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
@@ -44,8 +44,8 @@
             this.txbNote = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.cbPriority = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -108,19 +108,22 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.txbDeadline);
+            this.panel4.Controls.Add(this.dtpkDeadline);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(12, 231);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(776, 85);
             this.panel4.TabIndex = 3;
             // 
-            // txbDeadline
+            // dtpkDeadline
             // 
-            this.txbDeadline.Location = new System.Drawing.Point(217, 24);
-            this.txbDeadline.Name = "txbDeadline";
-            this.txbDeadline.Size = new System.Drawing.Size(540, 39);
-            this.txbDeadline.TabIndex = 1;
+            this.dtpkDeadline.Cursor = System.Windows.Forms.Cursors.Default;
+            this.dtpkDeadline.CustomFormat = "";
+            this.dtpkDeadline.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkDeadline.Location = new System.Drawing.Point(217, 25);
+            this.dtpkDeadline.Name = "dtpkDeadline";
+            this.dtpkDeadline.Size = new System.Drawing.Size(540, 39);
+            this.dtpkDeadline.TabIndex = 1;
             // 
             // label4
             // 
@@ -196,6 +199,14 @@
             this.panel2.Size = new System.Drawing.Size(776, 85);
             this.panel2.TabIndex = 6;
             // 
+            // cbPriority
+            // 
+            this.cbPriority.FormattingEnabled = true;
+            this.cbPriority.Location = new System.Drawing.Point(217, 24);
+            this.cbPriority.Name = "cbPriority";
+            this.cbPriority.Size = new System.Drawing.Size(540, 40);
+            this.cbPriority.TabIndex = 9;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -205,14 +216,6 @@
             this.label2.Size = new System.Drawing.Size(108, 40);
             this.label2.TabIndex = 0;
             this.label2.Text = "Priority";
-            // 
-            // cbPriority
-            // 
-            this.cbPriority.FormattingEnabled = true;
-            this.cbPriority.Location = new System.Drawing.Point(217, 24);
-            this.cbPriority.Name = "cbPriority";
-            this.cbPriority.Size = new System.Drawing.Size(540, 40);
-            this.cbPriority.TabIndex = 9;
             // 
             // AddNewTask
             // 
@@ -253,7 +256,6 @@
         private TextBox txbTaskName;
         private Label label3;
         private Panel panel4;
-        private TextBox txbDeadline;
         private Label label4;
         private Panel panel5;
         private Button btnExit;
@@ -264,5 +266,6 @@
         private Panel panel2;
         private Label label2;
         private ComboBox cbPriority;
+        private DateTimePicker dtpkDeadline;
     }
 }
