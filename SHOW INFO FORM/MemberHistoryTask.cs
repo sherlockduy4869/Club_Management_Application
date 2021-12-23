@@ -20,7 +20,7 @@ namespace Project_OOP_Final.SHOW_INFO_FORM
         }
         void loadMemberDoneTask(string id)
         {
-            dtgvDoneTask.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Task_Id, Task_Name, Deadline, Status FROM Info_Task WHERE Id_Member = '" + id + "' AND Status = 'Done' ");
+            dtgvDoneTask.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Task_Id, Task_Name, Deadline, Status, Priority FROM Info_Task WHERE Id_Member = '" + id + "' AND Status = 'Done' ");
         }
         private void MemberHistoryTask_Load(object sender, EventArgs e)
         {
@@ -30,6 +30,27 @@ namespace Project_OOP_Final.SHOW_INFO_FORM
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dtgvDoneTask_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            foreach (DataGridViewRow row in dtgvDoneTask.Rows)
+            {
+                string priority = Convert.ToString(row.Cells["Priority"].Value);
+
+                if (priority == "Normal")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Green;
+                }
+                else if (priority == "Important")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Yellow;
+                }
+                else if (priority == "Very Important")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Orange;
+                }
+            }
         }
     }
 }

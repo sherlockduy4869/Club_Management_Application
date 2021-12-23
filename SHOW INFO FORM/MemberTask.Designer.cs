@@ -46,6 +46,7 @@
             this.dtgvMemberTask.RowTemplate.Height = 41;
             this.dtgvMemberTask.Size = new System.Drawing.Size(1473, 480);
             this.dtgvMemberTask.TabIndex = 0;
+            this.dtgvMemberTask.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvMemberTask_CellFormatting);
             // 
             // label1
             // 

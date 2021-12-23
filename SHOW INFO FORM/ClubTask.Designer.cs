@@ -70,6 +70,7 @@
             this.dtgvClubTask.RowTemplate.Height = 41;
             this.dtgvClubTask.Size = new System.Drawing.Size(1640, 480);
             this.dtgvClubTask.TabIndex = 4;
+            this.dtgvClubTask.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvClubTask_CellFormatting);
             // 
             // btnAdd
             // 

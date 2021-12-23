@@ -25,6 +25,7 @@ namespace Project_OOP_Final
         void loadClubTask()
         {
             dtgvClubTask.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id_Member, Task_Id, Task_Name, Deadline, Status, Note, Priority FROM Info_Task");
+            
         }
         #endregion
 
@@ -62,6 +63,26 @@ namespace Project_OOP_Final
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             dtgvClubTask.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id_Member, Task_Id, Task_Name, Deadline, Status, Note, Priority FROM Info_Task WHERE Task_Name like '" + txbSearch.Text + "%'");
+        }
+        private void dtgvClubTask_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            foreach(DataGridViewRow row in dtgvClubTask.Rows)
+            {
+                string priority = Convert.ToString(row.Cells["Priority"].Value);
+
+                if (priority == "Normal")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Green;
+                }
+                else if (priority == "Important")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Yellow;
+                }
+                else if (priority == "Very Important")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Orange;
+                }
+            }
         }
         #endregion
 

@@ -51,8 +51,6 @@ namespace Project_OOP_Final
         {
             this.Close();
         }
-        #endregion
-
         private void btnHistoryTask_Click(object sender, EventArgs e)
         {
             MemberHistoryTask memberHistoryTask = new MemberHistoryTask(_id);
@@ -60,5 +58,29 @@ namespace Project_OOP_Final
             memberHistoryTask.ShowDialog();
             this.Show();
         }
+
+        private void dtgvMemberTask_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            foreach (DataGridViewRow row in dtgvMemberTask.Rows)
+            {
+                string priority = Convert.ToString(row.Cells["Priority"].Value);
+
+                if (priority == "Normal")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Green;
+                }
+                else if (priority == "Important")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Yellow;
+                }
+                else if (priority == "Very Important")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Orange;
+                }
+            }
+        }
+        #endregion
+
+
     }
 }
