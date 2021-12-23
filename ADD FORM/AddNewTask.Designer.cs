@@ -43,11 +43,15 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.txbNote = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbPriority = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -132,7 +136,7 @@
             // 
             this.panel5.Controls.Add(this.btnExit);
             this.panel5.Controls.Add(this.btnAddTask);
-            this.panel5.Location = new System.Drawing.Point(422, 444);
+            this.panel5.Location = new System.Drawing.Point(422, 501);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(366, 74);
             this.panel5.TabIndex = 5;
@@ -161,7 +165,7 @@
             // 
             this.panel6.Controls.Add(this.txbNote);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(12, 322);
+            this.panel6.Location = new System.Drawing.Point(12, 410);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(776, 85);
             this.panel6.TabIndex = 4;
@@ -183,11 +187,39 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Note";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.cbPriority);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(12, 322);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(776, 85);
+            this.panel2.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(23, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 40);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Priority";
+            // 
+            // cbPriority
+            // 
+            this.cbPriority.FormattingEnabled = true;
+            this.cbPriority.Location = new System.Drawing.Point(217, 24);
+            this.cbPriority.Name = "cbPriority";
+            this.cbPriority.Size = new System.Drawing.Size(540, 40);
+            this.cbPriority.TabIndex = 9;
+            // 
             // AddNewTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 535);
+            this.ClientSize = new System.Drawing.Size(800, 599);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -206,6 +238,8 @@
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -227,5 +261,8 @@
         private Panel panel6;
         private TextBox txbNote;
         private Label label5;
+        private Panel panel2;
+        private Label label2;
+        private ComboBox cbPriority;
     }
 }

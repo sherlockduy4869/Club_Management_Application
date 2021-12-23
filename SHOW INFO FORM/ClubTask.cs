@@ -24,7 +24,7 @@ namespace Project_OOP_Final
         #region Method
         void loadClubTask()
         {
-            dtgvClubTask.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id_Member, Task_Id, Task_Name, Deadline, Status, Note FROM Info_Task");
+            dtgvClubTask.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id_Member, Task_Id, Task_Name, Deadline, Status, Note, Priority FROM Info_Task");
         }
         #endregion
 
@@ -61,7 +61,7 @@ namespace Project_OOP_Final
 
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
-            dtgvClubTask.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id_Member, Task_Id, Task_Name, Deadline, Status, Note FROM Info_Task WHERE Task_Name like '" + txbSearch.Text + "%'");
+            dtgvClubTask.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id_Member, Task_Id, Task_Name, Deadline, Status, Note, Priority FROM Info_Task WHERE Task_Name like '" + txbSearch.Text + "%'");
         }
         #endregion
 

@@ -16,9 +16,9 @@ namespace Project_OOP_Final.DAL
         }
         private LeaderTaskDAL() { }
 
-        public int addNewTask(string idMember, string taskName, string deadline, string note)
+        public int addNewTask(string idMember, string taskName, string deadline, string note, string priority)
         {
-            string sql = "Insert INTO Info_Task(Id_Member,Task_Name,Deadline, Note) VALUES('" + idMember + "','" + taskName + "','" + deadline + "', '" + note + "')";
+            string sql = "Insert INTO Info_Task(Id_Member,Task_Name,Deadline, Note, Priority) VALUES('" + idMember + "','" + taskName + "','" + deadline + "', '" + note + "', '" + priority + "')";
             int i = DataProvider.Instance.ExecuteNonQuery(sql);
             return i;
         }

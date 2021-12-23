@@ -16,6 +16,7 @@ namespace Project_OOP_Final
         public AddNewTask()
         {
             InitializeComponent();
+            loadPriority();
         }
         private void AddTask_Load(object sender, EventArgs e)
         {
@@ -29,6 +30,14 @@ namespace Project_OOP_Final
             txbDeadline.Text = string.Empty;
             txbNote.Text = string.Empty;
         }
+        void loadPriority()
+        {
+            List<string> priorityList = new List<string>();
+            priorityList.Add("Normal");
+            priorityList.Add("Important");
+            priorityList.Add("Very Important");
+            cbPriority.DataSource = priorityList;
+        }
         #endregion
         #region Event
         private void btnAddTask_Click(object sender, EventArgs e)
@@ -37,10 +46,11 @@ namespace Project_OOP_Final
             string taskName = txbTaskName.Text;
             string deadline = txbDeadline.Text;
             string note = txbNote.Text;
+            string priority = cbPriority.Text;
 
             try
             {
-                int i = LeaderTaskDAL.Instance.addNewTask(idMember, taskName, deadline, note);
+                int i = LeaderTaskDAL.Instance.addNewTask(idMember, taskName, deadline, note, priority);
 
                 if (i != 0)
                 {

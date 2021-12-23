@@ -14,6 +14,7 @@ namespace Project_OOP_Final.DTO
         private string _task;
         private string _deadline;
         private string _status;
+        private string _priority;
         public MemberTask(DataRow row)
         {
             _id = (string)row["Id"];
@@ -21,14 +22,16 @@ namespace Project_OOP_Final.DTO
             _task = (string)row["Task"];
             _deadline = (string)row["Deadline"];
             _status = (string)row["Status"];
+            _priority = (string)row["Priority"];
         }
-        public MemberTask(string id, string taskId, string task, string deadline, string status)
+        public MemberTask(string id, string taskId, string task, string deadline, string status, string priority)
         {
             _id = id;
             _taskId = taskId;
             _task = task;
             _deadline = deadline;
             _status = status;
+            _priority = priority;
         }
         public string Id
         {
@@ -54,6 +57,11 @@ namespace Project_OOP_Final.DTO
         {
             get { return _status; }
             set { _status = value; }
+        }
+        public string Priority
+        {
+            get { return _priority; }
+            set { _priority = value; }
         }
     }
 }
