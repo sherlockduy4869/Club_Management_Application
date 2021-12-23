@@ -26,12 +26,10 @@ namespace Project_OOP_Final.SHOW_INFO_FORM
         {
 
         }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void dtgvDoneTask_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             foreach (DataGridViewRow row in dtgvDoneTask.Rows)

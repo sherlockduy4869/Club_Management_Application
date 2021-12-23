@@ -31,7 +31,6 @@ namespace Project_OOP_Final
         {
             lbRole.Text = role;
             btnClubTask.Enabled = role != "Mentor";
-            
         }
         public void showPersonalInfor(string id, string role, string name, string clas, string phone)
         {
@@ -41,7 +40,6 @@ namespace Project_OOP_Final
             txbClass.Text = clas;
             txbPhone.Text = phone;
             txbRole.Text = role;
-
         }
         #endregion
 
@@ -66,7 +64,6 @@ namespace Project_OOP_Final
 
             fShow.ShowDialog();
             this.Show();
-
         }
 
         private void btnAdjustInfo_Click(object sender, EventArgs e)
@@ -104,7 +101,6 @@ namespace Project_OOP_Final
                 this.Hide();
                 membertask.ShowDialog();
                 this.Show();
-                
             }
             else
             {

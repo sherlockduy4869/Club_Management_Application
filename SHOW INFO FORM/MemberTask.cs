@@ -39,14 +39,12 @@ namespace Project_OOP_Final
         {
 
         }
-
         private void btnSubmitTask_Click(object sender, EventArgs e)
         {
             
             SubmitTask submitTask = new SubmitTask(_id);
             submitTask.Show();
         }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -58,7 +56,6 @@ namespace Project_OOP_Final
             memberHistoryTask.ShowDialog();
             this.Show();
         }
-
         private void dtgvMemberTask_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             foreach (DataGridViewRow row in dtgvMemberTask.Rows)

@@ -69,7 +69,6 @@ namespace Project_OOP_Final
                     {
                         ReFresh();
                         MessageBox.Show("Removed");
-
                     }
                     else
                     {

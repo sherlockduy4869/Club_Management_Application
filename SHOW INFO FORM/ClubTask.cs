@@ -15,7 +15,6 @@ namespace Project_OOP_Final
 {
     public partial class ClubTask : Form
     {
-
         public ClubTask()
         {
             InitializeComponent();

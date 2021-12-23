@@ -100,10 +100,6 @@ namespace Project_OOP_Final
                         MessageBox.Show("Failed");
                     }
                 }
-                else
-                {
-                    MessageBox.Show("Please enter Role = Member/Leader/Mentor");
-                }
             }
             catch (Exception ex)
             {

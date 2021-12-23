@@ -48,7 +48,6 @@ namespace Project_OOP_Final.REMOVE
             this.Close();
 
         }
-
         private void RemoveTask_Load(object sender, EventArgs e)
         {
         }

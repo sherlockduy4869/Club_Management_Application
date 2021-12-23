@@ -26,7 +26,6 @@ namespace Project_OOP_Final
             InitializeComponent();
             loadClubInfo();
             loadACtivity();
-            
         }
 
         #region Method
