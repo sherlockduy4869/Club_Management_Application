@@ -139,7 +139,7 @@
             this.tpLeader.Location = new System.Drawing.Point(8, 46);
             this.tpLeader.Name = "tpLeader";
             this.tpLeader.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLeader.Size = new System.Drawing.Size(1095, 481);
+            this.tpLeader.Size = new System.Drawing.Size(1504, 481);
             this.tpLeader.TabIndex = 1;
             this.tpLeader.Text = "Leader";
             this.tpLeader.UseVisualStyleBackColor = true;
@@ -152,7 +152,7 @@
             this.dtgvShowLeader.Name = "dtgvShowLeader";
             this.dtgvShowLeader.RowHeadersWidth = 82;
             this.dtgvShowLeader.RowTemplate.Height = 41;
-            this.dtgvShowLeader.Size = new System.Drawing.Size(1311, 478);
+            this.dtgvShowLeader.Size = new System.Drawing.Size(1498, 478);
             this.dtgvShowLeader.TabIndex = 0;
             // 
             // tpMentor
@@ -161,7 +161,7 @@
             this.tpMentor.Location = new System.Drawing.Point(8, 46);
             this.tpMentor.Name = "tpMentor";
             this.tpMentor.Padding = new System.Windows.Forms.Padding(3);
-            this.tpMentor.Size = new System.Drawing.Size(1095, 481);
+            this.tpMentor.Size = new System.Drawing.Size(1504, 481);
             this.tpMentor.TabIndex = 2;
             this.tpMentor.Text = "Mentor";
             this.tpMentor.UseVisualStyleBackColor = true;
@@ -174,7 +174,7 @@
             this.dtgvShowMentor.Name = "dtgvShowMentor";
             this.dtgvShowMentor.RowHeadersWidth = 82;
             this.dtgvShowMentor.RowTemplate.Height = 41;
-            this.dtgvShowMentor.Size = new System.Drawing.Size(1313, 475);
+            this.dtgvShowMentor.Size = new System.Drawing.Size(1497, 475);
             this.dtgvShowMentor.TabIndex = 0;
             // 
             // txbSearch
