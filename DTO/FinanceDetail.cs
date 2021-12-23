@@ -20,13 +20,6 @@ namespace Project_OOP_Final.DTO
             _quantity = (int)row["Quantity"];
             _totalPrice = (int)row["TotalPrice"];
         }
-        public FinanceDetail(string itemName, int price, int quantity, int totalPrice)
-        {
-            _itemName = itemName;
-            _price = price;
-            _quantity = quantity;
-            _totalPrice = totalPrice;
-        }
         public string ItemName
         {
             get { return _itemName; }

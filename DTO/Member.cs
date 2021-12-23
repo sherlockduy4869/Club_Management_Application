@@ -19,15 +19,6 @@ namespace Project_OOP_Final.DTO
             _class = (string)row["Class"];
             _team = (string)row["Team"];
         }
-        public Member(string id, string name, string phone, string role, string clas, string team)
-        {
-            _id = id;
-            _name = name;
-            _phone = phone;
-            _role = role;
-            _class = clas;
-            _team = team;
-        }
         public string Team
         {
             get { return _team; }

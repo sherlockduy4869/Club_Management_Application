@@ -24,15 +24,6 @@ namespace Project_OOP_Final.DTO
             _status = (string)row["Status"];
             _priority = (string)row["Priority"];
         }
-        public MemberTask(string id, string taskId, string task, string deadline, string status, string priority)
-        {
-            _id = id;
-            _taskId = taskId;
-            _task = task;
-            _deadline = deadline;
-            _status = status;
-            _priority = priority;
-        }
         public string Id
         {
             get { return _id; }

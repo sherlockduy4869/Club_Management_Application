@@ -20,13 +20,6 @@ namespace Project_OOP_Final.DTO
             _dateStart = (string)row["DateStart"];
             _dateEnd = (string)row["DateEnd"];
         }
-        public Activity(string id, string name, string dateStart, string dateEnd)
-        {
-            _id = id;
-            _name = name;
-            _dateStart = dateStart;
-            _dateEnd = dateEnd;
-        }
         public string Id
         {
             get { return _id; }

@@ -21,13 +21,6 @@ namespace Project_OOP_Final.DTO
             _passWord = (string)row["Pass"];
             _role = (string)row["Role"];
         }
-        public Account(string id, string userName, string passWord, string role)
-        {
-            _id = id;
-            _userName = userName;
-            _passWord = passWord;
-            _role = role;
-        }
         public string Id
         {
             get { return _id; }

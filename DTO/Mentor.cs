@@ -20,14 +20,6 @@ namespace Project_OOP_Final.DTO
                 _class = (string)clas;
             //_class = (string)row["Class"];
         }
-        public Mentor(string id, string name, string phone, string role, string clas)
-        {
-            _id = id;
-            _name = name;
-            _phone = phone;
-            _role = role;
-            _class = clas;
-        }
 
     }
 }

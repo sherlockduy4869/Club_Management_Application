@@ -42,6 +42,7 @@ namespace Project_OOP_Final
         void loadTeam()
         {
             List<string> team = new List<string>();
+            team.Add("None");
             team.Add("Media");
             team.Add("Tech");
             team.Add("HR");
