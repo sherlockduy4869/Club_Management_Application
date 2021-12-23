@@ -132,7 +132,7 @@ namespace Project_OOP_Final
         }
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
-            dtgvActivity.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM Info_Activity WHERE Name like '" + txbSearch.Text + "%'");
+            dtgvActivity.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM Info_Activity WHERE Name like '%" + txbSearch.Text + "%'");
         }
 
         #endregion
