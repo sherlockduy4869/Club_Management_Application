@@ -17,6 +17,8 @@ namespace Project_OOP_Final
         public AddNewMember()
         {
             InitializeComponent();
+            loadRole();
+            loadTeam();
         }
         private void AddNew_Load(object sender, EventArgs e)
         {
@@ -28,10 +30,23 @@ namespace Project_OOP_Final
             txbName.Text = string.Empty;
             txbPhone.Text = string.Empty;
             txbClass.Text = string.Empty;
-            txbRole.Text = string.Empty;
-            txbTeam.Text = string.Empty;
         }
-
+        void loadRole()
+        {
+            List<string> roles = new List<string>();
+            roles.Add("Member");
+            roles.Add("Leader");
+            roles.Add("Mentor");
+            cbRole.DataSource = roles;
+        }
+        void loadTeam()
+        {
+            List<string> team = new List<string>();
+            team.Add("Media");
+            team.Add("Tech");
+            team.Add("HR");
+            cbTeam.DataSource = team;
+        }
         #endregion
         #region Event
         private void btnAdd_Click(object sender, EventArgs e)
@@ -39,8 +54,8 @@ namespace Project_OOP_Final
             string name = txbName.Text;
             string clas = txbClass.Text;
             string phone = txbPhone.Text;
-            string role = txbRole.Text;
-            string team = txbTeam.Text;
+            string role = cbRole.Text;
+            string team = cbTeam.Text;
 
             try
             {

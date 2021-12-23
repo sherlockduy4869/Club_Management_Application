@@ -41,11 +41,11 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.txbRole = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.txbTeam = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.cbRole = new System.Windows.Forms.ComboBox();
+            this.cbTeam = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -163,19 +163,12 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.txbRole);
+            this.panel6.Controls.Add(this.cbRole);
             this.panel6.Controls.Add(this.label5);
             this.panel6.Location = new System.Drawing.Point(50, 29);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(746, 88);
             this.panel6.TabIndex = 2;
-            // 
-            // txbRole
-            // 
-            this.txbRole.Location = new System.Drawing.Point(208, 24);
-            this.txbRole.Name = "txbRole";
-            this.txbRole.Size = new System.Drawing.Size(524, 39);
-            this.txbRole.TabIndex = 1;
             // 
             // label5
             // 
@@ -189,19 +182,12 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.txbTeam);
+            this.panel7.Controls.Add(this.cbTeam);
             this.panel7.Controls.Add(this.label6);
             this.panel7.Location = new System.Drawing.Point(50, 405);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(746, 88);
             this.panel7.TabIndex = 6;
-            // 
-            // txbTeam
-            // 
-            this.txbTeam.Location = new System.Drawing.Point(208, 24);
-            this.txbTeam.Name = "txbTeam";
-            this.txbTeam.Size = new System.Drawing.Size(524, 39);
-            this.txbTeam.TabIndex = 1;
             // 
             // label6
             // 
@@ -212,6 +198,22 @@
             this.label6.Size = new System.Drawing.Size(95, 45);
             this.label6.TabIndex = 0;
             this.label6.Text = "Team";
+            // 
+            // cbRole
+            // 
+            this.cbRole.FormattingEnabled = true;
+            this.cbRole.Location = new System.Drawing.Point(208, 31);
+            this.cbRole.Name = "cbRole";
+            this.cbRole.Size = new System.Drawing.Size(524, 40);
+            this.cbRole.TabIndex = 8;
+            // 
+            // cbTeam
+            // 
+            this.cbTeam.FormattingEnabled = true;
+            this.cbTeam.Location = new System.Drawing.Point(208, 29);
+            this.cbTeam.Name = "cbTeam";
+            this.cbTeam.Size = new System.Drawing.Size(524, 40);
+            this.cbTeam.TabIndex = 9;
             // 
             // AddNewMember
             // 
@@ -258,10 +260,10 @@
         private Button btnExit;
         private Button btnAdd;
         private Panel panel6;
-        private TextBox txbRole;
         private Label label5;
         private Panel panel7;
-        private TextBox txbTeam;
         private Label label6;
+        private ComboBox cbRole;
+        private ComboBox cbTeam;
     }
 }
