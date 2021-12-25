@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project_OOP_Final", "Project_OOP_Final.csproj", "{40FED183-9C0C-4943-9EE2-D07219AF79AD}"
 EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "Club Management", "..\Club Management\Club Management.aiproj", "{E50E0DD9-FAC9-4A0C-ACA6-CB4AED3E8D03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		All|Any CPU = All|Any CPU
@@ -18,6 +20,10 @@ Global
 		{40FED183-9C0C-4943-9EE2-D07219AF79AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40FED183-9C0C-4943-9EE2-D07219AF79AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40FED183-9C0C-4943-9EE2-D07219AF79AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E50E0DD9-FAC9-4A0C-ACA6-CB4AED3E8D03}.All|Any CPU.ActiveCfg = DefaultBuild
+		{E50E0DD9-FAC9-4A0C-ACA6-CB4AED3E8D03}.Debug|Any CPU.ActiveCfg = DefaultBuild
+		{E50E0DD9-FAC9-4A0C-ACA6-CB4AED3E8D03}.Debug|Any CPU.Build.0 = DefaultBuild
+		{E50E0DD9-FAC9-4A0C-ACA6-CB4AED3E8D03}.Release|Any CPU.ActiveCfg = DefaultBuild
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
