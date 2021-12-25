@@ -5,8 +5,9 @@
 ## How to use
 - Change the SQLconnection (in DataProvider.cs file) which is suitable with your SQLSever
 - Run the application in Visual Studio
-- Open SQL sever and insert 1 account leader in database
-- Add 1 account for Member and 1 account for Mentor
+- Open SQL sever and run the SQL code in SQL folder
+- 1 account Leader will be automatically added with User_Name : 'LD1', Pass_Word: '123456'
+- From account Leader, we can add member and mentor
 ## Note 
 - Only Leader can add, delete Member, Mentor, and Leader
 - Only Leader can deliver tasks for member
