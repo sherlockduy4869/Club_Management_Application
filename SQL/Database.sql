@@ -1,5 +1,7 @@
 CREATE DATABASE OOP_PROJECT
+GO
 USE OOP_PROJECT
+GO
 
 /*Table Area*/
 --Table Account
@@ -10,6 +12,7 @@ CREATE TABLE Account
 	Pass VARCHAR(50),
 	Role VARCHAR(50)
 )
+GO
 
 --Table Info_Member
 CREATE TABLE Info_Member
@@ -22,7 +25,6 @@ CREATE TABLE Info_Member
 	Role VARCHAR(20) DEFAULT 'Member', 
 	Team VARCHAR(50) 
 )
-
 GO
 --Table Info_Leader
 CREATE TABLE Info_Leader
@@ -35,6 +37,7 @@ CREATE TABLE Info_Leader
 	Role VARCHAR(20) DEFAULT 'Leader',
 	Team VARCHAR(50) 
 )
+GO
 
 --Table Info_Mentor
 CREATE TABLE Info_Mentor
@@ -46,17 +49,17 @@ CREATE TABLE Info_Mentor
 	Phone VARCHAR(20),
 	Role VARCHAR(20) DEFAULT 'Mentor'
 )
-
+GO
 --Table Info_Activity
 CREATE TABLE Info_Activity
 (
 	STT INT IDENTITY,
 	Id CHAR(10),
 	Name VARCHAR(100),
-	DateStart VARCHAR(20),
-	DateEnd VARCHAR(20),
+	DateStart VARCHAR(50),
+	DateEnd VARCHAR(50),
 )
-
+GO
 --Table Info Finance_Detail
 CREATE TABLE Finance_Detail
 (	
@@ -65,7 +68,7 @@ CREATE TABLE Finance_Detail
 	Price INT,
 	Quantity INT,
 )
-
+GO
 --Table Info_Task
 CREATE TABLE Info_Task
 (
@@ -73,11 +76,12 @@ CREATE TABLE Info_Task
 	Id_Member CHAR(10),
 	Task_Id VARCHAR(50),
 	Task_Name VARCHAR(100),
-	Deadline VARCHAR(20),
+	Deadline VARCHAR(50),
 	Status VARCHAR(50) DEFAULT 'Working',
-	Note VARCHAR(200) DEFAULT 'None'
+	Note VARCHAR(200) DEFAULT 'None',
+	Priority VARCHAR(20)
 )
-
+GO
 /*Proc Area*/
 -- Proc for Login
 CREATE PROC Login
@@ -86,9 +90,10 @@ AS
 BEGIN
 	SELECT * FROM Account WHERE UserName = @userName AND Pass = @passWord
 END
+GO
 
 -- Proc for loading information of member
-ALTER PROC LoadInfoListMember
+CREATE PROC LoadInfoListMember
 AS
 BEGIN
 	SELECT Id, Name, Class, Phone, Team FROM Info_Member 
@@ -96,7 +101,7 @@ END
 GO
 
 -- Proc for loading information of leader
-ALTER PROC LoadInfoListLeader
+CREATE PROC LoadInfoListLeader
 AS
 BEGIN
 	SELECT Id, Name, Class, Phone, Team  FROM Info_Leader 
@@ -104,11 +109,12 @@ END
 GO
 
 -- Proc for loading information of mentor
-ALTER PROC LoadInfoListMentor
+CREATE PROC LoadInfoListMentor
 AS
 BEGIN
 	SELECT Id, Name, Class, Phone FROM Info_Mentor
 END
+GO
 
 -- Proc for loading information of activity
 CREATE PROC LoadInfoActivity
@@ -116,6 +122,7 @@ AS
 BEGIN
 	SELECT * FROM Info_Activity
 END
+GO
 
 --Proc for adjusting information of member/leader/mentor
 CREATE PROC Adjust_Info
@@ -143,6 +150,7 @@ BEGIN
 	WHERE Id = @userName
 	END
 END
+GO
 
 --Proc for adjusting password
 CREATE PROC Adjust_Pass
@@ -153,9 +161,10 @@ BEGIN
 	SET Pass = @newPass
 	WHERE UserName = @userName
 END
+GO
 
 --Proc for inserting finance detail
-ALTER PROC USP_InsertFinanceDetail
+CREATE PROC USP_InsertFinanceDetail
 @idActivity VARCHAR(50), @itemName VARCHAR(50), @price INT, @quantity INT
 AS
 BEGIN
@@ -187,6 +196,7 @@ BEGIN
 		INSERT INTO Finance_Detail(IdActivity, ItemName, Price, Quantity) VALUES(@idActivity, @itemName, @price, @quantity)
 	END
 END
+GO
 
 /*Trigger Area*/
 --Trigger for inserting MemberID
@@ -205,6 +215,7 @@ BEGIN
 	SET Id = @id
 	WHERE STT = @stt
 END
+GO
 
 --Trigger for inserting LeaderID
 CREATE TRIGGER InsertLeaderID
@@ -222,6 +233,7 @@ BEGIN
 	SET Id = @id
 	WHERE STT = @stt
 END
+GO
 
 --Trigger for inserting MentorID
 CREATE TRIGGER InsertMentorID
@@ -239,6 +251,7 @@ BEGIN
 	SET Id = @id
 	WHERE STT = @stt
 END
+GO
 
 --Trigger for inserting MentorID
 CREATE TRIGGER InsertTaskID
@@ -256,6 +269,7 @@ BEGIN
 	SET Task_Id = @id
 	WHERE STT = @stt
 END
+GO
 
 --Trigger for inserting ActivityID
 CREATE TRIGGER InsertAcitivitID
@@ -273,6 +287,7 @@ BEGIN
 	SET Id = @id
 	WHERE STT = @stt
 END
+GO
 
 -- Trigger for creating new account when inserting new member
 CREATE TRIGGER Insert_Account
@@ -291,6 +306,7 @@ BEGIN
 		INSERT INTO Account(Id, UserName, Pass, Role) VALUES (@id,@id,'123456',@role)
 	END
 END
+GO
 
 -- Trigger for creating new account when inserting new leader
 CREATE TRIGGER Insert_Account_Leader
@@ -309,6 +325,7 @@ BEGIN
 		INSERT INTO Account(Id, UserName, Pass, Role) VALUES (@id,@id,'123456',@role)
 	END
 END
+GO
 
 -- Trigger for creating new account when inserting new mentor
 CREATE TRIGGER Insert_Account_Mentor
@@ -327,6 +344,7 @@ BEGIN
 		INSERT INTO Account(Id, UserName, Pass, Role) VALUES (@id,@id,'123456',@role)
 	END
 END
+GO
 
 -- Trigger for deleting account when deleting member
 CREATE TRIGGER Delete_Account
@@ -343,6 +361,7 @@ BEGIN
 	DELETE FROM Account WHERE id = @id AND Role = @role
 
 END
+GO
 
 -- Trigger for deleting account when deleting leader
 CREATE TRIGGER Delete_Account_Leader
@@ -359,6 +378,7 @@ BEGIN
 	DELETE FROM Account WHERE id = @id AND Role = @role
 
 END
+GO
 
 -- Trigger for deleting account when deleting mentor
 CREATE TRIGGER Delete_Account_Mentor
@@ -375,3 +395,7 @@ BEGIN
 	DELETE FROM Account WHERE id = @id AND Role = @role
 
 END
+GO
+--Insert first Leader
+INSERT INTO Info_Leader (Name, Class, Phone,Team) VALUES('Admin','adminClass', '09676546546','Media')
+GO
