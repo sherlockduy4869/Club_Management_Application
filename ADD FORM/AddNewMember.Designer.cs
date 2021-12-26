@@ -95,6 +95,7 @@
             this.txbPhone.Name = "txbPhone";
             this.txbPhone.Size = new System.Drawing.Size(524, 39);
             this.txbPhone.TabIndex = 1;
+            this.txbPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhone_KeyPress);
             // 
             // label3
             // 

@@ -17,12 +17,21 @@ namespace Project_OOP_Final
         public Remove()
         {
             InitializeComponent();
+            loadRole();
         }
         #region Method
-        void ReFresh()
+        void reFresh()
         {
             txbID.Text = string.Empty;
-            txbRole.Text = string.Empty;
+            
+        }
+        void loadRole()
+        {
+            List<string> roles = new List<string>();
+            roles.Add("Member");
+            roles.Add("Leader");
+            roles.Add("Mentor");
+            cbRole.DataSource = roles;
         }
         #endregion
 
@@ -30,54 +39,21 @@ namespace Project_OOP_Final
         private void btnRemove_Click(object sender, EventArgs e)
         {
             string id = txbID.Text;
-            string role = txbRole.Text;
+            string role = cbRole.Text;
 
+            var roleObject = GettingRole.getRoleForRemoving(role);
             try
             {
-                if(role == "Member")
+                var implementObject = new ImplementFunction();
+                int i = implementObject.startRemove(roleObject, id, role);
+                if(i != 0)
                 {
-                    int i = MemberDAL.Instance.remove(id, role);
-                    if (i != 0)
-                    {
-                        ReFresh();
-                        MessageBox.Show("Removed");
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("Failed");
-                    }
-                }
-                else if (role == "Leader")
-                {
-                    int i = LeaderDAL.Instance.remove(id, role);
-                    if (i != 0)
-                    {
-                        ReFresh();
-                        MessageBox.Show("Removed");
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("Failed");
-                    }
-                }
-                else if (role == "Mentor")
-                {
-                    int i = MentorDAL.Instance.remove(id, role);
-                    if (i != 0)
-                    {
-                        ReFresh();
-                        MessageBox.Show("Removed");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Failed");
-                    }
+                    reFresh();
+                    MessageBox.Show("Removed");
                 }
                 else
                 {
-                    MessageBox.Show("Please enter right information");
+                    MessageBox.Show("Failed");
                 }
             }
             catch (Exception ex)

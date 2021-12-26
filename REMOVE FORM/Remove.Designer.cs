@@ -35,8 +35,8 @@
             this.txbID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.txbRole = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.cbRole = new System.Windows.Forms.ComboBox();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -46,7 +46,7 @@
             // 
             this.panel5.Controls.Add(this.btnExit);
             this.panel5.Controls.Add(this.btnRemove);
-            this.panel5.Location = new System.Drawing.Point(403, 323);
+            this.panel5.Location = new System.Drawing.Point(78, 305);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(370, 102);
             this.panel5.TabIndex = 3;
@@ -77,14 +77,14 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(27, 53);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(746, 88);
+            this.panel1.Size = new System.Drawing.Size(471, 88);
             this.panel1.TabIndex = 1;
             // 
             // txbID
             // 
             this.txbID.Location = new System.Drawing.Point(208, 24);
             this.txbID.Name = "txbID";
-            this.txbID.Size = new System.Drawing.Size(524, 39);
+            this.txbID.Size = new System.Drawing.Size(242, 39);
             this.txbID.TabIndex = 1;
             // 
             // label1
@@ -99,19 +99,12 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.txbRole);
+            this.panel6.Controls.Add(this.cbRole);
             this.panel6.Controls.Add(this.label5);
             this.panel6.Location = new System.Drawing.Point(27, 172);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(746, 88);
+            this.panel6.Size = new System.Drawing.Size(471, 88);
             this.panel6.TabIndex = 2;
-            // 
-            // txbRole
-            // 
-            this.txbRole.Location = new System.Drawing.Point(208, 24);
-            this.txbRole.Name = "txbRole";
-            this.txbRole.Size = new System.Drawing.Size(524, 39);
-            this.txbRole.TabIndex = 1;
             // 
             // label5
             // 
@@ -123,11 +116,19 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Role";
             // 
+            // cbRole
+            // 
+            this.cbRole.FormattingEnabled = true;
+            this.cbRole.Location = new System.Drawing.Point(208, 24);
+            this.cbRole.Name = "cbRole";
+            this.cbRole.Size = new System.Drawing.Size(242, 40);
+            this.cbRole.TabIndex = 4;
+            // 
             // Remove
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 444);
+            this.ClientSize = new System.Drawing.Size(551, 444);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
@@ -153,7 +154,7 @@
         private TextBox txbID;
         private Label label1;
         private Panel panel6;
-        private TextBox txbRole;
         private Label label5;
+        private ComboBox cbRole;
     }
 }

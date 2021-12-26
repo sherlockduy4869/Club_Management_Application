@@ -42,7 +42,6 @@ namespace Project_OOP_Final
         void loadTeam()
         {
             List<string> team = new List<string>();
-            team.Add("None");
             team.Add("Media");
             team.Add("Tech");
             team.Add("HR");
@@ -58,47 +57,19 @@ namespace Project_OOP_Final
             string role = cbRole.Text;
             string team = cbTeam.Text;
 
+            var roleObject = GettingRole.getRoleForAdding(role);
             try
             {
-               
-                if(role == "Member")
+                var implementObject = new ImplementFunction();
+                int i = implementObject.startAdding(roleObject, name, clas, phone, team);
+                if (i != 0)
                 {
-                    int i = MemberDAL.Instance.addNew(name, clas, phone, team);
-
-                    if (i != 0)
-                    {
-                        reFresh();
-                        MessageBox.Show("Added");
-                    }
-                    
+                    reFresh();
+                    MessageBox.Show("Added");
                 }
-                else if (role == "Leader")
+                else
                 {
-                    int i = LeaderDAL.Instance.addNew(name, clas, phone, team);
-
-                    if (i != 0)
-                    {
-                        reFresh();
-                        MessageBox.Show("Added");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Failed");
-                    }
-                }
-                else if (role == "Mentor")
-                {
-                    int i = MentorDAL.Instance.addNew(name, clas, phone);
-
-                    if (i != 0)
-                    {
-                        reFresh();
-                        MessageBox.Show("Added");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Failed");
-                    }
+                    MessageBox.Show("Failed");
                 }
             }
             catch (Exception ex)
@@ -113,6 +84,15 @@ namespace Project_OOP_Final
             this.Hide();
             fShow.ShowDialog();
         }
+        private void txbPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Only accept numeric values and backspace");
+            }
+        }
         #endregion
+
+
     }
 }

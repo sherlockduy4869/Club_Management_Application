@@ -51,19 +51,24 @@
             this.btnAdjustInfo = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.lbRole = new System.Windows.Forms.Label();
+            this.pnMenu = new System.Windows.Forms.Panel();
+            this.pnAdjust = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnClass.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.pnMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.txbID);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 95);
+            this.panel1.Location = new System.Drawing.Point(682, 95);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(805, 71);
             this.panel1.TabIndex = 0;
@@ -90,7 +95,7 @@
             // 
             this.panel2.Controls.Add(this.txbName);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(12, 172);
+            this.panel2.Location = new System.Drawing.Point(682, 172);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(805, 71);
             this.panel2.TabIndex = 1;
@@ -117,7 +122,7 @@
             // 
             this.pnClass.Controls.Add(this.txbClass);
             this.pnClass.Controls.Add(this.label3);
-            this.pnClass.Location = new System.Drawing.Point(12, 406);
+            this.pnClass.Location = new System.Drawing.Point(682, 406);
             this.pnClass.Name = "pnClass";
             this.pnClass.Size = new System.Drawing.Size(805, 71);
             this.pnClass.TabIndex = 2;
@@ -144,7 +149,7 @@
             // 
             this.panel4.Controls.Add(this.txbPhone);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(12, 249);
+            this.panel4.Location = new System.Drawing.Point(682, 249);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(805, 71);
             this.panel4.TabIndex = 3;
@@ -171,7 +176,7 @@
             // 
             this.panel7.Controls.Add(this.txbRole);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(12, 326);
+            this.panel7.Location = new System.Drawing.Point(682, 326);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(805, 71);
             this.panel7.TabIndex = 5;
@@ -201,7 +206,7 @@
             this.panel8.Controls.Add(this.btnAdjustPass);
             this.panel8.Controls.Add(this.btnCLubMemberInfo);
             this.panel8.Controls.Add(this.btnAdjustInfo);
-            this.panel8.Location = new System.Drawing.Point(150, 483);
+            this.panel8.Location = new System.Drawing.Point(820, 483);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(589, 201);
             this.panel8.TabIndex = 6;
@@ -258,7 +263,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(640, 721);
+            this.btnExit.Location = new System.Drawing.Point(1310, 721);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(164, 74);
             this.btnExit.TabIndex = 4;
@@ -270,18 +275,57 @@
             // 
             this.lbRole.AutoSize = true;
             this.lbRole.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbRole.Location = new System.Drawing.Point(54, 30);
+            this.lbRole.Location = new System.Drawing.Point(724, 30);
             this.lbRole.Name = "lbRole";
             this.lbRole.Size = new System.Drawing.Size(174, 45);
             this.lbRole.TabIndex = 7;
             this.lbRole.Text = "Role_name";
+            // 
+            // pnMenu
+            // 
+            this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.pnMenu.Controls.Add(this.panel3);
+            this.pnMenu.Controls.Add(this.button1);
+            this.pnMenu.Controls.Add(this.pnAdjust);
+            this.pnMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnMenu.Name = "pnMenu";
+            this.pnMenu.Size = new System.Drawing.Size(504, 1013);
+            this.pnMenu.TabIndex = 8;
+            // 
+            // pnAdjust
+            // 
+            this.pnAdjust.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnAdjust.Location = new System.Drawing.Point(0, 0);
+            this.pnAdjust.Name = "pnAdjust";
+            this.pnAdjust.Size = new System.Drawing.Size(504, 200);
+            this.pnAdjust.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Location = new System.Drawing.Point(0, 200);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(504, 46);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Adjust";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 246);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(504, 200);
+            this.panel3.TabIndex = 2;
             // 
             // PersonalInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(839, 805);
+            this.ClientSize = new System.Drawing.Size(1646, 1013);
+            this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.lbRole);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel8);
@@ -305,6 +349,7 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
+            this.pnMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,5 +380,9 @@
         private Button btnAdjustPass;
         private Button btnClubInfo;
         private Button btnClubTask;
+        private Panel pnMenu;
+        private Panel panel3;
+        private Button button1;
+        private Panel pnAdjust;
     }
 }

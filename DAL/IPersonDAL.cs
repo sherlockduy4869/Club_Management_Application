@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Project_OOP_Final.DAL
 {
-    interface PersonDAL
+    interface IPersonDAL
     {
-        public int remove(string id, string role);
-
+       int remove(string id, string role);
+       int addNew(string name, string clas, string phone, string team);
     }
 }

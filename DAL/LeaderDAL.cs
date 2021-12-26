@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project_OOP_Final.DAL
 {
-    public class LeaderDAL : PersonDAL
+    public class LeaderDAL : IPersonDAL
     {
         private static LeaderDAL instance;
         public static LeaderDAL Instance
@@ -16,7 +16,7 @@ namespace Project_OOP_Final.DAL
             get { if (instance == null) instance = new LeaderDAL(); return instance; }
             private set { instance = value; }
         }
-        private LeaderDAL() { }
+        public LeaderDAL() { }
         public Leader getInfoById(string id)
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("Select * from Info_Leader Where Id = '" + id + "'");

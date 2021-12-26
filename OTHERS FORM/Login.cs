@@ -18,10 +18,6 @@ namespace Project_OOP_Final
         #endregion
 
         #region Event
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string userName = txbUserName.Text;
@@ -40,7 +36,7 @@ namespace Project_OOP_Final
                 }
                 else if (loginAccount.Role == "Mentor")
                 {
-                    Mentor mentor = MentorDAL.Instance.GetInfoById(loginAccount.Id);
+                    Mentor mentor = MentorDAL.Instance.getInfoById(loginAccount.Id);
                     PersonalInfo personalInfo = new PersonalInfo(loginAccount);
                     personalInfo.showPersonalInfor(mentor.Id, mentor.Role, mentor.Name, mentor.Class, mentor.Phone);
                     this.Hide();
@@ -70,5 +66,7 @@ namespace Project_OOP_Final
 
         }
         #endregion
+
+
     }
 }

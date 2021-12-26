@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project_OOP_Final.DAL
 {
-    public class MentorDAL : PersonDAL
+    public class MentorDAL : IPersonDAL
     {
         private static MentorDAL instance;
         public static MentorDAL Instance
@@ -16,8 +16,8 @@ namespace Project_OOP_Final.DAL
             get { if (instance == null) instance = new MentorDAL(); return instance; }
             private set { instance = value; }
         }
-        private MentorDAL() { }
-        public Mentor GetInfoById(string id)
+        public MentorDAL() { }
+        public Mentor getInfoById(string id)
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("Select * from Info_Mentor Where Id = '" + id + "'");
             foreach (DataRow row in data.Rows)
@@ -26,7 +26,7 @@ namespace Project_OOP_Final.DAL
             }
             return null;
         }
-        public int addNew(string name, string clas, string phone)
+        public int addNew(string name, string clas, string phone, string team)
         {
             string sql = "Insert into Info_Mentor(Name,Class,Phone) VALUES('" + name + "','" + clas + "','" + phone + "')";
 
