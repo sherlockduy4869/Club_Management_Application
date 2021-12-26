@@ -42,7 +42,7 @@ namespace Project_OOP_Final
                     this.Hide();
                     personalInfo.ShowDialog();
                 }
-                else if (loginAccount.Role == "Leader")
+                else
                 {
                     Leader leader = LeaderDAL.Instance.getInfoById(loginAccount.Id);
                     PersonalInfo personalInfo = new PersonalInfo(loginAccount);
@@ -50,15 +50,10 @@ namespace Project_OOP_Final
                     this.Hide();
                     personalInfo.ShowDialog();
                 }
-
-                else
-                {
-                    MessageBox.Show("Sai cmnr");
-                }
             }
             else
             {
-                MessageBox.Show("Wrong!!!");
+                MessageBox.Show("Wrong UserName or PassWord, please re-enter again");
             }
         }
         private void Login_Load(object sender, EventArgs e)

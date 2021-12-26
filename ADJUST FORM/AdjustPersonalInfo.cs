@@ -72,6 +72,13 @@ namespace Project_OOP_Final
             this.Close();
             
         }
+        private void txbPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Only accept numeric values and backspace");
+            }
+        }
         #endregion
     }
 
