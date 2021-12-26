@@ -57,7 +57,7 @@ namespace Project_OOP_Final
             string role = cbRole.Text;
             string team = cbTeam.Text;
 
-            var roleObject = GettingRole.getRoleForAdding(role);
+            var roleObject = GettingRoleDAL.getRoleForAdding(role);
             try
             {
                 var implementObject = new ImplementFunction();

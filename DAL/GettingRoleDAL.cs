@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project_OOP_Final.DAL
 {
-    class GettingRole
+    class GettingRoleDAL
     {
         public static IPersonDAL getRoleForRemoving(string role)
         {

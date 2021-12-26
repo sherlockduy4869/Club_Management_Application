@@ -36,7 +36,7 @@ namespace Project_OOP_Final
             string id = txbID.Text;
             string role = cbRole.Text;
 
-            var roleObject = GettingRole.getRoleForRemoving(role);
+            var roleObject = GettingRoleDAL.getRoleForRemoving(role);
             try
             {
                 var implementObject = new ImplementFunction();
