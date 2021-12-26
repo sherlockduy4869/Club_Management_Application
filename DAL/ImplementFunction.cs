@@ -8,7 +8,7 @@ namespace Project_OOP_Final.DAL
 {
     class ImplementFunction
     {
-        public int startRemove(IPersonDAL personDAL, string id, string role)
+        public int startRemoving(IPersonDAL personDAL, string id, string role)
         {
             int i = personDAL.remove(id, role);
             return i;

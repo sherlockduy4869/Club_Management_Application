@@ -40,7 +40,7 @@ namespace Project_OOP_Final
             try
             {
                 var implementObject = new ImplementFunction();
-                int i = implementObject.startRemove(roleObject, id, role);
+                int i = implementObject.startRemoving(roleObject, id, role);
                 if(i != 0)
                 {
                     txbID.Text = string.Empty;
