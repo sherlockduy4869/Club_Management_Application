@@ -20,11 +20,6 @@ namespace Project_OOP_Final
             loadRole();
         }
         #region Method
-        void reFresh()
-        {
-            txbID.Text = string.Empty;
-            
-        }
         void loadRole()
         {
             List<string> roles = new List<string>();
@@ -48,7 +43,7 @@ namespace Project_OOP_Final
                 int i = implementObject.startRemove(roleObject, id, role);
                 if(i != 0)
                 {
-                    reFresh();
+                    txbID.Text = string.Empty;
                     MessageBox.Show("Removed");
                 }
                 else
