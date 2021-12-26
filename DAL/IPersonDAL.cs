@@ -10,5 +10,6 @@ namespace Project_OOP_Final.DAL
     {
        int remove(string id, string role);
        int addNew(string name, string clas, string phone, string team);
+        
     }
 }
