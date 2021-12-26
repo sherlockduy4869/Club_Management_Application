@@ -39,8 +39,7 @@ namespace Project_OOP_Final
             var roleObject = GettingRoleDAL.getRoleForRemoving(role);
             try
             {
-                var implementObject = new ImplementFunction();
-                int i = implementObject.startRemoving(roleObject, id, role);
+                int i = ImplementFunction.startRemoving(roleObject, id, role);
                 if(i != 0)
                 {
                     txbID.Text = string.Empty;
