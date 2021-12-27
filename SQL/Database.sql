@@ -303,7 +303,7 @@ BEGIN
 
 	IF(@id is not Null)
 	BEGIN
-		INSERT INTO Account(Id, UserName, Pass, Role) VALUES (@id,@id,'123456',@role)
+		INSERT INTO Account(Id, UserName, Pass, Role) VALUES (@id,@id,'2251022057731868917119086224872421513662',@role)
 	END
 END
 GO
@@ -322,7 +322,7 @@ BEGIN
 
 	IF(@id is not Null)
 	BEGIN
-		INSERT INTO Account(Id, UserName, Pass, Role) VALUES (@id,@id,'123456',@role)
+		INSERT INTO Account(Id, UserName, Pass, Role) VALUES (@id,@id,'2251022057731868917119086224872421513662',@role)
 	END
 END
 GO
@@ -341,7 +341,7 @@ BEGIN
 
 	IF(@id is not Null)
 	BEGIN
-		INSERT INTO Account(Id, UserName, Pass, Role) VALUES (@id,@id,'123456',@role)
+		INSERT INTO Account(Id, UserName, Pass, Role) VALUES (@id,@id,'2251022057731868917119086224872421513662',@role)
 	END
 END
 GO
