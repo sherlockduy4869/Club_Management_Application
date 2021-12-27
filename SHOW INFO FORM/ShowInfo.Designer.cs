@@ -197,7 +197,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ShowInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ShowInfo";
+            this.Text = "Show Information of Club Member/Leader/Mentor";
             this.Load += new System.EventHandler(this.ShowInfo_Load);
             this.pnForLeader.ResumeLayout(false);
             this.dtgvShowInfoMentor.ResumeLayout(false);

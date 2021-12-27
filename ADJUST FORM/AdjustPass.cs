@@ -26,7 +26,7 @@ namespace Project_OOP_Final
         {
             passNow = pass;
         }
-        string cryPass(string passWord)
+        string encodingPass(string passWord)
         {
             byte[] temp = ASCIIEncoding.ASCII.GetBytes(passWord);
             byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
@@ -52,9 +52,9 @@ namespace Project_OOP_Final
         private void btnAdjust_Click(object sender, EventArgs e)
         {
             string userName = txbUserName.Text;
-            string currentPass = cryPass(txbCurrentPass.Text);
-            string newPass = cryPass(txbNewPass.Text);
-            string reNewPass = cryPass(txbReEnterPass.Text);
+            string currentPass = encodingPass(txbCurrentPass.Text);
+            string newPass = encodingPass(txbNewPass.Text);
+            string reNewPass = encodingPass(txbReEnterPass.Text);
             string pass = passNow;
 
             try

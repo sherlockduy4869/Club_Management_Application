@@ -55,18 +55,7 @@ namespace Project_OOP_Final
             Application.Exit();
         }
 
-        private void btnShowCLubInfo_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            ShowInfo fShow = new ShowInfo();
-            fShow.changeAccount(loginAccount.Role);
-
-            fShow.ShowDialog();
-            this.Show();
-        }
-
-        private void btnAdjustInfo_Click(object sender, EventArgs e)
+        private void btnAdjustInfo_Click_1(object sender, EventArgs e)
         {
             AdjustPersonalInfo fAdjustPersonalInfo = new AdjustPersonalInfo();
             fAdjustPersonalInfo.getUserNameAndRole(loginAccount.UserName, loginAccount.Role);
@@ -74,8 +63,7 @@ namespace Project_OOP_Final
             fAdjustPersonalInfo.ShowDialog();
             this.Show();
         }
-
-        private void btnAdjustPass_Click(object sender, EventArgs e)
+        private void btnAdjustPass_Click_1(object sender, EventArgs e)
         {
             AdjustPass fAdjustPass = new AdjustPass();
             fAdjustPass.getPassNow(loginAccount.Password);
@@ -84,7 +72,7 @@ namespace Project_OOP_Final
             this.Show();
         }
 
-        private void btnClubInfo_Click(object sender, EventArgs e)
+        private void btnClubInfo_Click_1(object sender, EventArgs e)
         {
             ClubInfo clubInfo = new ClubInfo();
             clubInfo.changeAccount(loginAccount.Role);
@@ -92,10 +80,9 @@ namespace Project_OOP_Final
             clubInfo.ShowDialog();
             this.Show();
         }
-
-        private void btnClubTask_Click(object sender, EventArgs e)
+        private void btnClubTask_Click_1(object sender, EventArgs e)
         {
-            if(loginAccount.Role == "Member")
+            if (loginAccount.Role == "Member")
             {
                 MemberTask membertask = new MemberTask(loginAccount.Id);
                 this.Hide();
@@ -110,7 +97,16 @@ namespace Project_OOP_Final
                 this.Show();
             }
         }
-        #endregion
+        private void btnCLubMemberInfo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
 
+            ShowInfo fShow = new ShowInfo();
+            fShow.changeAccount(loginAccount.Role);
+
+            fShow.ShowDialog();
+            this.Show();
+        }
+        #endregion
     }
 }
