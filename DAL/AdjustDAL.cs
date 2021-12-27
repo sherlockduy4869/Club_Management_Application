@@ -18,6 +18,7 @@ namespace Project_OOP_Final.DAL
 
         public int adjustPass(string userName, string newPass)
         {
+
             string sql = "EXEC dbo.Adjust_Pass @userName= '" + userName + "',@newPass= '" + newPass + "'";
             int i = DataProvider.Instance.ExecuteNonQuery(sql);
             return i;

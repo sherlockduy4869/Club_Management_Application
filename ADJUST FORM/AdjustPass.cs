@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,6 +26,18 @@ namespace Project_OOP_Final
         {
             passNow = pass;
         }
+        string cryPass(string passWord)
+        {
+            byte[] temp = ASCIIEncoding.ASCII.GetBytes(passWord);
+            byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
+            
+            string hasPass = "";
+            foreach (byte item in hasData)
+            {
+                hasPass += item;
+            }
+            return hasPass;
+        }
         #endregion
         #region Event
         private void btnExit_Click(object sender, EventArgs e)
@@ -39,14 +52,13 @@ namespace Project_OOP_Final
         private void btnAdjust_Click(object sender, EventArgs e)
         {
             string userName = txbUserName.Text;
-            string currentPass = txbCurrentPass.Text;
-            string newPass = txbNewPass.Text;
-            string reNewPass = txbReEnterPass.Text;
+            string currentPass = cryPass(txbCurrentPass.Text);
+            string newPass = cryPass(txbNewPass.Text);
+            string reNewPass = cryPass(txbReEnterPass.Text);
             string pass = passNow;
 
             try
             {
-                
                 if(currentPass == pass)
                 {   
                     if(newPass == reNewPass)
