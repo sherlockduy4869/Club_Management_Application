@@ -16,11 +16,16 @@ namespace Project_OOP_Final.OTHERS
         public ReDoTask()
         {
             InitializeComponent();
+            loadTaskId();
         }
-
+        void loadTaskId()
+        {
+            List<string> list = MemberDAL.Instance.getTaskId();
+            cbTaskId.DataSource = list;
+        }
         private void btnRedo_Click(object sender, EventArgs e)
         {
-            string taskId = txbTaskId.Text;
+            string taskId = cbTaskId.Text;
             string note = txbNote.Text;
 
             try
@@ -29,7 +34,6 @@ namespace Project_OOP_Final.OTHERS
 
                 if (i != 0)
                 {
-                    txbTaskId.Text = string.Empty;
                     txbNote.Text = string.Empty;
                     MessageBox.Show("Done");
                 }

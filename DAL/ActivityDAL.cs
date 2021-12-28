@@ -41,6 +41,18 @@ namespace Project_OOP_Final.DAL
             }
             return list;
         }
+        public List<string> getActivityId()
+        {
+            List<string> list = new List<string>();
+            string sql = "SELECT Id, Name, DateStart, DateEnd FROM Info_Activity";
+            DataTable data = DataProvider.Instance.ExecuteQuery(sql);
+            foreach (DataRow row in data.Rows)
+            {
+                Activity activity = new Activity(row);
+                list.Add(activity.Id);
+            }
+            return list;
+        }
     }
 
 }

@@ -1,6 +1,6 @@
 ﻿namespace Project_OOP_Final
 {
-    partial class MemberTask
+    partial class MemberClubTask
     {
         /// <summary>
         /// Required designer variable.

@@ -56,5 +56,6 @@ namespace Project_OOP_Final.DAL
             int i = DataProvider.Instance.ExecuteNonQuery(sql);
             return i;
         }
+        
     }
 }

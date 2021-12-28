@@ -17,9 +17,9 @@ namespace Project_OOP_Final.DTO
         private string _priority;
         public MemberTask(DataRow row)
         {
-            _id = (string)row["Id"];
+            _id = (string)row["Id_Member"];
             _taskId = (string)row["Task_Id"];
-            _task = (string)row["Task"];
+            _task = (string)row["Task_Name"];
             _deadline = (string)row["Deadline"];
             _status = (string)row["Status"];
             _priority = (string)row["Priority"];

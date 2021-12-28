@@ -32,16 +32,16 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnAdjust = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txbDateEnd = new System.Windows.Forms.TextBox();
+            this.dtpkDateEnd = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txbDateStart = new System.Windows.Forms.TextBox();
+            this.dtpkDateStart = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbName = new System.Windows.Forms.TextBox();
             this.lable1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txbId = new System.Windows.Forms.TextBox();
+            this.cbId = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -54,7 +54,7 @@
             // 
             this.panel5.Controls.Add(this.btnExit);
             this.panel5.Controls.Add(this.btnAdjust);
-            this.panel5.Location = new System.Drawing.Point(437, 458);
+            this.panel5.Location = new System.Drawing.Point(287, 462);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(362, 91);
             this.panel5.TabIndex = 9;
@@ -81,19 +81,20 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.txbDateEnd);
+            this.panel4.Controls.Add(this.dtpkDateEnd);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(28, 352);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(715, 90);
+            this.panel4.Size = new System.Drawing.Size(621, 90);
             this.panel4.TabIndex = 8;
             // 
-            // txbDateEnd
+            // dtpkDateEnd
             // 
-            this.txbDateEnd.Location = new System.Drawing.Point(190, 29);
-            this.txbDateEnd.Name = "txbDateEnd";
-            this.txbDateEnd.Size = new System.Drawing.Size(499, 39);
-            this.txbDateEnd.TabIndex = 1;
+            this.dtpkDateEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkDateEnd.Location = new System.Drawing.Point(190, 23);
+            this.dtpkDateEnd.Name = "dtpkDateEnd";
+            this.dtpkDateEnd.Size = new System.Drawing.Size(400, 39);
+            this.dtpkDateEnd.TabIndex = 1;
             // 
             // label4
             // 
@@ -107,19 +108,20 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.txbDateStart);
+            this.panel3.Controls.Add(this.dtpkDateStart);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(28, 252);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(715, 90);
+            this.panel3.Size = new System.Drawing.Size(621, 90);
             this.panel3.TabIndex = 7;
             // 
-            // txbDateStart
+            // dtpkDateStart
             // 
-            this.txbDateStart.Location = new System.Drawing.Point(190, 30);
-            this.txbDateStart.Name = "txbDateStart";
-            this.txbDateStart.Size = new System.Drawing.Size(499, 39);
-            this.txbDateStart.TabIndex = 1;
+            this.dtpkDateStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkDateStart.Location = new System.Drawing.Point(193, 23);
+            this.dtpkDateStart.Name = "dtpkDateStart";
+            this.dtpkDateStart.Size = new System.Drawing.Size(400, 39);
+            this.dtpkDateStart.TabIndex = 10;
             // 
             // label3
             // 
@@ -137,14 +139,14 @@
             this.panel2.Controls.Add(this.lable1);
             this.panel2.Location = new System.Drawing.Point(28, 156);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(715, 90);
+            this.panel2.Size = new System.Drawing.Size(621, 90);
             this.panel2.TabIndex = 6;
             // 
             // txbName
             // 
             this.txbName.Location = new System.Drawing.Point(190, 29);
             this.txbName.Name = "txbName";
-            this.txbName.Size = new System.Drawing.Size(499, 39);
+            this.txbName.Size = new System.Drawing.Size(403, 39);
             this.txbName.TabIndex = 1;
             // 
             // lable1
@@ -159,19 +161,20 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txbId);
+            this.panel1.Controls.Add(this.cbId);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(28, 60);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(715, 90);
+            this.panel1.Size = new System.Drawing.Size(621, 90);
             this.panel1.TabIndex = 5;
             // 
-            // txbId
+            // cbId
             // 
-            this.txbId.Location = new System.Drawing.Point(190, 30);
-            this.txbId.Name = "txbId";
-            this.txbId.Size = new System.Drawing.Size(499, 39);
-            this.txbId.TabIndex = 1;
+            this.cbId.FormattingEnabled = true;
+            this.cbId.Location = new System.Drawing.Point(190, 23);
+            this.cbId.Name = "cbId";
+            this.cbId.Size = new System.Drawing.Size(403, 40);
+            this.cbId.TabIndex = 10;
             // 
             // label1
             // 
@@ -187,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(826, 579);
+            this.ClientSize = new System.Drawing.Size(686, 579);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -216,16 +219,16 @@
         private Button btnExit;
         private Button btnAdjust;
         private Panel panel4;
-        private TextBox txbDateEnd;
         private Label label4;
         private Panel panel3;
-        private TextBox txbDateStart;
         private Label label3;
         private Panel panel2;
         private TextBox txbName;
         private Label lable1;
         private Panel panel1;
-        private TextBox txbId;
         private Label label1;
+        private ComboBox cbId;
+        private DateTimePicker dtpkDateEnd;
+        private DateTimePicker dtpkDateStart;
     }
 }

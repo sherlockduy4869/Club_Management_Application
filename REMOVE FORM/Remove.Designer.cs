@@ -35,8 +35,8 @@
             this.txbID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.cbRole = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -106,6 +106,14 @@
             this.panel6.Size = new System.Drawing.Size(471, 88);
             this.panel6.TabIndex = 2;
             // 
+            // cbRole
+            // 
+            this.cbRole.FormattingEnabled = true;
+            this.cbRole.Location = new System.Drawing.Point(208, 24);
+            this.cbRole.Name = "cbRole";
+            this.cbRole.Size = new System.Drawing.Size(242, 40);
+            this.cbRole.TabIndex = 4;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -115,14 +123,6 @@
             this.label5.Size = new System.Drawing.Size(82, 45);
             this.label5.TabIndex = 0;
             this.label5.Text = "Role";
-            // 
-            // cbRole
-            // 
-            this.cbRole.FormattingEnabled = true;
-            this.cbRole.Location = new System.Drawing.Point(208, 24);
-            this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(242, 40);
-            this.cbRole.TabIndex = 4;
             // 
             // Remove
             // 

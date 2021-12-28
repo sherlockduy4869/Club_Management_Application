@@ -16,27 +16,26 @@ namespace Project_OOP_Final
         public AdjustActivity()
         {
             InitializeComponent();
+            loadIdActivity();
         }
         private void AdjustActivity_Load(object sender, EventArgs e)
         {
 
         }
         #region Method
-        void reFresh()
+        void loadIdActivity()
         {
-            txbId.Text = string.Empty;
-            txbName.Text = string.Empty;
-            txbDateStart.Text = string.Empty;
-            txbDateEnd.Text = string.Empty;
+            List<string> list = ActivityDAL.Instance.getActivityId();
+            cbId.DataSource = list;
         }
         #endregion
         #region Event
         private void btnAdjust_Click(object sender, EventArgs e)
         {
-            string id = txbId.Text;
+            string id = cbId.Text;
             string name = txbName.Text;
-            string dateStart = txbDateStart.Text;
-            string dateEnd = txbDateEnd.Text;
+            string dateStart = dtpkDateStart.Text;
+            string dateEnd = dtpkDateEnd.Text;
             try
             {
 
@@ -44,7 +43,7 @@ namespace Project_OOP_Final
 
                 if (i != 0)
                 {
-                    reFresh();
+                    txbName.Text = string.Empty;
                     MessageBox.Show("Adjusted");
                 }
                 else

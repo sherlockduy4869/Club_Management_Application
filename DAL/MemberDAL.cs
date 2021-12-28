@@ -46,5 +46,29 @@ namespace Project_OOP_Final.DAL
             return i;
 
         }
+        public List<string> getMemberId()
+        {
+            List<string> list = new List<string>();
+            string sql = "SELECT Id, Name, Class, Phone, Role, Team FROM Info_Member";
+            DataTable data = DataProvider.Instance.ExecuteQuery(sql);
+            foreach (DataRow row in data.Rows)
+            {
+                Member member = new Member(row);
+                list.Add(member.Id);
+            }
+            return list;
+        }
+        public List<string> getTaskId()
+        {
+            List<string> list = new List<string>();
+            string sql = "SELECT Id_Member, Task_Id, Task_Name, Deadline, Status, Priority FROM Info_Task";
+            DataTable data = DataProvider.Instance.ExecuteQuery(sql);
+            foreach (DataRow row in data.Rows)
+            {
+                MemberTask task = new MemberTask(row);
+                list.Add(task.TaskId);
+            }
+            return list;
+        }
     }
 }

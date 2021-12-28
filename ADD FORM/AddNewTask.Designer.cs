@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txbIdMember = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txbTaskName = new System.Windows.Forms.TextBox();
@@ -46,6 +45,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbPriority = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.cbId = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -56,19 +56,12 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txbIdMember);
+            this.panel1.Controls.Add(this.cbId);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 49);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 85);
             this.panel1.TabIndex = 0;
-            // 
-            // txbIdMember
-            // 
-            this.txbIdMember.Location = new System.Drawing.Point(217, 24);
-            this.txbIdMember.Name = "txbIdMember";
-            this.txbIdMember.Size = new System.Drawing.Size(540, 39);
-            this.txbIdMember.TabIndex = 1;
             // 
             // label1
             // 
@@ -217,6 +210,14 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Priority";
             // 
+            // cbId
+            // 
+            this.cbId.FormattingEnabled = true;
+            this.cbId.Location = new System.Drawing.Point(217, 27);
+            this.cbId.Name = "cbId";
+            this.cbId.Size = new System.Drawing.Size(540, 40);
+            this.cbId.TabIndex = 7;
+            // 
             // AddNewTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -250,7 +251,6 @@
         #endregion
 
         private Panel panel1;
-        private TextBox txbIdMember;
         private Label label1;
         private Panel panel3;
         private TextBox txbTaskName;
@@ -267,5 +267,6 @@
         private Label label2;
         private ComboBox cbPriority;
         private DateTimePicker dtpkDeadline;
+        private ComboBox cbId;
     }
 }

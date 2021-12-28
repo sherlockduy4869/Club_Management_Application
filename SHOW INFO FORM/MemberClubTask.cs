@@ -12,16 +12,19 @@ using System.Windows.Forms;
 
 namespace Project_OOP_Final
 {
-    public partial class MemberTask : Form
+    public partial class MemberClubTask : Form
     {
         private string _id;
-        public MemberTask(string id)
+
+        public string Id { get; internal set; }
+
+        public MemberClubTask(string id)
         {
             InitializeComponent();
             _id = id;
             loadMemberTask(id);
         }
-        public MemberTask()
+        public MemberClubTask(DataRow row)
         {
             InitializeComponent();
 

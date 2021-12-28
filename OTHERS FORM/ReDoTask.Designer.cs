@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txbTaskId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbNote = new System.Windows.Forms.TextBox();
@@ -37,6 +36,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnRedo = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.cbTaskId = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -44,19 +44,12 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.txbTaskId);
+            this.panel2.Controls.Add(this.cbTaskId);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(12, 62);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(828, 83);
+            this.panel2.Size = new System.Drawing.Size(679, 83);
             this.panel2.TabIndex = 4;
-            // 
-            // txbTaskId
-            // 
-            this.txbTaskId.Location = new System.Drawing.Point(227, 28);
-            this.txbTaskId.Name = "txbTaskId";
-            this.txbTaskId.Size = new System.Drawing.Size(571, 39);
-            this.txbTaskId.TabIndex = 1;
             // 
             // label2
             // 
@@ -74,14 +67,14 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 151);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(828, 83);
+            this.panel1.Size = new System.Drawing.Size(679, 83);
             this.panel1.TabIndex = 5;
             // 
             // txbNote
             // 
             this.txbNote.Location = new System.Drawing.Point(227, 28);
             this.txbNote.Name = "txbNote";
-            this.txbNote.Size = new System.Drawing.Size(571, 39);
+            this.txbNote.Size = new System.Drawing.Size(427, 39);
             this.txbNote.TabIndex = 1;
             // 
             // label1
@@ -98,7 +91,7 @@
             // 
             this.panel3.Controls.Add(this.btnRedo);
             this.panel3.Controls.Add(this.btnExit);
-            this.panel3.Location = new System.Drawing.Point(491, 282);
+            this.panel3.Location = new System.Drawing.Point(342, 270);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(349, 86);
             this.panel3.TabIndex = 7;
@@ -123,11 +116,19 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // cbTaskId
+            // 
+            this.cbTaskId.FormattingEnabled = true;
+            this.cbTaskId.Location = new System.Drawing.Point(227, 27);
+            this.cbTaskId.Name = "cbTaskId";
+            this.cbTaskId.Size = new System.Drawing.Size(427, 40);
+            this.cbTaskId.TabIndex = 8;
+            // 
             // ReDoTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 380);
+            this.ClientSize = new System.Drawing.Size(711, 380);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -147,7 +148,6 @@
         #endregion
 
         private Panel panel2;
-        private TextBox txbTaskId;
         private Label label2;
         private Panel panel1;
         private TextBox txbNote;
@@ -155,5 +155,6 @@
         private Panel panel3;
         private Button btnRedo;
         private Button btnExit;
+        private ComboBox cbTaskId;
     }
 }

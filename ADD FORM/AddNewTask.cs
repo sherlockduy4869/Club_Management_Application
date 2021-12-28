@@ -17,6 +17,7 @@ namespace Project_OOP_Final
         {
             InitializeComponent();
             loadPriority();
+            loadMemberId();
         }
         private void AddTask_Load(object sender, EventArgs e)
         {
@@ -25,7 +26,6 @@ namespace Project_OOP_Final
         #region Method
         void reFresh()
         {
-            txbIdMember.Text = string.Empty;
             txbTaskName.Text = string.Empty;
             txbNote.Text = string.Empty;
         }
@@ -37,11 +37,16 @@ namespace Project_OOP_Final
             priorityList.Add("Very Important");
             cbPriority.DataSource = priorityList;
         }
+        void loadMemberId()
+        {
+            List<string> list = MemberDAL.Instance.getMemberId();
+            cbId.DataSource = list;
+        }
         #endregion
         #region Event
         private void btnAddTask_Click(object sender, EventArgs e)
         {
-            string idMember = txbIdMember.Text;
+            string idMember = cbId.Text;
             string taskName = txbTaskName.Text;
             string deadline = dtpkDeadline.Text;
             string note = txbNote.Text;

@@ -109,9 +109,9 @@ namespace Project_OOP_Final
         {
             if (loginAccount.Role == "Member")
             {
-                MemberTask membertask = new MemberTask(loginAccount.Id);
+                MemberClubTask memberclubtask = new MemberClubTask(loginAccount.Id);
                 this.Hide();
-                membertask.ShowDialog();
+                memberclubtask.ShowDialog();
                 this.Show();
             }
             else
