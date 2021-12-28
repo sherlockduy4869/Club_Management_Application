@@ -74,6 +74,7 @@ CREATE TABLE Info_Task
 (
 	STT INT IDENTITY,
 	Id_Member CHAR(10),
+	Name VARCHAR(50),
 	Task_Id VARCHAR(50),
 	Task_Name VARCHAR(100),
 	Deadline VARCHAR(50),
@@ -394,6 +395,23 @@ BEGIN
 
 	DELETE FROM Account WHERE id = @id AND Role = @role
 
+END
+GO
+--Trigger for Insert member name in Info_Task
+CREATE TRIGGER InsertMemberName
+ON Info_Task
+FOR INSERT
+AS
+BEGIN
+	DECLARE @Name VARCHAR(40)
+	DECLARE @id VARCHAR(20)
+
+	SELECT @id = Id_Member FROM inserted 
+	SELECT @Name = Name FROM Info_Member WHERE Id = @id
+
+	UPDATE Info_Task
+	SET Name = @Name
+	WHERE Id_Member = @id
 END
 GO
 --Insert first Leader
