@@ -25,6 +25,7 @@ namespace Project_OOP_Final
             this.loginAccount = acc;
             InitializeComponent();
             changeAccount(loginAccount.Role);
+            customizeDesign();
         }
         #region Method
         void changeAccount (string role)
@@ -40,6 +41,30 @@ namespace Project_OOP_Final
             txbClass.Text = clas;
             txbPhone.Text = phone;
             txbRole.Text = role;
+        }
+        private void customizeDesign()
+        {
+            pnSubClubMemberInfo.Visible = false;
+            pnSubClubTask.Visible = false;
+        }
+        private void hideSubMenu()
+        {
+            if(pnSubClubMemberInfo.Visible == true)
+                pnSubClubMemberInfo.Visible=false;
+            if(pnSubClubTask.Visible == true)
+                pnSubClubTask.Visible=false;
+        }
+        private void showSubMenu(Panel subMenu)
+        {
+            if(subMenu.Visible == false)
+            {
+                hideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
         }
         #endregion
 
@@ -99,6 +124,8 @@ namespace Project_OOP_Final
         }
         private void btnCLubMemberInfo_Click(object sender, EventArgs e)
         {
+
+            showSubMenu(pnSubClubMemberInfo);
             this.Hide();
 
             ShowInfo fShow = new ShowInfo();

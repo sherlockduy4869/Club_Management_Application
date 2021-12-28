@@ -39,5 +39,12 @@ namespace Project_OOP_Final.DAL
             int i = DataProvider.Instance.ExecuteNonQuery(sql);
             return i;
         }
+        public int submitTask(string id, string taskId)
+        {
+            string sql = "UPDATE Info_Task SET Status = 'Done' WHERE Id_Member = '" + id + "' AND Task_Id = '" + taskId + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(sql);
+            return i;
+
+        }
     }
 }

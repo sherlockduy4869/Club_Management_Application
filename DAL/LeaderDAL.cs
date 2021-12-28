@@ -38,5 +38,23 @@ namespace Project_OOP_Final.DAL
             int i = DataProvider.Instance.ExecuteNonQuery(sql);
             return i;
         }
+        public int addNewTask(string idMember, string taskName, string deadline, string note, string priority)
+        {
+            string sql = "Insert INTO Info_Task(Id_Member,Task_Name,Deadline, Note, Priority) VALUES('" + idMember + "','" + taskName + "','" + deadline + "', '" + note + "', '" + priority + "')";
+            int i = DataProvider.Instance.ExecuteNonQuery(sql);
+            return i;
+        }
+        public int removeTask(string taskId)
+        {
+            string sql = "DELETE FROM Info_Task WHERE Task_Id ='" + taskId + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(sql);
+            return i;
+        }
+        public int redoTask(string taskId, string note)
+        {
+            string sql = "Update Info_Task SET Status = 'Re-do task', Note = '" + note + "' WHERE Task_Id = '" + taskId + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(sql);
+            return i;
+        }
     }
 }

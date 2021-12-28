@@ -50,7 +50,7 @@
             this.btnAdjustPass = new System.Windows.Forms.Button();
             this.btnAdjustInfo = new System.Windows.Forms.Button();
             this.btnClubInfo = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnSubClubTask = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -66,7 +66,7 @@
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.pnMenu.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.pnSubClubTask.SuspendLayout();
             this.pnSubClubMemberInfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -234,11 +234,12 @@
             // 
             // pnMenu
             // 
+            this.pnMenu.AutoScroll = true;
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.pnMenu.Controls.Add(this.btnAdjustPass);
             this.pnMenu.Controls.Add(this.btnAdjustInfo);
             this.pnMenu.Controls.Add(this.btnClubInfo);
-            this.pnMenu.Controls.Add(this.panel3);
+            this.pnMenu.Controls.Add(this.pnSubClubTask);
             this.pnMenu.Controls.Add(this.btnClubTask);
             this.pnMenu.Controls.Add(this.pnSubClubMemberInfo);
             this.pnMenu.Controls.Add(this.btnCLubMemberInfo);
@@ -246,7 +247,7 @@
             this.pnMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnMenu.Location = new System.Drawing.Point(0, 0);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(504, 1013);
+            this.pnMenu.Size = new System.Drawing.Size(504, 1029);
             this.pnMenu.TabIndex = 8;
             // 
             // btnAdjustPass
@@ -297,17 +298,17 @@
             this.btnClubInfo.UseVisualStyleBackColor = true;
             this.btnClubInfo.Click += new System.EventHandler(this.btnClubInfo_Click_1);
             // 
-            // panel3
+            // pnSubClubTask
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 399);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(504, 150);
-            this.panel3.TabIndex = 4;
+            this.pnSubClubTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.pnSubClubTask.Controls.Add(this.button6);
+            this.pnSubClubTask.Controls.Add(this.button5);
+            this.pnSubClubTask.Controls.Add(this.button4);
+            this.pnSubClubTask.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnSubClubTask.Location = new System.Drawing.Point(0, 399);
+            this.pnSubClubTask.Name = "pnSubClubTask";
+            this.pnSubClubTask.Size = new System.Drawing.Size(504, 150);
+            this.pnSubClubTask.TabIndex = 4;
             // 
             // button6
             // 
@@ -440,7 +441,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(1646, 1013);
+            this.ClientSize = new System.Drawing.Size(1624, 1029);
             this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.lbRole);
             this.Controls.Add(this.btnExit);
@@ -451,6 +452,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MinimumSize = new System.Drawing.Size(1650, 1100);
             this.Name = "PersonalInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Personal Information ";
@@ -466,7 +468,7 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.pnMenu.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.pnSubClubTask.ResumeLayout(false);
             this.pnSubClubMemberInfo.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -499,7 +501,7 @@
         private Panel pnSubClubMemberInfo;
         private Button button1;
         private Button button2;
-        private Panel panel3;
+        private Panel pnSubClubTask;
         private Button button6;
         private Button button5;
         private Button button4;

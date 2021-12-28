@@ -24,7 +24,7 @@ namespace Project_OOP_Final.REMOVE
 
             try
             {
-                int i = LeaderTaskDAL.Instance.removeTask(taskId);
+                int i = LeaderDAL.Instance.removeTask(taskId);
 
                 if (i != 0)
                 {

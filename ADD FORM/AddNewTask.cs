@@ -49,7 +49,7 @@ namespace Project_OOP_Final
 
             try
             {
-                int i = LeaderTaskDAL.Instance.addNewTask(idMember, taskName, deadline, note, priority);
+                int i = LeaderDAL.Instance.addNewTask(idMember, taskName, deadline, note, priority);
 
                 if (i != 0)
                 {

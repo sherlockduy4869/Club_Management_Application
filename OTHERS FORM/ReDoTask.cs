@@ -25,7 +25,7 @@ namespace Project_OOP_Final.OTHERS
 
             try
             {
-                int i = LeaderTaskDAL.Instance.redoTask(taskId, note);
+                int i = LeaderDAL.Instance.redoTask(taskId, note);
 
                 if (i != 0)
                 {

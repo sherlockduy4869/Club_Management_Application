@@ -56,7 +56,7 @@ namespace Project_OOP_Final
             try
             {
 
-                int i = MemberTaskDAL.Instance.submitTask(IdMember, taskId);
+                int i = MemberDAL.Instance.submitTask(IdMember, taskId);
 
                 if (i != 0)
                 {
