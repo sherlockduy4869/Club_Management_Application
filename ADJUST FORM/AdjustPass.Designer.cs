@@ -34,7 +34,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbNewPass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnAdjust = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -45,7 +44,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +52,7 @@
             // 
             this.panel6.Controls.Add(this.txbUserName);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(29, 64);
+            this.panel6.Location = new System.Drawing.Point(330, 218);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(746, 88);
             this.panel6.TabIndex = 1;
@@ -80,7 +78,7 @@
             // 
             this.panel1.Controls.Add(this.txbNewPass);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(29, 252);
+            this.panel1.Location = new System.Drawing.Point(330, 406);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(746, 88);
             this.panel1.TabIndex = 3;
@@ -103,28 +101,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "New_Pass";
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btnExit);
-            this.panel5.Controls.Add(this.btnAdjust);
-            this.panel5.Location = new System.Drawing.Point(418, 450);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(370, 102);
-            this.panel5.TabIndex = 5;
-            // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(204, 28);
+            this.btnExit.Location = new System.Drawing.Point(12, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 46);
             this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnAdjust
             // 
-            this.btnAdjust.Location = new System.Drawing.Point(18, 28);
+            this.btnAdjust.Location = new System.Drawing.Point(640, 708);
             this.btnAdjust.Name = "btnAdjust";
             this.btnAdjust.Size = new System.Drawing.Size(150, 46);
             this.btnAdjust.TabIndex = 0;
@@ -136,7 +125,7 @@
             // 
             this.panel7.Controls.Add(this.txbReEnterPass);
             this.panel7.Controls.Add(this.label6);
-            this.panel7.Location = new System.Drawing.Point(29, 346);
+            this.panel7.Location = new System.Drawing.Point(330, 500);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(746, 88);
             this.panel7.TabIndex = 4;
@@ -163,7 +152,7 @@
             // 
             this.panel2.Controls.Add(this.txbCurrentPass);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(29, 158);
+            this.panel2.Location = new System.Drawing.Point(330, 312);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(746, 88);
             this.panel2.TabIndex = 2;
@@ -186,19 +175,20 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Current Pass";
             // 
-            // FAdjustPass
+            // AdjustPass
             // 
             this.AcceptButton = this.btnAdjust;
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(800, 572);
+            this.ClientSize = new System.Drawing.Size(1532, 1029);
+            this.Controls.Add(this.btnAdjust);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
-            this.Name = "FAdjustPass";
+            this.Name = "AdjustPass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Adjust Pass";
             this.Load += new System.EventHandler(this.AdjustPass_Load);
@@ -206,7 +196,6 @@
             this.panel6.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -223,7 +212,6 @@
         private Panel panel1;
         private TextBox txbNewPass;
         private Label label1;
-        private Panel panel5;
         private Button btnExit;
         private Button btnAdjust;
         private Panel panel7;

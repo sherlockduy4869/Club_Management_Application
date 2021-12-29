@@ -71,10 +71,10 @@
             // 
             this.tcClubInfo.Controls.Add(this.tpActivity);
             this.tcClubInfo.Controls.Add(this.tpFinance);
-            this.tcClubInfo.Location = new System.Drawing.Point(36, 73);
+            this.tcClubInfo.Location = new System.Drawing.Point(22, 134);
             this.tcClubInfo.Name = "tcClubInfo";
             this.tcClubInfo.SelectedIndex = 0;
-            this.tcClubInfo.Size = new System.Drawing.Size(1555, 769);
+            this.tcClubInfo.Size = new System.Drawing.Size(1499, 769);
             this.tcClubInfo.TabIndex = 0;
             // 
             // tpActivity
@@ -85,7 +85,7 @@
             this.tpActivity.Location = new System.Drawing.Point(8, 46);
             this.tpActivity.Name = "tpActivity";
             this.tpActivity.Padding = new System.Windows.Forms.Padding(3);
-            this.tpActivity.Size = new System.Drawing.Size(1539, 715);
+            this.tpActivity.Size = new System.Drawing.Size(1483, 715);
             this.tpActivity.TabIndex = 0;
             this.tpActivity.Text = "Activity";
             this.tpActivity.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@
             this.dtgvActivity.Name = "dtgvActivity";
             this.dtgvActivity.RowHeadersWidth = 82;
             this.dtgvActivity.RowTemplate.Height = 41;
-            this.dtgvActivity.Size = new System.Drawing.Size(1530, 532);
+            this.dtgvActivity.Size = new System.Drawing.Size(1474, 532);
             this.dtgvActivity.TabIndex = 1;
             // 
             // pnLeader
@@ -314,11 +314,11 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1427, 859);
+            this.btnExit.Location = new System.Drawing.Point(12, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 46);
             this.btnExit.TabIndex = 2;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -326,7 +326,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1621, 926);
+            this.ClientSize = new System.Drawing.Size(1532, 1029);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tcClubInfo);
             this.Name = "ClubInfo";

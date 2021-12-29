@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel5 = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnAdjust = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -43,35 +42,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txbUserName = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btnExit);
-            this.panel5.Controls.Add(this.btnAdjust);
-            this.panel5.Location = new System.Drawing.Point(415, 475);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(370, 102);
-            this.panel5.TabIndex = 11;
-            // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(204, 28);
+            this.btnExit.Location = new System.Drawing.Point(12, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 46);
             this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnAdjust
             // 
-            this.btnAdjust.Location = new System.Drawing.Point(18, 28);
+            this.btnAdjust.Location = new System.Drawing.Point(441, 528);
             this.btnAdjust.Name = "btnAdjust";
             this.btnAdjust.Size = new System.Drawing.Size(150, 46);
             this.btnAdjust.TabIndex = 0;
@@ -83,7 +72,7 @@
             // 
             this.panel4.Controls.Add(this.txbClass);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(39, 352);
+            this.panel4.Location = new System.Drawing.Point(127, 386);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(746, 88);
             this.panel4.TabIndex = 10;
@@ -109,7 +98,7 @@
             // 
             this.panel3.Controls.Add(this.txbPhone);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(39, 258);
+            this.panel3.Location = new System.Drawing.Point(127, 292);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(746, 88);
             this.panel3.TabIndex = 9;
@@ -136,7 +125,7 @@
             // 
             this.panel2.Controls.Add(this.txbName);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(39, 164);
+            this.panel2.Location = new System.Drawing.Point(127, 198);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(746, 88);
             this.panel2.TabIndex = 8;
@@ -180,7 +169,7 @@
             // 
             this.panel1.Controls.Add(this.txbUserName);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(39, 64);
+            this.panel1.Location = new System.Drawing.Point(127, 98);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(746, 88);
             this.panel1.TabIndex = 12;
@@ -189,17 +178,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(827, 600);
-            this.Controls.Add(this.panel5);
+            this.ClientSize = new System.Drawing.Size(1532, 1029);
+            this.Controls.Add(this.btnAdjust);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AdjustPersonalInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fAdjustPersonalInfo";
+            this.Text = "Adjust Personal Info";
             this.Load += new System.EventHandler(this.AdjustPersonalInfo_Load);
-            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -213,7 +202,6 @@
         }
 
         #endregion
-        private Panel panel5;
         private Button btnExit;
         private Button btnAdjust;
         private Panel panel4;

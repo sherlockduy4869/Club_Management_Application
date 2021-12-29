@@ -55,7 +55,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(617, 144);
+            this.label1.Location = new System.Drawing.Point(620, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(267, 50);
             this.label1.TabIndex = 1;
@@ -65,7 +65,7 @@
             // 
             this.pnForLeader.Controls.Add(this.btnRemove);
             this.pnForLeader.Controls.Add(this.btnAddnew);
-            this.pnForLeader.Location = new System.Drawing.Point(536, 817);
+            this.pnForLeader.Location = new System.Drawing.Point(561, 908);
             this.pnForLeader.Name = "pnForLeader";
             this.pnForLeader.Size = new System.Drawing.Size(440, 109);
             this.pnForLeader.TabIndex = 2;
@@ -92,16 +92,19 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1373, 929);
+            this.btnExit.Location = new System.Drawing.Point(17, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 46);
             this.btnExit.TabIndex = 2;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // dtgvShowInfoMentor
             // 
+            this.dtgvShowInfoMentor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvShowInfoMentor.Controls.Add(this.tpMember);
             this.dtgvShowInfoMentor.Controls.Add(this.tpLeader);
             this.dtgvShowInfoMentor.Controls.Add(this.tpMentor);
@@ -189,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1527, 1000);
+            this.ClientSize = new System.Drawing.Size(1532, 1029);
             this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.dtgvShowInfoMentor);
             this.Controls.Add(this.btnExit);

@@ -25,7 +25,6 @@ namespace Project_OOP_Final
             this.loginAccount = acc;
             InitializeComponent();
             changeAccount(loginAccount.Role);
-            customizeDesign();
         }
         #region Method
         void changeAccount (string role)
@@ -42,29 +41,21 @@ namespace Project_OOP_Final
             txbPhone.Text = phone;
             txbRole.Text = role;
         }
-        private void customizeDesign()
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
         {
-            pnSubClubMemberInfo.Visible = false;
-            pnSubClubTask.Visible = false;
-        }
-        private void hideSubMenu()
-        {
-            if(pnSubClubMemberInfo.Visible == true)
-                pnSubClubMemberInfo.Visible=false;
-            if(pnSubClubTask.Visible == true)
-                pnSubClubTask.Visible=false;
-        }
-        private void showSubMenu(Panel subMenu)
-        {
-            if(subMenu.Visible == false)
+            if(activeForm != null)
             {
-                hideSubMenu();
-                subMenu.Visible = true;
+                activeForm.Close();
             }
-            else
-            {
-                subMenu.Visible = false;
-            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnChildForm.Controls.Add(childForm);
+            pnChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
         #endregion
 
@@ -82,58 +73,52 @@ namespace Project_OOP_Final
 
         private void btnAdjustInfo_Click_1(object sender, EventArgs e)
         {
+            openChildForm(new AdjustPersonalInfo());
             AdjustPersonalInfo fAdjustPersonalInfo = new AdjustPersonalInfo();
             fAdjustPersonalInfo.getUserNameAndRole(loginAccount.UserName, loginAccount.Role);
-            this.Hide();
-            fAdjustPersonalInfo.ShowDialog();
-            this.Show();
         }
         private void btnAdjustPass_Click_1(object sender, EventArgs e)
         {
+            openChildForm(new AdjustPass());
             AdjustPass fAdjustPass = new AdjustPass();
             fAdjustPass.getPassNow(loginAccount.Password);
-            this.Hide();
-            fAdjustPass.ShowDialog();
-            this.Show();
+
         }
 
         private void btnClubInfo_Click_1(object sender, EventArgs e)
         {
+            openChildForm(new ClubInfo());
+
             ClubInfo clubInfo = new ClubInfo();
             clubInfo.changeAccount(loginAccount.Role);
-            this.Hide();
-            clubInfo.ShowDialog();
-            this.Show();
         }
         private void btnClubTask_Click_1(object sender, EventArgs e)
         {
+            openChildForm(new ClubTask());
             if (loginAccount.Role == "Member")
             {
                 MemberClubTask memberclubtask = new MemberClubTask(loginAccount.Id);
-                this.Hide();
-                memberclubtask.ShowDialog();
-                this.Show();
             }
             else
             {
                 ClubTask clubtask = new ClubTask();
-                this.Hide();
-                clubtask.ShowDialog();
-                this.Show();
             }
         }
         private void btnCLubMemberInfo_Click(object sender, EventArgs e)
         {
-
-            showSubMenu(pnSubClubMemberInfo);
-            this.Hide();
+            openChildForm(new ShowInfo());
 
             ShowInfo fShow = new ShowInfo();
             fShow.changeAccount(loginAccount.Role);
 
-            fShow.ShowDialog();
-            this.Show();
         }
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         #endregion
+
+
     }
 }

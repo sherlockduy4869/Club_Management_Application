@@ -18,12 +18,18 @@ namespace Project_OOP_Final
         #endregion
 
         #region Event
+        
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string userName = txbUserName.Text;
             string passWord = txbPassWord.Text;
-            
-            if (Login(userName,passWord)== true)
+
+            if (Login(userName, passWord) == true)
             {
                 Account loginAccount = AccountDAL.Instance.getAccountByUserName(userName);
                 if (loginAccount.Role == "Member")
@@ -55,10 +61,6 @@ namespace Project_OOP_Final
             {
                 MessageBox.Show("Wrong UserName or PassWord, please re-enter again");
             }
-        }
-        private void Login_Load(object sender, EventArgs e)
-        {
-
         }
         #endregion
 
