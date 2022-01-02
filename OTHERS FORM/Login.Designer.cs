@@ -60,7 +60,7 @@
             this.pnUserName.Controls.Add(this.pnUnderUserName);
             this.pnUserName.Controls.Add(this.picUserName);
             this.pnUserName.Controls.Add(this.txbUserName);
-            this.pnUserName.Location = new System.Drawing.Point(78, 474);
+            this.pnUserName.Location = new System.Drawing.Point(78, 468);
             this.pnUserName.Name = "pnUserName";
             this.pnUserName.Size = new System.Drawing.Size(805, 98);
             this.pnUserName.TabIndex = 4;
@@ -101,7 +101,7 @@
             this.pnPassword.Controls.Add(this.pnUnderPassword);
             this.pnPassword.Controls.Add(this.picPassword);
             this.pnPassword.Controls.Add(this.txbPassWord);
-            this.pnPassword.Location = new System.Drawing.Point(78, 615);
+            this.pnPassword.Location = new System.Drawing.Point(78, 609);
             this.pnPassword.Name = "pnPassword";
             this.pnPassword.Size = new System.Drawing.Size(805, 91);
             this.pnPassword.TabIndex = 5;
@@ -144,7 +144,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(318, 835);
+            this.btnLogin.Location = new System.Drawing.Point(318, 829);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(355, 80);
             this.btnLogin.TabIndex = 9;
@@ -155,7 +155,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(410, 183);
+            this.pictureBox1.Location = new System.Drawing.Point(410, 177);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 186);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
