@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnAdjust = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txbClass = new System.Windows.Forms.TextBox();
@@ -47,16 +46,6 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(12, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(150, 46);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "X";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnAdjust
             // 
@@ -178,9 +167,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1532, 1029);
+            this.ClientSize = new System.Drawing.Size(1445, 1029);
             this.Controls.Add(this.btnAdjust);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -202,7 +190,6 @@
         }
 
         #endregion
-        private Button btnExit;
         private Button btnAdjust;
         private Panel panel4;
         private TextBox txbClass;

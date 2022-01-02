@@ -48,10 +48,6 @@ namespace Project_OOP_Final
             SubmitTask submitTask = new SubmitTask(_id);
             submitTask.Show();
         }
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
         private void btnHistoryTask_Click(object sender, EventArgs e)
         {
             MemberHistoryTask memberHistoryTask = new MemberHistoryTask(_id);

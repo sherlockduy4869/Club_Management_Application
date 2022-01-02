@@ -49,11 +49,6 @@ namespace Project_OOP_Final
 
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnAddnew_Click(object sender, EventArgs e)
         {
             AddNewMember fAddNew = new AddNewMember();

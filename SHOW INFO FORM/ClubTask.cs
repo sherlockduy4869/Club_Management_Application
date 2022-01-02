@@ -33,12 +33,6 @@ namespace Project_OOP_Final
         {
 
         }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddNewTask addTask = new AddNewTask();

@@ -40,11 +40,6 @@ namespace Project_OOP_Final
         }
         #endregion
         #region Event
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void AdjustPass_Load(object sender, EventArgs e)
         {
 
@@ -56,7 +51,6 @@ namespace Project_OOP_Final
             string newPass = encodingPass(txbNewPass.Text);
             string reNewPass = encodingPass(txbReEnterPass.Text);
             string pass = passNow;
-
             try
             {
                 if(currentPass == pass)

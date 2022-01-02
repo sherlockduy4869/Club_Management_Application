@@ -102,10 +102,6 @@ namespace Project_OOP_Final
             
             adjustActivity.Show();
         }
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
         private void btnAddItem_Click(object sender, EventArgs e)
         {
             try

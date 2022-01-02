@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dtgvClubTask = new System.Windows.Forms.DataGridView();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -40,21 +39,11 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(12, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(150, 46);
-            this.btnExit.TabIndex = 7;
-            this.btnExit.Text = "X";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(704, 105);
+            this.label1.Location = new System.Drawing.Point(691, 115);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 50);
             this.label1.TabIndex = 5;
@@ -71,7 +60,7 @@
             this.dtgvClubTask.Name = "dtgvClubTask";
             this.dtgvClubTask.RowHeadersWidth = 82;
             this.dtgvClubTask.RowTemplate.Height = 41;
-            this.dtgvClubTask.Size = new System.Drawing.Size(1508, 480);
+            this.dtgvClubTask.Size = new System.Drawing.Size(1421, 480);
             this.dtgvClubTask.TabIndex = 4;
             this.dtgvClubTask.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvClubTask_CellFormatting);
             // 
@@ -100,7 +89,7 @@
             this.panel1.Controls.Add(this.btnRedo);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.btnRemove);
-            this.panel1.Location = new System.Drawing.Point(507, 843);
+            this.panel1.Location = new System.Drawing.Point(508, 745);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(569, 78);
             this.panel1.TabIndex = 11;
@@ -117,7 +106,7 @@
             // 
             // txbSearch
             // 
-            this.txbSearch.Location = new System.Drawing.Point(326, 187);
+            this.txbSearch.Location = new System.Drawing.Point(294, 187);
             this.txbSearch.Name = "txbSearch";
             this.txbSearch.Size = new System.Drawing.Size(898, 39);
             this.txbSearch.TabIndex = 12;
@@ -127,10 +116,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1532, 1029);
+            this.ClientSize = new System.Drawing.Size(1445, 1029);
             this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgvClubTask);
             this.Name = "ClubTask";
@@ -145,8 +133,6 @@
         }
 
         #endregion
-
-        private Button btnExit;
         private Label label1;
         private DataGridView dtgvClubTask;
         private Button btnAdd;

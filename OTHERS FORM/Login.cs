@@ -1,5 +1,6 @@
 using Project_OOP_Final.DAL;
 using Project_OOP_Final.DTO;
+using Project_OOP_Final.SHOW_INFO_FORM;
 
 namespace Project_OOP_Final
 {
@@ -35,26 +36,26 @@ namespace Project_OOP_Final
                 if (loginAccount.Role == "Member")
                 {
                     Member member = MemberDAL.Instance.getInfoById(loginAccount.Id);
-                    PersonalInfo personalInfo = new PersonalInfo(loginAccount);
-                    personalInfo.showPersonalInfor(member.Id, member.Role, member.Name, member.Class, member.Phone);
+                    MainForm mainForm = new MainForm(loginAccount);
+                    mainForm.showPersonalInfor(member.Id, member.Role, member.Name, member.Class, member.Phone);
                     this.Hide();
-                    personalInfo.ShowDialog();
+                    mainForm.ShowDialog();
                 }
                 else if (loginAccount.Role == "Mentor")
                 {
                     Mentor mentor = MentorDAL.Instance.getInfoById(loginAccount.Id);
-                    PersonalInfo personalInfo = new PersonalInfo(loginAccount);
-                    personalInfo.showPersonalInfor(mentor.Id, mentor.Role, mentor.Name, mentor.Class, mentor.Phone);
+                    MainForm mainForm = new MainForm(loginAccount);
+                    mainForm.showPersonalInfor(mentor.Id, mentor.Role, mentor.Name, mentor.Class, mentor.Phone);
                     this.Hide();
-                    personalInfo.ShowDialog();
+                    mainForm.ShowDialog();
                 }
                 else
                 {
                     Leader leader = LeaderDAL.Instance.getInfoById(loginAccount.Id);
-                    PersonalInfo personalInfo = new PersonalInfo(loginAccount);
-                    personalInfo.showPersonalInfor(leader.Id, leader.Role, leader.Name, leader.Class, leader.Phone);
+                    MainForm mainForm = new MainForm(loginAccount);
+                    mainForm.showPersonalInfor(leader.Id, leader.Role, leader.Name, leader.Class, leader.Phone);
                     this.Hide();
-                    personalInfo.ShowDialog();
+                    mainForm.ShowDialog();
                 }
             }
             else
