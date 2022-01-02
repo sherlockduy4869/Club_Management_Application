@@ -63,8 +63,23 @@ namespace Project_OOP_Final
                 MessageBox.Show("Wrong UserName or PassWord, please re-enter again");
             }
         }
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txbUserName_Click(object sender, EventArgs e)
+        {
+            txbUserName.Clear();
+
+        }
+
+        private void txbPassWord_Click(object sender, EventArgs e)
+        {
+            txbPassWord.Clear();
+
+        }
+
         #endregion
-
-
     }
 }
