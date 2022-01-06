@@ -224,6 +224,7 @@
             // 
             this.lbRole.AutoSize = true;
             this.lbRole.Font = new System.Drawing.Font("Arial Narrow", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.lbRole.Location = new System.Drawing.Point(18, 32);
             this.lbRole.Name = "lbRole";
             this.lbRole.Size = new System.Drawing.Size(204, 52);

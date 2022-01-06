@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberClubTask));
             this.dtgvMemberTask = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSubmitTask = new System.Windows.Forms.Button();
@@ -39,7 +40,7 @@
             // 
             this.dtgvMemberTask.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvMemberTask.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvMemberTask.Location = new System.Drawing.Point(12, 204);
+            this.dtgvMemberTask.Location = new System.Drawing.Point(12, 220);
             this.dtgvMemberTask.Name = "dtgvMemberTask";
             this.dtgvMemberTask.RowHeadersWidth = 82;
             this.dtgvMemberTask.RowTemplate.Height = 41;
@@ -50,31 +51,43 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(523, 123);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(557, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 50);
+            this.label1.Size = new System.Drawing.Size(334, 58);
             this.label1.TabIndex = 1;
             this.label1.Text = "Member Task";
             // 
             // btnSubmitTask
             // 
-            this.btnSubmitTask.Location = new System.Drawing.Point(437, 726);
+            this.btnSubmitTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnSubmitTask.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSubmitTask.ForeColor = System.Drawing.Color.White;
+            this.btnSubmitTask.Image = ((System.Drawing.Image)(resources.GetObject("btnSubmitTask.Image")));
+            this.btnSubmitTask.Location = new System.Drawing.Point(443, 840);
             this.btnSubmitTask.Name = "btnSubmitTask";
-            this.btnSubmitTask.Size = new System.Drawing.Size(150, 59);
+            this.btnSubmitTask.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnSubmitTask.Size = new System.Drawing.Size(231, 191);
             this.btnSubmitTask.TabIndex = 2;
             this.btnSubmitTask.Text = "Submit Task";
-            this.btnSubmitTask.UseVisualStyleBackColor = true;
+            this.btnSubmitTask.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSubmitTask.UseVisualStyleBackColor = false;
             this.btnSubmitTask.Click += new System.EventHandler(this.btnSubmitTask_Click);
             // 
             // btnHistoryTask
             // 
-            this.btnHistoryTask.Location = new System.Drawing.Point(734, 726);
+            this.btnHistoryTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnHistoryTask.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHistoryTask.ForeColor = System.Drawing.Color.White;
+            this.btnHistoryTask.Image = ((System.Drawing.Image)(resources.GetObject("btnHistoryTask.Image")));
+            this.btnHistoryTask.Location = new System.Drawing.Point(773, 840);
             this.btnHistoryTask.Name = "btnHistoryTask";
-            this.btnHistoryTask.Size = new System.Drawing.Size(150, 59);
+            this.btnHistoryTask.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnHistoryTask.Size = new System.Drawing.Size(231, 191);
             this.btnHistoryTask.TabIndex = 4;
             this.btnHistoryTask.Text = "History Task";
-            this.btnHistoryTask.UseVisualStyleBackColor = true;
+            this.btnHistoryTask.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnHistoryTask.UseVisualStyleBackColor = false;
             this.btnHistoryTask.Click += new System.EventHandler(this.btnHistoryTask_Click);
             // 
             // MemberClubTask

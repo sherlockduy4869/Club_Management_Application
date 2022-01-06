@@ -31,7 +31,8 @@ namespace Project_OOP_Final
         #region Method
         public void changeAccount(string role)
         {
-            pnLeader.Visible = role == "Leader";
+            btnAdd.Visible = role == "Leader";
+            btnAdjust.Visible = role == "Leader";
             btnAddItem.Enabled = role == "Leader";
             txbItemName.Enabled = role == "Leader";
             txbPrice.Enabled = role == "Leader";
@@ -51,7 +52,7 @@ namespace Project_OOP_Final
                 btn.Tag = activity;
                 btn.Width = 180;
                 btn.Height = 180;
-                btn.BackColor = Color.YellowGreen;
+                btn.BackColor = Color.FromArgb(246, 174, 0);
                 btn.Text = activity.Name;
                 flpActivity.Controls.Add(btn);
             }
@@ -131,6 +132,14 @@ namespace Project_OOP_Final
             dtgvActivity.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM Info_Activity WHERE Name like '%" + txbSearch.Text + "%'");
         }
 
+        private void txbSearch_Click(object sender, EventArgs e)
+        {
+            txbSearch.Clear();
+        }
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
         #endregion
 
 

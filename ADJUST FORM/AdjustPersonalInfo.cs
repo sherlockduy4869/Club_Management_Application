@@ -73,7 +73,27 @@ namespace Project_OOP_Final
                 MessageBox.Show("Only accept numeric values and backspace");
             }
         }
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void txbName_Click(object sender, EventArgs e)
+        {
+            txbName.Clear();
+        }
+
+        private void txbClass_Click(object sender, EventArgs e)
+        {
+            txbClass.Clear();
+        }
+
+        private void txbPhone_Click(object sender, EventArgs e)
+        {
+            txbPhone.Clear();
+        }
         #endregion
+
+
     }
 
 }

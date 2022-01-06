@@ -88,6 +88,31 @@ namespace Project_OOP_Final
                 MessageBox.Show("ERROR 404");
             }
         }
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void txbUserName_Click(object sender, EventArgs e)
+        {
+            txbUserName.Clear();
+        }
+
+        private void txbCurrentPass_Click(object sender, EventArgs e)
+        {
+            txbCurrentPass.Clear();
+        }
+
+        private void txbNewPass_Click(object sender, EventArgs e)
+        {
+            txbNewPass.Clear();
+        }
+
+        private void txbReEnterPass_Click(object sender, EventArgs e)
+        {
+            txbReEnterPass.Clear();
+        }
         #endregion
+
+
     }
 }

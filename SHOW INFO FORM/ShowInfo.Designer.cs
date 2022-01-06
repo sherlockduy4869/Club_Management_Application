@@ -50,11 +50,11 @@
             this.dtgvShowMember.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvShowMember.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvShowMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvShowMember.Location = new System.Drawing.Point(9, 292);
+            this.dtgvShowMember.Location = new System.Drawing.Point(11, 292);
             this.dtgvShowMember.Name = "dtgvShowMember";
             this.dtgvShowMember.RowHeadersWidth = 82;
             this.dtgvShowMember.RowTemplate.Height = 41;
-            this.dtgvShowMember.Size = new System.Drawing.Size(1416, 518);
+            this.dtgvShowMember.Size = new System.Drawing.Size(1414, 518);
             this.dtgvShowMember.TabIndex = 14;
             // 
             // btnRemove
@@ -108,6 +108,7 @@
             // 
             this.lbRole.AutoSize = true;
             this.lbRole.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.lbRole.Location = new System.Drawing.Point(433, 60);
             this.lbRole.Name = "lbRole";
             this.lbRole.Size = new System.Drawing.Size(568, 58);
@@ -131,6 +132,7 @@
             // txbSearch
             // 
             this.txbSearch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.txbSearch.Location = new System.Drawing.Point(934, 239);
             this.txbSearch.Name = "txbSearch";
             this.txbSearch.Size = new System.Drawing.Size(443, 44);

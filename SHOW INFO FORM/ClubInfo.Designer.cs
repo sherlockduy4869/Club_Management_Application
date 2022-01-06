@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClubInfo));
             this.tcClubInfo = new System.Windows.Forms.TabControl();
             this.tpActivity = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.dtgvActivity = new System.Windows.Forms.DataGridView();
-            this.pnLeader = new System.Windows.Forms.Panel();
-            this.btnAdjust = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.tpFinance = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -54,10 +53,13 @@
             this.Price = new System.Windows.Forms.ColumnHeader();
             this.Quantity = new System.Windows.Forms.ColumnHeader();
             this.TotalPrice = new System.Windows.Forms.ColumnHeader();
+            this.btnAdjust = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.tcClubInfo.SuspendLayout();
             this.tpActivity.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvActivity)).BeginInit();
-            this.pnLeader.SuspendLayout();
             this.tpFinance.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -70,31 +72,45 @@
             // 
             this.tcClubInfo.Controls.Add(this.tpActivity);
             this.tcClubInfo.Controls.Add(this.tpFinance);
-            this.tcClubInfo.Location = new System.Drawing.Point(22, 134);
+            this.tcClubInfo.Location = new System.Drawing.Point(22, 99);
             this.tcClubInfo.Name = "tcClubInfo";
             this.tcClubInfo.SelectedIndex = 0;
-            this.tcClubInfo.Size = new System.Drawing.Size(1421, 769);
+            this.tcClubInfo.Size = new System.Drawing.Size(1421, 717);
             this.tcClubInfo.TabIndex = 0;
             // 
             // tpActivity
             // 
+            this.tpActivity.Controls.Add(this.pictureBox1);
             this.tpActivity.Controls.Add(this.txbSearch);
             this.tpActivity.Controls.Add(this.dtgvActivity);
-            this.tpActivity.Controls.Add(this.pnLeader);
             this.tpActivity.Location = new System.Drawing.Point(8, 46);
             this.tpActivity.Name = "tpActivity";
             this.tpActivity.Padding = new System.Windows.Forms.Padding(3);
-            this.tpActivity.Size = new System.Drawing.Size(1405, 715);
+            this.tpActivity.Size = new System.Drawing.Size(1405, 663);
             this.tpActivity.TabIndex = 0;
             this.tpActivity.Text = "Activity";
             this.tpActivity.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(961, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            // 
             // txbSearch
             // 
-            this.txbSearch.Location = new System.Drawing.Point(384, 22);
+            this.txbSearch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbSearch.Location = new System.Drawing.Point(412, 17);
             this.txbSearch.Name = "txbSearch";
-            this.txbSearch.Size = new System.Drawing.Size(669, 39);
+            this.txbSearch.Size = new System.Drawing.Size(543, 44);
             this.txbSearch.TabIndex = 5;
+            this.txbSearch.Text = "Search...";
+            this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
             this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
             // dtgvActivity
@@ -105,37 +121,8 @@
             this.dtgvActivity.Name = "dtgvActivity";
             this.dtgvActivity.RowHeadersWidth = 82;
             this.dtgvActivity.RowTemplate.Height = 41;
-            this.dtgvActivity.Size = new System.Drawing.Size(1396, 532);
+            this.dtgvActivity.Size = new System.Drawing.Size(1396, 590);
             this.dtgvActivity.TabIndex = 1;
-            // 
-            // pnLeader
-            // 
-            this.pnLeader.Controls.Add(this.btnAdjust);
-            this.pnLeader.Controls.Add(this.btnAdd);
-            this.pnLeader.Location = new System.Drawing.Point(536, 618);
-            this.pnLeader.Name = "pnLeader";
-            this.pnLeader.Size = new System.Drawing.Size(404, 80);
-            this.pnLeader.TabIndex = 1;
-            // 
-            // btnAdjust
-            // 
-            this.btnAdjust.Location = new System.Drawing.Point(224, 16);
-            this.btnAdjust.Name = "btnAdjust";
-            this.btnAdjust.Size = new System.Drawing.Size(150, 46);
-            this.btnAdjust.TabIndex = 2;
-            this.btnAdjust.Text = "Adjust";
-            this.btnAdjust.UseVisualStyleBackColor = true;
-            this.btnAdjust.Click += new System.EventHandler(this.btnAdjust_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(26, 16);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(150, 46);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tpFinance
             // 
@@ -143,7 +130,7 @@
             this.tpFinance.Location = new System.Drawing.Point(8, 46);
             this.tpFinance.Name = "tpFinance";
             this.tpFinance.Padding = new System.Windows.Forms.Padding(3);
-            this.tpFinance.Size = new System.Drawing.Size(1405, 715);
+            this.tpFinance.Size = new System.Drawing.Size(1405, 663);
             this.tpFinance.TabIndex = 1;
             this.tpFinance.Text = "Finance";
             this.tpFinance.UseVisualStyleBackColor = true;
@@ -156,36 +143,37 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1402, 621);
+            this.panel1.Size = new System.Drawing.Size(1402, 657);
             this.panel1.TabIndex = 0;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.txbTotalPrice);
-            this.panel4.Location = new System.Drawing.Point(394, 556);
+            this.panel4.Location = new System.Drawing.Point(997, 589);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1002, 65);
+            this.panel4.Size = new System.Drawing.Size(399, 65);
             this.panel4.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(599, 14);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(18, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 37);
+            this.label1.Size = new System.Drawing.Size(162, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Total Price";
             // 
             // txbTotalPrice
             // 
-            this.txbTotalPrice.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbTotalPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbTotalPrice.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbTotalPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.txbTotalPrice.Location = new System.Drawing.Point(794, 11);
+            this.txbTotalPrice.Location = new System.Drawing.Point(198, 15);
             this.txbTotalPrice.Name = "txbTotalPrice";
             this.txbTotalPrice.ReadOnly = true;
-            this.txbTotalPrice.Size = new System.Drawing.Size(188, 43);
+            this.txbTotalPrice.Size = new System.Drawing.Size(188, 37);
             this.txbTotalPrice.TabIndex = 0;
             this.txbTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -204,27 +192,30 @@
             // 
             // txbPrice
             // 
+            this.txbPrice.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbPrice.Location = new System.Drawing.Point(186, 51);
             this.txbPrice.Name = "txbPrice";
-            this.txbPrice.Size = new System.Drawing.Size(502, 39);
+            this.txbPrice.Size = new System.Drawing.Size(502, 38);
             this.txbPrice.TabIndex = 2;
             this.txbPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPrice_KeyPress);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(23, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 32);
+            this.label3.Size = new System.Drawing.Size(64, 31);
             this.label3.TabIndex = 5;
             this.label3.Text = "Price";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(23, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 32);
+            this.label2.Size = new System.Drawing.Size(120, 31);
             this.label2.TabIndex = 4;
             this.label2.Text = "Item Name";
             // 
@@ -242,27 +233,32 @@
             // 
             // btnAddItem
             // 
+            this.btnAddItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAddItem.FlatAppearance.BorderSize = 0;
+            this.btnAddItem.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnAddItem.Location = new System.Drawing.Point(699, 6);
             this.btnAddItem.Name = "btnAddItem";
             this.btnAddItem.Size = new System.Drawing.Size(177, 84);
             this.btnAddItem.TabIndex = 4;
-            this.btnAddItem.Text = "Add";
-            this.btnAddItem.UseVisualStyleBackColor = true;
+            this.btnAddItem.Text = "ADD";
+            this.btnAddItem.UseVisualStyleBackColor = false;
             this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // txbItemName
             // 
+            this.txbItemName.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbItemName.Location = new System.Drawing.Point(186, 6);
             this.txbItemName.Name = "txbItemName";
-            this.txbItemName.Size = new System.Drawing.Size(502, 39);
+            this.txbItemName.Size = new System.Drawing.Size(502, 38);
             this.txbItemName.TabIndex = 1;
             // 
             // flpActivity
             // 
             this.flpActivity.AutoScroll = true;
-            this.flpActivity.Location = new System.Drawing.Point(3, 3);
+            this.flpActivity.Location = new System.Drawing.Point(6, 3);
             this.flpActivity.Name = "flpActivity";
-            this.flpActivity.Size = new System.Drawing.Size(382, 618);
+            this.flpActivity.Size = new System.Drawing.Size(382, 651);
             this.flpActivity.TabIndex = 3;
             // 
             // panel3
@@ -270,7 +266,7 @@
             this.panel3.Controls.Add(this.lsvDetailFinance);
             this.panel3.Location = new System.Drawing.Point(391, 102);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1008, 448);
+            this.panel3.Size = new System.Drawing.Size(1008, 481);
             this.panel3.TabIndex = 2;
             // 
             // lsvDetailFinance
@@ -281,9 +277,9 @@
             this.Quantity,
             this.TotalPrice});
             this.lsvDetailFinance.GridLines = true;
-            this.lsvDetailFinance.Location = new System.Drawing.Point(3, 3);
+            this.lsvDetailFinance.Location = new System.Drawing.Point(0, 3);
             this.lsvDetailFinance.Name = "lsvDetailFinance";
-            this.lsvDetailFinance.Size = new System.Drawing.Size(1002, 442);
+            this.lsvDetailFinance.Size = new System.Drawing.Size(1008, 475);
             this.lsvDetailFinance.TabIndex = 0;
             this.lsvDetailFinance.UseCompatibleStateImageBehavior = false;
             this.lsvDetailFinance.View = System.Windows.Forms.View.Details;
@@ -311,12 +307,61 @@
             this.TotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TotalPrice.Width = 230;
             // 
+            // btnAdjust
+            // 
+            this.btnAdjust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAdjust.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdjust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAdjust.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjust.Image")));
+            this.btnAdjust.Location = new System.Drawing.Point(773, 837);
+            this.btnAdjust.Name = "btnAdjust";
+            this.btnAdjust.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnAdjust.Size = new System.Drawing.Size(231, 191);
+            this.btnAdjust.TabIndex = 2;
+            this.btnAdjust.Text = "Adjust";
+            this.btnAdjust.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAdjust.UseVisualStyleBackColor = false;
+            this.btnAdjust.Click += new System.EventHandler(this.btnAdjust_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAdd.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.Location = new System.Drawing.Point(476, 837);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnAdd.Size = new System.Drawing.Size(231, 191);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1353, -2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(90, 84);
+            this.btnExit.TabIndex = 52;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // ClubInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1445, 1029);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnAdjust);
             this.Controls.Add(this.tcClubInfo);
+            this.Controls.Add(this.btnAdd);
             this.Name = "ClubInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Club Info";
@@ -324,8 +369,8 @@
             this.tcClubInfo.ResumeLayout(false);
             this.tpActivity.ResumeLayout(false);
             this.tpActivity.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvActivity)).EndInit();
-            this.pnLeader.ResumeLayout(false);
             this.tpFinance.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -342,7 +387,6 @@
 
         private TabControl tcClubInfo;
         private TabPage tpActivity;
-        private Panel pnLeader;
         private Button btnAdjust;
         private Button btnAdd;
         private DataGridView dtgvActivity;
@@ -366,5 +410,7 @@
         private Label label2;
         private TextBox txbPrice;
         private TextBox txbSearch;
+        private PictureBox pictureBox1;
+        private Button btnExit;
     }
 }

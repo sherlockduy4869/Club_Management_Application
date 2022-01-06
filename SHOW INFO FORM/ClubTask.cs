@@ -77,6 +77,10 @@ namespace Project_OOP_Final
         {
             txbSearch.Clear();
         }
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
         #endregion
 
 
