@@ -17,52 +17,94 @@ namespace Project_OOP_Final
 
         public ShowInfo()
         {
-            
+
             InitializeComponent();
-            loadInfoListByRole();
+            loadInfoMember();
 
         }
         #region Method
         public void changeAccount(string role)
         {
-            pnForLeader.Visible = role == "Leader";
+            btnAddnew.Visible = role == "Leader";
+            btnRemove.Visible = role == "Leader";
 
         }
-        void loadInfoListByRole()
+        void loadInfoMember()
         {
             dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("EXEC dbo.LoadInfoListMember");
-            dtgvShowLeader.DataSource = DataProvider.Instance.ExecuteQuery("EXEC dbo.LoadInfoListLeader");
-            dtgvShowMentor.DataSource = DataProvider.Instance.ExecuteQuery("EXEC dbo.LoadInfoListMentor");
+        }
+        void loadInfoLeader()
+        {
+            dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("EXEC dbo.LoadInfoListLeader");
+        }
+        void loadInfoMentor()
+        {
+            dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("EXEC dbo.LoadInfoListMentor");
         }
         #endregion
 
         #region Event
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Remove fRemove = new Remove();
-            
-            fRemove.Show();
-        }
-
         private void ShowInfo_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnAddnew_Click(object sender, EventArgs e)
-        {
-            AddNewMember fAddNew = new AddNewMember();
-            this.Hide();
-            fAddNew.ShowDialog();
-        }
-        private void txbSearch_TextChanged(object sender, EventArgs e)
-        {
-            dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, Role, Team FROM Info_Member WHERE Name like '%" + txbSearch.Text + "%'");
-            dtgvShowLeader.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, Role, Team FROM Info_Leader WHERE Name like '%" + txbSearch.Text + "%'");
-            dtgvShowMentor.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, Role FROM Info_Mentor WHERE Name like '%" + txbSearch.Text + "%'");
-        }
         #endregion
 
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            Remove fRemove = new Remove();
 
+            fRemove.Show();
+        }
+
+        private void btnAddnew_Click_1(object sender, EventArgs e)
+        {
+            AddNewMember fAddNew = new AddNewMember();
+            fAddNew.Show();
+        }
+
+        private void txbSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (lbRole.Text == "Member Information")
+            {
+                dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, Team FROM Info_Member WHERE Name like '%" + txbSearch.Text + "%'");
+            }
+            else if (lbRole.Text == "Leader Information")
+            {
+                dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, Team FROM Info_Leader WHERE Name like '%" + txbSearch.Text + "%'");
+            }
+            else if (lbRole.Text == "Mentor Information")
+            {
+                dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, FROM Info_Mentor WHERE Name like '%" + txbSearch.Text + "%'");
+            }
+        }
+        private void btnMentor_Click(object sender, EventArgs e)
+        {
+            loadInfoMentor();
+            lbRole.Text = "Mentor Information";
+        }
+
+        private void btnLeader_Click(object sender, EventArgs e)
+        {
+            loadInfoLeader();
+            lbRole.Text = "Leader Information";
+        }
+
+        private void btnMember_Click(object sender, EventArgs e)
+        {
+            loadInfoMember();
+            lbRole.Text = "Member Information";
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txbSearch_Click(object sender, EventArgs e)
+        {
+            txbSearch.Clear();
+        }
     }
 }

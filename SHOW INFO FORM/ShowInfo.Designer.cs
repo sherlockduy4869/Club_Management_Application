@@ -28,194 +28,199 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnForLeader = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowInfo));
+            this.dtgvShowMember = new System.Windows.Forms.DataGridView();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAddnew = new System.Windows.Forms.Button();
-            this.dtgvShowInfoMentor = new System.Windows.Forms.TabControl();
-            this.tpMember = new System.Windows.Forms.TabPage();
-            this.dtgvShowMember = new System.Windows.Forms.DataGridView();
-            this.tpLeader = new System.Windows.Forms.TabPage();
-            this.dtgvShowLeader = new System.Windows.Forms.DataGridView();
-            this.tpMentor = new System.Windows.Forms.TabPage();
-            this.dtgvShowMentor = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbRole = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.txbSearch = new System.Windows.Forms.TextBox();
-            this.pnForLeader.SuspendLayout();
-            this.dtgvShowInfoMentor.SuspendLayout();
-            this.tpMember.SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnLeader = new System.Windows.Forms.Button();
+            this.btnMentor = new System.Windows.Forms.Button();
+            this.btnMember = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvShowMember)).BeginInit();
-            this.tpLeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvShowLeader)).BeginInit();
-            this.tpMentor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvShowMentor)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(602, 145);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 50);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "INFORMATION";
-            // 
-            // pnForLeader
-            // 
-            this.pnForLeader.Controls.Add(this.btnRemove);
-            this.pnForLeader.Controls.Add(this.btnAddnew);
-            this.pnForLeader.Location = new System.Drawing.Point(495, 817);
-            this.pnForLeader.Name = "pnForLeader";
-            this.pnForLeader.Size = new System.Drawing.Size(440, 109);
-            this.pnForLeader.TabIndex = 2;
-            // 
-            // btnRemove
-            // 
-            this.btnRemove.Location = new System.Drawing.Point(256, 12);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(150, 80);
-            this.btnRemove.TabIndex = 1;
-            this.btnRemove.Text = "Remove";
-            this.btnRemove.UseVisualStyleBackColor = true;
-            this.btnRemove.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnAddnew
-            // 
-            this.btnAddnew.Location = new System.Drawing.Point(30, 12);
-            this.btnAddnew.Name = "btnAddnew";
-            this.btnAddnew.Size = new System.Drawing.Size(150, 80);
-            this.btnAddnew.TabIndex = 0;
-            this.btnAddnew.Text = "Add new";
-            this.btnAddnew.UseVisualStyleBackColor = true;
-            this.btnAddnew.Click += new System.EventHandler(this.btnAddnew_Click);
-            // 
-            // dtgvShowInfoMentor
-            // 
-            this.dtgvShowInfoMentor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgvShowInfoMentor.Controls.Add(this.tpMember);
-            this.dtgvShowInfoMentor.Controls.Add(this.tpLeader);
-            this.dtgvShowInfoMentor.Controls.Add(this.tpMentor);
-            this.dtgvShowInfoMentor.Location = new System.Drawing.Point(3, 276);
-            this.dtgvShowInfoMentor.Name = "dtgvShowInfoMentor";
-            this.dtgvShowInfoMentor.SelectedIndex = 0;
-            this.dtgvShowInfoMentor.Size = new System.Drawing.Size(1437, 535);
-            this.dtgvShowInfoMentor.TabIndex = 3;
-            // 
-            // tpMember
-            // 
-            this.tpMember.Controls.Add(this.dtgvShowMember);
-            this.tpMember.Location = new System.Drawing.Point(8, 46);
-            this.tpMember.Name = "tpMember";
-            this.tpMember.Padding = new System.Windows.Forms.Padding(3);
-            this.tpMember.Size = new System.Drawing.Size(1421, 481);
-            this.tpMember.TabIndex = 0;
-            this.tpMember.Text = "Member";
-            this.tpMember.UseVisualStyleBackColor = true;
             // 
             // dtgvShowMember
             // 
             this.dtgvShowMember.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvShowMember.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvShowMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvShowMember.Location = new System.Drawing.Point(6, 6);
+            this.dtgvShowMember.Location = new System.Drawing.Point(9, 292);
             this.dtgvShowMember.Name = "dtgvShowMember";
             this.dtgvShowMember.RowHeadersWidth = 82;
             this.dtgvShowMember.RowTemplate.Height = 41;
-            this.dtgvShowMember.Size = new System.Drawing.Size(1409, 469);
-            this.dtgvShowMember.TabIndex = 0;
+            this.dtgvShowMember.Size = new System.Drawing.Size(1416, 518);
+            this.dtgvShowMember.TabIndex = 14;
             // 
-            // tpLeader
+            // btnRemove
             // 
-            this.tpLeader.Controls.Add(this.dtgvShowLeader);
-            this.tpLeader.Location = new System.Drawing.Point(8, 46);
-            this.tpLeader.Name = "tpLeader";
-            this.tpLeader.Padding = new System.Windows.Forms.Padding(3);
-            this.tpLeader.Size = new System.Drawing.Size(1421, 481);
-            this.tpLeader.TabIndex = 1;
-            this.tpLeader.Text = "Leader";
-            this.tpLeader.UseVisualStyleBackColor = true;
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnRemove.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnRemove.Image = ((System.Drawing.Image)(resources.GetObject("btnRemove.Image")));
+            this.btnRemove.Location = new System.Drawing.Point(785, 838);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Padding = new System.Windows.Forms.Padding(0, 0, 0, 25);
+            this.btnRemove.Size = new System.Drawing.Size(232, 191);
+            this.btnRemove.TabIndex = 16;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
-            // dtgvShowLeader
+            // btnAddnew
             // 
-            this.dtgvShowLeader.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvShowLeader.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvShowLeader.Location = new System.Drawing.Point(3, 3);
-            this.dtgvShowLeader.Name = "dtgvShowLeader";
-            this.dtgvShowLeader.RowHeadersWidth = 82;
-            this.dtgvShowLeader.RowTemplate.Height = 41;
-            this.dtgvShowLeader.Size = new System.Drawing.Size(1412, 478);
-            this.dtgvShowLeader.TabIndex = 0;
+            this.btnAddnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAddnew.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddnew.ForeColor = System.Drawing.Color.White;
+            this.btnAddnew.Image = ((System.Drawing.Image)(resources.GetObject("btnAddnew.Image")));
+            this.btnAddnew.Location = new System.Drawing.Point(417, 838);
+            this.btnAddnew.Name = "btnAddnew";
+            this.btnAddnew.Padding = new System.Windows.Forms.Padding(0, 0, 0, 25);
+            this.btnAddnew.Size = new System.Drawing.Size(231, 191);
+            this.btnAddnew.TabIndex = 15;
+            this.btnAddnew.Text = "Add new";
+            this.btnAddnew.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddnew.UseVisualStyleBackColor = false;
+            this.btnAddnew.Click += new System.EventHandler(this.btnAddnew_Click_1);
             // 
-            // tpMentor
+            // panel1
             // 
-            this.tpMentor.Controls.Add(this.dtgvShowMentor);
-            this.tpMentor.Location = new System.Drawing.Point(8, 46);
-            this.tpMentor.Name = "tpMentor";
-            this.tpMentor.Padding = new System.Windows.Forms.Padding(3);
-            this.tpMentor.Size = new System.Drawing.Size(1421, 481);
-            this.tpMentor.TabIndex = 2;
-            this.tpMentor.Text = "Mentor";
-            this.tpMentor.UseVisualStyleBackColor = true;
+            this.panel1.Controls.Add(this.lbRole);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Controls.Add(this.txbSearch);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btnLeader);
+            this.panel1.Controls.Add(this.btnMentor);
+            this.panel1.Controls.Add(this.btnMember);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1428, 286);
+            this.panel1.TabIndex = 24;
             // 
-            // dtgvShowMentor
+            // lbRole
             // 
-            this.dtgvShowMentor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvShowMentor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvShowMentor.Location = new System.Drawing.Point(1, 3);
-            this.dtgvShowMentor.Name = "dtgvShowMentor";
-            this.dtgvShowMentor.RowHeadersWidth = 82;
-            this.dtgvShowMentor.RowTemplate.Height = 41;
-            this.dtgvShowMentor.Size = new System.Drawing.Size(1417, 475);
-            this.dtgvShowMentor.TabIndex = 0;
+            this.lbRole.AutoSize = true;
+            this.lbRole.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbRole.Location = new System.Drawing.Point(469, 65);
+            this.lbRole.Name = "lbRole";
+            this.lbRole.Size = new System.Drawing.Size(499, 58);
+            this.lbRole.TabIndex = 29;
+            this.lbRole.Text = "Member Information";
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1338, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(90, 84);
+            this.btnExit.TabIndex = 52;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txbSearch
             // 
-            this.txbSearch.Location = new System.Drawing.Point(323, 231);
+            this.txbSearch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbSearch.Location = new System.Drawing.Point(934, 239);
             this.txbSearch.Name = "txbSearch";
-            this.txbSearch.Size = new System.Drawing.Size(770, 39);
-            this.txbSearch.TabIndex = 4;
+            this.txbSearch.Size = new System.Drawing.Size(443, 44);
+            this.txbSearch.TabIndex = 28;
+            this.txbSearch.Text = "Search...";
+            this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
             this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1373, 239);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnLeader
+            // 
+            this.btnLeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnLeader.FlatAppearance.BorderSize = 0;
+            this.btnLeader.ForeColor = System.Drawing.Color.White;
+            this.btnLeader.Location = new System.Drawing.Point(173, 208);
+            this.btnLeader.Name = "btnLeader";
+            this.btnLeader.Size = new System.Drawing.Size(173, 75);
+            this.btnLeader.TabIndex = 26;
+            this.btnLeader.Text = "Leader";
+            this.btnLeader.UseVisualStyleBackColor = false;
+            this.btnLeader.Click += new System.EventHandler(this.btnLeader_Click);
+            // 
+            // btnMentor
+            // 
+            this.btnMentor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnMentor.FlatAppearance.BorderSize = 0;
+            this.btnMentor.ForeColor = System.Drawing.Color.White;
+            this.btnMentor.Location = new System.Drawing.Point(343, 208);
+            this.btnMentor.Name = "btnMentor";
+            this.btnMentor.Size = new System.Drawing.Size(173, 75);
+            this.btnMentor.TabIndex = 27;
+            this.btnMentor.Text = "Mentor";
+            this.btnMentor.UseVisualStyleBackColor = false;
+            this.btnMentor.Click += new System.EventHandler(this.btnMentor_Click);
+            // 
+            // btnMember
+            // 
+            this.btnMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnMember.FlatAppearance.BorderSize = 0;
+            this.btnMember.ForeColor = System.Drawing.Color.White;
+            this.btnMember.Location = new System.Drawing.Point(5, 208);
+            this.btnMember.Name = "btnMember";
+            this.btnMember.Size = new System.Drawing.Size(173, 75);
+            this.btnMember.TabIndex = 25;
+            this.btnMember.Text = "Member";
+            this.btnMember.UseVisualStyleBackColor = false;
+            this.btnMember.Click += new System.EventHandler(this.btnMember_Click);
             // 
             // ShowInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1445, 1029);
-            this.Controls.Add(this.txbSearch);
-            this.Controls.Add(this.dtgvShowInfoMentor);
-            this.Controls.Add(this.pnForLeader);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1428, 1029);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dtgvShowMember);
+            this.Controls.Add(this.btnRemove);
+            this.Controls.Add(this.btnAddnew);
             this.Name = "ShowInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Show Information of Club Member/Leader/Mentor";
+            this.Text = "Show Information of Member";
             this.Load += new System.EventHandler(this.ShowInfo_Load);
-            this.pnForLeader.ResumeLayout(false);
-            this.dtgvShowInfoMentor.ResumeLayout(false);
-            this.tpMember.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvShowMember)).EndInit();
-            this.tpLeader.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvShowLeader)).EndInit();
-            this.tpMentor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvShowMentor)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private Label label1;
-        private Panel pnForLeader;
+        private Label label2;
+        private DataGridView dtgvShowMember;
         private Button btnRemove;
         private Button btnAddnew;
-        private TabControl dtgvShowInfoMentor;
-        private TabPage tpMember;
-        private TabPage tpLeader;
-        private TabPage tpMentor;
-        private DataGridView dtgvShowMember;
-        private DataGridView dtgvShowLeader;
-        private DataGridView dtgvShowMentor;
+        private Panel panel1;
         private TextBox txbSearch;
-        private Label label2;
+        private PictureBox pictureBox1;
+        private Button btnLeader;
+        private Button btnMentor;
+        private Button btnMember;
+        private Label lbRole;
+        private Button btnExit;
     }
 }

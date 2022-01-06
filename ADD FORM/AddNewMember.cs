@@ -80,8 +80,8 @@ namespace Project_OOP_Final
         private void btnExit_Click(object sender, EventArgs e)
         {
             ShowInfo fShow = new ShowInfo();
-            this.Hide();
-            fShow.ShowDialog();
+            this.Close();
+            fShow.Refresh();
         }
         private void txbPhone_KeyPress(object sender, KeyPressEventArgs e)
         {
