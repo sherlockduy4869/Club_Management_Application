@@ -52,7 +52,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(557, 82);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(573, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(334, 58);
             this.label1.TabIndex = 1;
@@ -64,7 +65,7 @@
             this.btnSubmitTask.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSubmitTask.ForeColor = System.Drawing.Color.White;
             this.btnSubmitTask.Image = ((System.Drawing.Image)(resources.GetObject("btnSubmitTask.Image")));
-            this.btnSubmitTask.Location = new System.Drawing.Point(443, 840);
+            this.btnSubmitTask.Location = new System.Drawing.Point(434, 840);
             this.btnSubmitTask.Name = "btnSubmitTask";
             this.btnSubmitTask.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnSubmitTask.Size = new System.Drawing.Size(231, 191);
@@ -80,7 +81,7 @@
             this.btnHistoryTask.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnHistoryTask.ForeColor = System.Drawing.Color.White;
             this.btnHistoryTask.Image = ((System.Drawing.Image)(resources.GetObject("btnHistoryTask.Image")));
-            this.btnHistoryTask.Location = new System.Drawing.Point(773, 840);
+            this.btnHistoryTask.Location = new System.Drawing.Point(764, 840);
             this.btnHistoryTask.Name = "btnHistoryTask";
             this.btnHistoryTask.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnHistoryTask.Size = new System.Drawing.Size(231, 191);

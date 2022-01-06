@@ -153,9 +153,10 @@
             // 
             // btnLeader
             // 
-            this.btnLeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnLeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnLeader.FlatAppearance.BorderSize = 0;
-            this.btnLeader.ForeColor = System.Drawing.Color.White;
+            this.btnLeader.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnLeader.Location = new System.Drawing.Point(173, 208);
             this.btnLeader.Name = "btnLeader";
             this.btnLeader.Size = new System.Drawing.Size(173, 75);
@@ -166,9 +167,10 @@
             // 
             // btnMentor
             // 
-            this.btnMentor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnMentor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnMentor.FlatAppearance.BorderSize = 0;
-            this.btnMentor.ForeColor = System.Drawing.Color.White;
+            this.btnMentor.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMentor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnMentor.Location = new System.Drawing.Point(343, 208);
             this.btnMentor.Name = "btnMentor";
             this.btnMentor.Size = new System.Drawing.Size(173, 75);
@@ -179,9 +181,10 @@
             // 
             // btnMember
             // 
-            this.btnMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnMember.FlatAppearance.BorderSize = 0;
-            this.btnMember.ForeColor = System.Drawing.Color.White;
+            this.btnMember.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnMember.Location = new System.Drawing.Point(5, 208);
             this.btnMember.Name = "btnMember";
             this.btnMember.Size = new System.Drawing.Size(173, 75);

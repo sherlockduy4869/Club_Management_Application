@@ -47,6 +47,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnUnderUserName = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -59,10 +60,10 @@
             this.btnAdjust.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAdjust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnAdjust.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjust.Image")));
-            this.btnAdjust.Location = new System.Drawing.Point(543, 612);
+            this.btnAdjust.Location = new System.Drawing.Point(866, 838);
             this.btnAdjust.Name = "btnAdjust";
             this.btnAdjust.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnAdjust.Size = new System.Drawing.Size(414, 191);
+            this.btnAdjust.Size = new System.Drawing.Size(231, 191);
             this.btnAdjust.TabIndex = 0;
             this.btnAdjust.Text = "Adjust";
             this.btnAdjust.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -75,7 +76,7 @@
             this.panel4.Controls.Add(this.panel7);
             this.panel4.Controls.Add(this.txbClass);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(167, 424);
+            this.panel4.Location = new System.Drawing.Point(712, 466);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(545, 167);
             this.panel4.TabIndex = 10;
@@ -118,7 +119,7 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.txbPhone);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(773, 424);
+            this.panel3.Location = new System.Drawing.Point(712, 639);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(545, 167);
             this.panel3.TabIndex = 9;
@@ -162,7 +163,7 @@
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.txbName);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(773, 200);
+            this.panel2.Location = new System.Drawing.Point(712, 293);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(545, 167);
             this.panel2.TabIndex = 8;
@@ -228,7 +229,7 @@
             this.panel1.Controls.Add(this.pnUnderUserName);
             this.panel1.Controls.Add(this.txbUserName);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(167, 200);
+            this.panel1.Location = new System.Drawing.Point(712, 120);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(545, 167);
             this.panel1.TabIndex = 12;
@@ -255,11 +256,21 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(497, 1029);
+            this.panel8.TabIndex = 55;
+            // 
             // AdjustPersonalInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1445, 1029);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAdjust);
             this.Controls.Add(this.panel4);
@@ -301,5 +312,6 @@
         private Panel panel5;
         private Panel panel6;
         private Panel pnUnderUserName;
+        private Panel panel8;
     }
 }

@@ -47,6 +47,7 @@
             this.txbCurrentPass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -59,7 +60,7 @@
             this.panel6.Controls.Add(this.pnUnderUserName);
             this.panel6.Controls.Add(this.txbUserName);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(170, 198);
+            this.panel6.Location = new System.Drawing.Point(712, 120);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(542, 164);
             this.panel6.TabIndex = 1;
@@ -102,7 +103,7 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.txbNewPass);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(170, 415);
+            this.panel1.Location = new System.Drawing.Point(712, 466);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(542, 164);
             this.panel1.TabIndex = 3;
@@ -146,10 +147,10 @@
             this.btnAdjust.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAdjust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnAdjust.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjust.Image")));
-            this.btnAdjust.Location = new System.Drawing.Point(542, 617);
+            this.btnAdjust.Location = new System.Drawing.Point(866, 838);
             this.btnAdjust.Name = "btnAdjust";
             this.btnAdjust.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnAdjust.Size = new System.Drawing.Size(414, 191);
+            this.btnAdjust.Size = new System.Drawing.Size(231, 191);
             this.btnAdjust.TabIndex = 0;
             this.btnAdjust.Text = "Adjust";
             this.btnAdjust.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -162,7 +163,7 @@
             this.panel7.Controls.Add(this.panel4);
             this.panel7.Controls.Add(this.txbReEnterPass);
             this.panel7.Controls.Add(this.label6);
-            this.panel7.Location = new System.Drawing.Point(771, 415);
+            this.panel7.Location = new System.Drawing.Point(712, 639);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(542, 164);
             this.panel7.TabIndex = 4;
@@ -206,7 +207,7 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.txbCurrentPass);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(771, 198);
+            this.panel2.Location = new System.Drawing.Point(712, 293);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(542, 164);
             this.panel2.TabIndex = 2;
@@ -251,12 +252,21 @@
             this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1355, 1);
+            this.btnExit.Location = new System.Drawing.Point(1355, -2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(90, 84);
             this.btnExit.TabIndex = 52;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(497, 1029);
+            this.panel8.TabIndex = 56;
             // 
             // AdjustPass
             // 
@@ -264,6 +274,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1445, 1029);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAdjust);
             this.Controls.Add(this.panel2);
@@ -306,5 +317,6 @@
         private Panel panel5;
         private Panel panel4;
         private Panel panel3;
+        private Panel panel8;
     }
 }
