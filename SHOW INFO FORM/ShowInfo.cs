@@ -66,15 +66,15 @@ namespace Project_OOP_Final
 
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
-            if (lbRole.Text == "Member Information")
+            if (lbRole.Text == "MEMBER INFORMATION")
             {
                 dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, Team FROM Info_Member WHERE Name like '%" + txbSearch.Text + "%'");
             }
-            else if (lbRole.Text == "Leader Information")
+            else if (lbRole.Text == "LEADER INFORMATION")
             {
                 dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, Team FROM Info_Leader WHERE Name like '%" + txbSearch.Text + "%'");
             }
-            else if (lbRole.Text == "Mentor Information")
+            else if (lbRole.Text == "MENTOR INFORMATION")
             {
                 dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, FROM Info_Mentor WHERE Name like '%" + txbSearch.Text + "%'");
             }
@@ -82,19 +82,19 @@ namespace Project_OOP_Final
         private void btnMentor_Click(object sender, EventArgs e)
         {
             loadInfoMentor();
-            lbRole.Text = "Mentor Information";
+            lbRole.Text = "MENTOR INFORMATION";
         }
 
         private void btnLeader_Click(object sender, EventArgs e)
         {
             loadInfoLeader();
-            lbRole.Text = "Leader Information";
+            lbRole.Text = "LEADER INFORMATION";
         }
 
         private void btnMember_Click(object sender, EventArgs e)
         {
             loadInfoMember();
-            lbRole.Text = "Member Information";
+            lbRole.Text = "MEMBER INFORMATION";
         }
 
         private void btnExit_Click(object sender, EventArgs e)

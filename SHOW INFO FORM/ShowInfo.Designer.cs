@@ -63,7 +63,7 @@
             this.btnRemove.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnRemove.Image = ((System.Drawing.Image)(resources.GetObject("btnRemove.Image")));
-            this.btnRemove.Location = new System.Drawing.Point(785, 838);
+            this.btnRemove.Location = new System.Drawing.Point(781, 838);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Padding = new System.Windows.Forms.Padding(0, 0, 0, 25);
             this.btnRemove.Size = new System.Drawing.Size(232, 191);
@@ -108,11 +108,11 @@
             // 
             this.lbRole.AutoSize = true;
             this.lbRole.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbRole.Location = new System.Drawing.Point(469, 65);
+            this.lbRole.Location = new System.Drawing.Point(433, 60);
             this.lbRole.Name = "lbRole";
-            this.lbRole.Size = new System.Drawing.Size(499, 58);
+            this.lbRole.Size = new System.Drawing.Size(568, 58);
             this.lbRole.TabIndex = 29;
-            this.lbRole.Text = "Member Information";
+            this.lbRole.Text = "MEMBER INFORMATION";
             // 
             // btnExit
             // 

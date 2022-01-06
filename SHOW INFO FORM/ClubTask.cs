@@ -63,19 +63,19 @@ namespace Project_OOP_Final
             {
                 string priority = Convert.ToString(row.Cells["Priority"].Value);
 
-                if (priority == "Normal")
+                if (priority == "Important")
                 {
-                    row.DefaultCellStyle.BackColor = Color.Green;
-                }
-                else if (priority == "Important")
-                {
-                    row.DefaultCellStyle.BackColor = Color.Yellow;
+                    row.DefaultCellStyle.ForeColor = Color.FromArgb(246, 174, 0);
                 }
                 else if (priority == "Very Important")
                 {
-                    row.DefaultCellStyle.BackColor = Color.Orange;
+                    row.DefaultCellStyle.ForeColor = Color.FromArgb(178, 8, 55);
                 }
             }
+        }
+        private void txbSearch_Click(object sender, EventArgs e)
+        {
+            txbSearch.Clear();
         }
         #endregion
 

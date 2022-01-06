@@ -41,18 +41,23 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.lbRole = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.txbRole = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.txbPhone = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pnClass = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.txbClass = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.txbName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pnUnderUserName = new System.Windows.Forms.Panel();
             this.txbID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnMenu.SuspendLayout();
@@ -218,145 +223,220 @@
             // lbRole
             // 
             this.lbRole.AutoSize = true;
-            this.lbRole.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbRole.Location = new System.Drawing.Point(375, 269);
+            this.lbRole.Font = new System.Drawing.Font("Arial Narrow", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbRole.Location = new System.Drawing.Point(18, 32);
             this.lbRole.Name = "lbRole";
-            this.lbRole.Size = new System.Drawing.Size(174, 45);
+            this.lbRole.Size = new System.Drawing.Size(204, 52);
             this.lbRole.TabIndex = 50;
             this.lbRole.Text = "Role_name";
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel7.Controls.Add(this.panel6);
             this.panel7.Controls.Add(this.txbRole);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(333, 565);
+            this.panel7.Location = new System.Drawing.Point(18, 626);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(805, 71);
+            this.panel7.Size = new System.Drawing.Size(564, 166);
             this.panel7.TabIndex = 49;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(52, 137);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(450, 1);
+            this.panel6.TabIndex = 15;
             // 
             // txbRole
             // 
-            this.txbRole.Location = new System.Drawing.Point(232, 17);
+            this.txbRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.txbRole.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbRole.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbRole.ForeColor = System.Drawing.Color.White;
+            this.txbRole.Location = new System.Drawing.Point(54, 98);
             this.txbRole.Name = "txbRole";
             this.txbRole.ReadOnly = true;
-            this.txbRole.Size = new System.Drawing.Size(560, 39);
+            this.txbRole.Size = new System.Drawing.Size(450, 37);
             this.txbRole.TabIndex = 1;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(42, 11);
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.label7.Location = new System.Drawing.Point(52, 24);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 45);
+            this.label7.Size = new System.Drawing.Size(82, 43);
             this.label7.TabIndex = 0;
             this.label7.Text = "Role";
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.txbPhone);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(333, 488);
+            this.panel4.Location = new System.Drawing.Point(18, 454);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(805, 71);
+            this.panel4.Size = new System.Drawing.Size(564, 166);
             this.panel4.TabIndex = 47;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(56, 137);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(450, 1);
+            this.panel5.TabIndex = 14;
             // 
             // txbPhone
             // 
-            this.txbPhone.Location = new System.Drawing.Point(232, 17);
+            this.txbPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.txbPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbPhone.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbPhone.ForeColor = System.Drawing.Color.White;
+            this.txbPhone.Location = new System.Drawing.Point(54, 94);
             this.txbPhone.Name = "txbPhone";
             this.txbPhone.ReadOnly = true;
-            this.txbPhone.Size = new System.Drawing.Size(560, 39);
+            this.txbPhone.Size = new System.Drawing.Size(448, 37);
             this.txbPhone.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(42, 11);
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.label4.Location = new System.Drawing.Point(52, 33);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 45);
+            this.label4.Size = new System.Drawing.Size(107, 43);
             this.label4.TabIndex = 0;
             this.label4.Text = "Phone";
             // 
             // pnClass
             // 
+            this.pnClass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.pnClass.Controls.Add(this.panel8);
             this.pnClass.Controls.Add(this.txbClass);
             this.pnClass.Controls.Add(this.label3);
-            this.pnClass.Location = new System.Drawing.Point(333, 645);
+            this.pnClass.Location = new System.Drawing.Point(18, 798);
             this.pnClass.Name = "pnClass";
-            this.pnClass.Size = new System.Drawing.Size(805, 71);
+            this.pnClass.Size = new System.Drawing.Size(564, 166);
             this.pnClass.TabIndex = 46;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Location = new System.Drawing.Point(58, 137);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(450, 1);
+            this.panel8.TabIndex = 16;
             // 
             // txbClass
             // 
-            this.txbClass.Location = new System.Drawing.Point(232, 17);
+            this.txbClass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.txbClass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbClass.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbClass.ForeColor = System.Drawing.Color.White;
+            this.txbClass.Location = new System.Drawing.Point(54, 94);
             this.txbClass.Name = "txbClass";
             this.txbClass.ReadOnly = true;
-            this.txbClass.Size = new System.Drawing.Size(560, 39);
+            this.txbClass.Size = new System.Drawing.Size(450, 37);
             this.txbClass.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(42, 11);
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.label3.Location = new System.Drawing.Point(52, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 45);
+            this.label3.Size = new System.Drawing.Size(95, 43);
             this.label3.TabIndex = 0;
             this.label3.Text = "Class";
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.txbName);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(333, 411);
+            this.panel2.Location = new System.Drawing.Point(18, 282);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(805, 71);
+            this.panel2.Size = new System.Drawing.Size(564, 166);
             this.panel2.TabIndex = 45;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(57, 136);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(450, 1);
+            this.panel1.TabIndex = 13;
             // 
             // txbName
             // 
-            this.txbName.Location = new System.Drawing.Point(232, 17);
+            this.txbName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.txbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbName.ForeColor = System.Drawing.Color.White;
+            this.txbName.Location = new System.Drawing.Point(54, 93);
             this.txbName.Name = "txbName";
             this.txbName.ReadOnly = true;
-            this.txbName.Size = new System.Drawing.Size(560, 39);
+            this.txbName.Size = new System.Drawing.Size(456, 37);
             this.txbName.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(42, 11);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.label2.Location = new System.Drawing.Point(52, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 45);
+            this.label2.Size = new System.Drawing.Size(100, 43);
             this.label2.TabIndex = 0;
             this.label2.Text = "Name";
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel3.Controls.Add(this.pnUnderUserName);
             this.panel3.Controls.Add(this.txbID);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(333, 334);
+            this.panel3.Location = new System.Drawing.Point(18, 110);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(805, 71);
+            this.panel3.Size = new System.Drawing.Size(564, 166);
             this.panel3.TabIndex = 44;
+            // 
+            // pnUnderUserName
+            // 
+            this.pnUnderUserName.BackColor = System.Drawing.Color.White;
+            this.pnUnderUserName.Location = new System.Drawing.Point(54, 137);
+            this.pnUnderUserName.Name = "pnUnderUserName";
+            this.pnUnderUserName.Size = new System.Drawing.Size(450, 1);
+            this.pnUnderUserName.TabIndex = 12;
             // 
             // txbID
             // 
-            this.txbID.Location = new System.Drawing.Point(232, 17);
+            this.txbID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.txbID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbID.ForeColor = System.Drawing.Color.White;
+            this.txbID.Location = new System.Drawing.Point(52, 94);
             this.txbID.Name = "txbID";
             this.txbID.ReadOnly = true;
-            this.txbID.Size = new System.Drawing.Size(560, 39);
+            this.txbID.Size = new System.Drawing.Size(450, 37);
             this.txbID.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(42, 17);
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.label1.Location = new System.Drawing.Point(52, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 45);
+            this.label1.Size = new System.Drawing.Size(49, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
@@ -419,5 +499,10 @@
         private Button btnExit;
         private Button btnTask;
         private Panel pnCick;
+        private Panel pnUnderUserName;
+        private Panel panel1;
+        private Panel panel6;
+        private Panel panel5;
+        private Panel panel8;
     }
 }
