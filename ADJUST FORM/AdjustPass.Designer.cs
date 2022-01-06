@@ -48,10 +48,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -60,15 +64,15 @@
             this.panel6.Controls.Add(this.pnUnderUserName);
             this.panel6.Controls.Add(this.txbUserName);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(712, 120);
+            this.panel6.Location = new System.Drawing.Point(492, 114);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(542, 164);
+            this.panel6.Size = new System.Drawing.Size(954, 166);
             this.panel6.TabIndex = 1;
             // 
             // pnUnderUserName
             // 
             this.pnUnderUserName.BackColor = System.Drawing.Color.White;
-            this.pnUnderUserName.Location = new System.Drawing.Point(15, 122);
+            this.pnUnderUserName.Location = new System.Drawing.Point(237, 125);
             this.pnUnderUserName.Name = "pnUnderUserName";
             this.pnUnderUserName.Size = new System.Drawing.Size(495, 1);
             this.pnUnderUserName.TabIndex = 13;
@@ -79,7 +83,7 @@
             this.txbUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbUserName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbUserName.ForeColor = System.Drawing.Color.White;
-            this.txbUserName.Location = new System.Drawing.Point(15, 84);
+            this.txbUserName.Location = new System.Drawing.Point(237, 87);
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(495, 37);
             this.txbUserName.TabIndex = 1;
@@ -91,7 +95,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label5.Location = new System.Drawing.Point(15, 26);
+            this.label5.Location = new System.Drawing.Point(237, 29);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(172, 43);
             this.label5.TabIndex = 0;
@@ -103,15 +107,15 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.txbNewPass);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(712, 466);
+            this.panel1.Location = new System.Drawing.Point(492, 458);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(542, 164);
+            this.panel1.Size = new System.Drawing.Size(954, 166);
             this.panel1.TabIndex = 3;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(15, 122);
+            this.panel5.Location = new System.Drawing.Point(237, 122);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(495, 1);
             this.panel5.TabIndex = 14;
@@ -122,7 +126,7 @@
             this.txbNewPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbNewPass.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbNewPass.ForeColor = System.Drawing.Color.White;
-            this.txbNewPass.Location = new System.Drawing.Point(15, 84);
+            this.txbNewPass.Location = new System.Drawing.Point(237, 84);
             this.txbNewPass.Name = "txbNewPass";
             this.txbNewPass.Size = new System.Drawing.Size(495, 37);
             this.txbNewPass.TabIndex = 1;
@@ -135,7 +139,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label1.Location = new System.Drawing.Point(15, 26);
+            this.label1.Location = new System.Drawing.Point(237, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(221, 43);
             this.label1.TabIndex = 0;
@@ -163,15 +167,15 @@
             this.panel7.Controls.Add(this.panel4);
             this.panel7.Controls.Add(this.txbReEnterPass);
             this.panel7.Controls.Add(this.label6);
-            this.panel7.Location = new System.Drawing.Point(712, 639);
+            this.panel7.Location = new System.Drawing.Point(492, 630);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(542, 164);
+            this.panel7.Size = new System.Drawing.Size(954, 166);
             this.panel7.TabIndex = 4;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(15, 122);
+            this.panel4.Location = new System.Drawing.Point(237, 125);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(495, 1);
             this.panel4.TabIndex = 14;
@@ -182,7 +186,7 @@
             this.txbReEnterPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbReEnterPass.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbReEnterPass.ForeColor = System.Drawing.Color.White;
-            this.txbReEnterPass.Location = new System.Drawing.Point(15, 84);
+            this.txbReEnterPass.Location = new System.Drawing.Point(237, 87);
             this.txbReEnterPass.Name = "txbReEnterPass";
             this.txbReEnterPass.Size = new System.Drawing.Size(495, 37);
             this.txbReEnterPass.TabIndex = 1;
@@ -195,7 +199,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label6.Location = new System.Drawing.Point(15, 26);
+            this.label6.Location = new System.Drawing.Point(237, 29);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(350, 43);
             this.label6.TabIndex = 0;
@@ -207,15 +211,15 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.txbCurrentPass);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(712, 293);
+            this.panel2.Location = new System.Drawing.Point(492, 286);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(542, 164);
+            this.panel2.Size = new System.Drawing.Size(954, 166);
             this.panel2.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(15, 122);
+            this.panel3.Location = new System.Drawing.Point(237, 122);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(495, 1);
             this.panel3.TabIndex = 14;
@@ -226,7 +230,7 @@
             this.txbCurrentPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbCurrentPass.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbCurrentPass.ForeColor = System.Drawing.Color.White;
-            this.txbCurrentPass.Location = new System.Drawing.Point(15, 82);
+            this.txbCurrentPass.Location = new System.Drawing.Point(237, 82);
             this.txbCurrentPass.Name = "txbCurrentPass";
             this.txbCurrentPass.Size = new System.Drawing.Size(495, 37);
             this.txbCurrentPass.TabIndex = 1;
@@ -239,7 +243,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label2.Location = new System.Drawing.Point(15, 36);
+            this.label2.Location = new System.Drawing.Point(237, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(261, 43);
             this.label2.TabIndex = 0;
@@ -262,11 +266,34 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.panel8.Controls.Add(this.pictureBox1);
+            this.panel8.Controls.Add(this.label3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(497, 1029);
             this.panel8.TabIndex = 56;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(50, 186);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(396, 463);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.label3.Location = new System.Drawing.Point(24, 689);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(455, 76);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "WE DO - WE PLAY - WE SHINE\r\n              TOGETHER";
             // 
             // AdjustPass
             // 
@@ -293,6 +320,9 @@
             this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -318,5 +348,7 @@
         private Panel panel4;
         private Panel panel3;
         private Panel panel8;
+        private Label label3;
+        private PictureBox pictureBox1;
     }
 }

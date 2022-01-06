@@ -32,8 +32,10 @@
             this.tcClubInfo = new System.Windows.Forms.TabControl();
             this.tpActivity = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAdjust = new System.Windows.Forms.Button();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.dtgvActivity = new System.Windows.Forms.DataGridView();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.tpFinance = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -53,8 +55,6 @@
             this.Price = new System.Windows.Forms.ColumnHeader();
             this.Quantity = new System.Windows.Forms.ColumnHeader();
             this.TotalPrice = new System.Windows.Forms.ColumnHeader();
-            this.btnAdjust = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.tcClubInfo.SuspendLayout();
             this.tpActivity.SuspendLayout();
@@ -75,18 +75,20 @@
             this.tcClubInfo.Location = new System.Drawing.Point(22, 99);
             this.tcClubInfo.Name = "tcClubInfo";
             this.tcClubInfo.SelectedIndex = 0;
-            this.tcClubInfo.Size = new System.Drawing.Size(1421, 717);
+            this.tcClubInfo.Size = new System.Drawing.Size(1421, 931);
             this.tcClubInfo.TabIndex = 0;
             // 
             // tpActivity
             // 
             this.tpActivity.Controls.Add(this.pictureBox1);
+            this.tpActivity.Controls.Add(this.btnAdjust);
             this.tpActivity.Controls.Add(this.txbSearch);
             this.tpActivity.Controls.Add(this.dtgvActivity);
+            this.tpActivity.Controls.Add(this.btnAdd);
             this.tpActivity.Location = new System.Drawing.Point(8, 46);
             this.tpActivity.Name = "tpActivity";
             this.tpActivity.Padding = new System.Windows.Forms.Padding(3);
-            this.tpActivity.Size = new System.Drawing.Size(1405, 663);
+            this.tpActivity.Size = new System.Drawing.Size(1405, 877);
             this.tpActivity.TabIndex = 0;
             this.tpActivity.Text = "Activity";
             this.tpActivity.UseVisualStyleBackColor = true;
@@ -100,6 +102,22 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnAdjust
+            // 
+            this.btnAdjust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAdjust.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdjust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAdjust.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjust.Image")));
+            this.btnAdjust.Location = new System.Drawing.Point(777, 686);
+            this.btnAdjust.Name = "btnAdjust";
+            this.btnAdjust.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnAdjust.Size = new System.Drawing.Size(231, 191);
+            this.btnAdjust.TabIndex = 2;
+            this.btnAdjust.Text = "Adjust";
+            this.btnAdjust.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAdjust.UseVisualStyleBackColor = false;
+            this.btnAdjust.Click += new System.EventHandler(this.btnAdjust_Click);
             // 
             // txbSearch
             // 
@@ -124,13 +142,29 @@
             this.dtgvActivity.Size = new System.Drawing.Size(1396, 590);
             this.dtgvActivity.TabIndex = 1;
             // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAdd.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.Location = new System.Drawing.Point(413, 686);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnAdd.Size = new System.Drawing.Size(231, 191);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // tpFinance
             // 
             this.tpFinance.Controls.Add(this.panel1);
             this.tpFinance.Location = new System.Drawing.Point(8, 46);
             this.tpFinance.Name = "tpFinance";
             this.tpFinance.Padding = new System.Windows.Forms.Padding(3);
-            this.tpFinance.Size = new System.Drawing.Size(1405, 663);
+            this.tpFinance.Size = new System.Drawing.Size(1405, 877);
             this.tpFinance.TabIndex = 1;
             this.tpFinance.Text = "Finance";
             this.tpFinance.UseVisualStyleBackColor = true;
@@ -143,14 +177,14 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1402, 657);
+            this.panel1.Size = new System.Drawing.Size(1402, 872);
             this.panel1.TabIndex = 0;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.txbTotalPrice);
-            this.panel4.Location = new System.Drawing.Point(997, 589);
+            this.panel4.Location = new System.Drawing.Point(1000, 761);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(399, 65);
             this.panel4.TabIndex = 1;
@@ -224,6 +258,8 @@
             // 
             // nmCount
             // 
+            this.nmCount.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nmCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.nmCount.Location = new System.Drawing.Point(894, 30);
             this.nmCount.Minimum = new decimal(new int[] {
             100,
@@ -231,7 +267,7 @@
             0,
             -2147483648});
             this.nmCount.Name = "nmCount";
-            this.nmCount.Size = new System.Drawing.Size(80, 39);
+            this.nmCount.Size = new System.Drawing.Size(80, 41);
             this.nmCount.TabIndex = 3;
             // 
             // btnAddItem
@@ -261,7 +297,7 @@
             this.flpActivity.AutoScroll = true;
             this.flpActivity.Location = new System.Drawing.Point(6, 3);
             this.flpActivity.Name = "flpActivity";
-            this.flpActivity.Size = new System.Drawing.Size(382, 651);
+            this.flpActivity.Size = new System.Drawing.Size(382, 823);
             this.flpActivity.TabIndex = 3;
             // 
             // panel3
@@ -269,7 +305,7 @@
             this.panel3.Controls.Add(this.lsvDetailFinance);
             this.panel3.Location = new System.Drawing.Point(391, 102);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1008, 481);
+            this.panel3.Size = new System.Drawing.Size(1008, 653);
             this.panel3.TabIndex = 2;
             // 
             // lsvDetailFinance
@@ -282,7 +318,7 @@
             this.lsvDetailFinance.GridLines = true;
             this.lsvDetailFinance.Location = new System.Drawing.Point(0, 3);
             this.lsvDetailFinance.Name = "lsvDetailFinance";
-            this.lsvDetailFinance.Size = new System.Drawing.Size(1008, 475);
+            this.lsvDetailFinance.Size = new System.Drawing.Size(1008, 647);
             this.lsvDetailFinance.TabIndex = 0;
             this.lsvDetailFinance.UseCompatibleStateImageBehavior = false;
             this.lsvDetailFinance.View = System.Windows.Forms.View.Details;
@@ -310,38 +346,6 @@
             this.TotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TotalPrice.Width = 230;
             // 
-            // btnAdjust
-            // 
-            this.btnAdjust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnAdjust.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdjust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnAdjust.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjust.Image")));
-            this.btnAdjust.Location = new System.Drawing.Point(773, 837);
-            this.btnAdjust.Name = "btnAdjust";
-            this.btnAdjust.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnAdjust.Size = new System.Drawing.Size(231, 191);
-            this.btnAdjust.TabIndex = 2;
-            this.btnAdjust.Text = "Adjust";
-            this.btnAdjust.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAdjust.UseVisualStyleBackColor = false;
-            this.btnAdjust.Click += new System.EventHandler(this.btnAdjust_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnAdd.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.Location = new System.Drawing.Point(476, 837);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnAdd.Size = new System.Drawing.Size(231, 191);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // btnExit
             // 
             this.btnExit.FlatAppearance.BorderSize = 0;
@@ -362,9 +366,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1445, 1029);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnAdjust);
             this.Controls.Add(this.tcClubInfo);
-            this.Controls.Add(this.btnAdd);
             this.Name = "ClubInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Club Info";
