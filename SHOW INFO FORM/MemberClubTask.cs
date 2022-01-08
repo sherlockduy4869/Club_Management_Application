@@ -42,12 +42,12 @@ namespace Project_OOP_Final
         {
 
         }
-        private void btnSubmitTask_Click(object sender, EventArgs e)
+        private void btnSubmitTask_Click_1(object sender, EventArgs e)
         {
-            
             SubmitTask submitTask = new SubmitTask(_id);
             submitTask.Show();
         }
+
         private void btnHistoryTask_Click(object sender, EventArgs e)
         {
             MemberHistoryTask memberHistoryTask = new MemberHistoryTask(_id);
@@ -71,8 +71,9 @@ namespace Project_OOP_Final
                 }
             }
         }
+
         #endregion
 
-
+        
     }
 }

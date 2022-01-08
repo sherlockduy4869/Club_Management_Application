@@ -65,18 +65,19 @@
             // 
             // txbName
             // 
+            this.txbName.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbName.Location = new System.Drawing.Point(208, 24);
             this.txbName.Name = "txbName";
-            this.txbName.Size = new System.Drawing.Size(524, 39);
+            this.txbName.Size = new System.Drawing.Size(524, 38);
             this.txbName.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(15, 24);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(15, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 45);
+            this.label2.Size = new System.Drawing.Size(88, 37);
             this.label2.TabIndex = 0;
             this.label2.Text = "Name";
             // 
@@ -91,19 +92,20 @@
             // 
             // txbPhone
             // 
+            this.txbPhone.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbPhone.Location = new System.Drawing.Point(208, 24);
             this.txbPhone.Name = "txbPhone";
-            this.txbPhone.Size = new System.Drawing.Size(524, 39);
+            this.txbPhone.Size = new System.Drawing.Size(524, 38);
             this.txbPhone.TabIndex = 1;
             this.txbPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhone_KeyPress);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(15, 24);
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(15, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 45);
+            this.label3.Size = new System.Drawing.Size(95, 37);
             this.label3.TabIndex = 0;
             this.label3.Text = "Phone";
             // 
@@ -118,18 +120,19 @@
             // 
             // txbClass
             // 
+            this.txbClass.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbClass.Location = new System.Drawing.Point(208, 24);
             this.txbClass.Name = "txbClass";
-            this.txbClass.Size = new System.Drawing.Size(524, 39);
+            this.txbClass.Size = new System.Drawing.Size(524, 38);
             this.txbClass.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(15, 24);
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(15, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 45);
+            this.label4.Size = new System.Drawing.Size(83, 37);
             this.label4.TabIndex = 0;
             this.label4.Text = "Class";
             // 
@@ -144,6 +147,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnExit.Location = new System.Drawing.Point(204, 28);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(150, 46);
@@ -154,6 +158,7 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.Location = new System.Drawing.Point(18, 28);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(150, 46);
@@ -173,19 +178,20 @@
             // 
             // cbRole
             // 
+            this.cbRole.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbRole.FormattingEnabled = true;
             this.cbRole.Location = new System.Drawing.Point(208, 31);
             this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(524, 40);
+            this.cbRole.Size = new System.Drawing.Size(524, 39);
             this.cbRole.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(15, 24);
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(15, 34);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 45);
+            this.label5.Size = new System.Drawing.Size(72, 37);
             this.label5.TabIndex = 0;
             this.label5.Text = "Role";
             // 
@@ -200,19 +206,20 @@
             // 
             // cbTeam
             // 
+            this.cbTeam.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbTeam.FormattingEnabled = true;
             this.cbTeam.Location = new System.Drawing.Point(208, 29);
             this.cbTeam.Name = "cbTeam";
-            this.cbTeam.Size = new System.Drawing.Size(524, 40);
+            this.cbTeam.Size = new System.Drawing.Size(524, 39);
             this.cbTeam.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(15, 24);
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(15, 29);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 45);
+            this.label6.Size = new System.Drawing.Size(85, 37);
             this.label6.TabIndex = 0;
             this.label6.Text = "Team";
             // 

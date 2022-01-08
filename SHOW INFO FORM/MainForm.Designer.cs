@@ -38,9 +38,6 @@
             this.btnTask = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pnMain = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.lbRole = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -65,8 +62,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pnMenu.SuspendLayout();
             this.pnMain.SuspendLayout();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.pnClass.SuspendLayout();
@@ -78,7 +73,7 @@
             // 
             this.btnClubMemberInfo.FlatAppearance.BorderSize = 0;
             this.btnClubMemberInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClubMemberInfo.Font = new System.Drawing.Font("Century Gothic", 10.875F);
+            this.btnClubMemberInfo.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnClubMemberInfo.ForeColor = System.Drawing.Color.White;
             this.btnClubMemberInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnClubMemberInfo.Image")));
             this.btnClubMemberInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -94,7 +89,7 @@
             // 
             this.btnAdjustPassword.FlatAppearance.BorderSize = 0;
             this.btnAdjustPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdjustPassword.Font = new System.Drawing.Font("Century Gothic", 10.875F);
+            this.btnAdjustPassword.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAdjustPassword.ForeColor = System.Drawing.Color.White;
             this.btnAdjustPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjustPassword.Image")));
             this.btnAdjustPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -110,7 +105,7 @@
             // 
             this.btnClubActivityInfo.FlatAppearance.BorderSize = 0;
             this.btnClubActivityInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClubActivityInfo.Font = new System.Drawing.Font("Century Gothic", 10.875F);
+            this.btnClubActivityInfo.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnClubActivityInfo.ForeColor = System.Drawing.Color.White;
             this.btnClubActivityInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnClubActivityInfo.Image")));
             this.btnClubActivityInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -126,7 +121,7 @@
             // 
             this.btnAdjustPersonalInfo.FlatAppearance.BorderSize = 0;
             this.btnAdjustPersonalInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdjustPersonalInfo.Font = new System.Drawing.Font("Century Gothic", 10.875F);
+            this.btnAdjustPersonalInfo.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAdjustPersonalInfo.ForeColor = System.Drawing.Color.White;
             this.btnAdjustPersonalInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjustPersonalInfo.Image")));
             this.btnAdjustPersonalInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -168,7 +163,7 @@
             // 
             this.btnTask.FlatAppearance.BorderSize = 0;
             this.btnTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTask.Font = new System.Drawing.Font("Century Gothic", 10.875F);
+            this.btnTask.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTask.ForeColor = System.Drawing.Color.White;
             this.btnTask.Image = ((System.Drawing.Image)(resources.GetObject("btnTask.Image")));
             this.btnTask.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -184,7 +179,7 @@
             // 
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 10.875F);
+            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -199,7 +194,6 @@
             // pnMain
             // 
             this.pnMain.BackColor = System.Drawing.Color.White;
-            this.pnMain.Controls.Add(this.panel9);
             this.pnMain.Controls.Add(this.btnExit);
             this.pnMain.Controls.Add(this.lbRole);
             this.pnMain.Controls.Add(this.panel7);
@@ -213,42 +207,11 @@
             this.pnMain.Size = new System.Drawing.Size(1454, 1100);
             this.pnMain.TabIndex = 11;
             // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.panel9.Controls.Add(this.pictureBox1);
-            this.panel9.Controls.Add(this.label5);
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(502, 1100);
-            this.panel9.TabIndex = 52;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(50, 186);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(396, 463);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.label5.Location = new System.Drawing.Point(24, 689);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(455, 76);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "WE DO - WE PLAY - WE SHINE\r\n              TOGETHER";
-            // 
             // btnExit
             // 
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F);
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.Location = new System.Drawing.Point(1364, 0);
@@ -261,9 +224,9 @@
             // lbRole
             // 
             this.lbRole.AutoSize = true;
-            this.lbRole.Font = new System.Drawing.Font("Arial Narrow", 16.125F);
+            this.lbRole.Font = new System.Drawing.Font("Arial Narrow", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.lbRole.Location = new System.Drawing.Point(695, 36);
+            this.lbRole.Location = new System.Drawing.Point(434, 36);
             this.lbRole.Name = "lbRole";
             this.lbRole.Size = new System.Drawing.Size(204, 52);
             this.lbRole.TabIndex = 50;
@@ -275,7 +238,7 @@
             this.panel7.Controls.Add(this.panel6);
             this.panel7.Controls.Add(this.txbRole);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(500, 630);
+            this.panel7.Location = new System.Drawing.Point(239, 630);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(954, 166);
             this.panel7.TabIndex = 49;
@@ -292,7 +255,7 @@
             // 
             this.txbRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbRole.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbRole.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txbRole.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbRole.ForeColor = System.Drawing.Color.White;
             this.txbRole.Location = new System.Drawing.Point(247, 108);
             this.txbRole.Name = "txbRole";
@@ -303,7 +266,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 13.875F);
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.label7.Location = new System.Drawing.Point(245, 34);
             this.label7.Name = "label7";
@@ -317,7 +280,7 @@
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.txbPhone);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(500, 458);
+            this.panel4.Location = new System.Drawing.Point(239, 458);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(954, 166);
             this.panel4.TabIndex = 47;
@@ -334,7 +297,7 @@
             // 
             this.txbPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbPhone.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txbPhone.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbPhone.ForeColor = System.Drawing.Color.White;
             this.txbPhone.Location = new System.Drawing.Point(245, 102);
             this.txbPhone.Name = "txbPhone";
@@ -345,7 +308,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.875F);
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.label4.Location = new System.Drawing.Point(243, 41);
             this.label4.Name = "label4";
@@ -359,7 +322,7 @@
             this.pnClass.Controls.Add(this.panel8);
             this.pnClass.Controls.Add(this.txbClass);
             this.pnClass.Controls.Add(this.label3);
-            this.pnClass.Location = new System.Drawing.Point(500, 802);
+            this.pnClass.Location = new System.Drawing.Point(239, 802);
             this.pnClass.Name = "pnClass";
             this.pnClass.Size = new System.Drawing.Size(954, 166);
             this.pnClass.TabIndex = 46;
@@ -376,7 +339,7 @@
             // 
             this.txbClass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbClass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbClass.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txbClass.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbClass.ForeColor = System.Drawing.Color.White;
             this.txbClass.Location = new System.Drawing.Point(246, 102);
             this.txbClass.Name = "txbClass";
@@ -387,7 +350,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.875F);
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.label3.Location = new System.Drawing.Point(244, 32);
             this.label3.Name = "label3";
@@ -401,7 +364,7 @@
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.txbName);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(500, 286);
+            this.panel2.Location = new System.Drawing.Point(239, 286);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(954, 166);
             this.panel2.TabIndex = 45;
@@ -418,7 +381,7 @@
             // 
             this.txbName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbName.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txbName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbName.ForeColor = System.Drawing.Color.White;
             this.txbName.Location = new System.Drawing.Point(244, 103);
             this.txbName.Name = "txbName";
@@ -429,7 +392,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.875F);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.label2.Location = new System.Drawing.Point(242, 43);
             this.label2.Name = "label2";
@@ -443,7 +406,7 @@
             this.panel3.Controls.Add(this.pnUnderUserName);
             this.panel3.Controls.Add(this.txbID);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(500, 114);
+            this.panel3.Location = new System.Drawing.Point(239, 114);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(954, 166);
             this.panel3.TabIndex = 44;
@@ -460,7 +423,7 @@
             // 
             this.txbID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbID.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txbID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbID.ForeColor = System.Drawing.Color.White;
             this.txbID.Location = new System.Drawing.Point(245, 100);
             this.txbID.Name = "txbID";
@@ -471,7 +434,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.875F);
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.label1.Location = new System.Drawing.Point(245, 39);
             this.label1.Name = "label1";
@@ -486,7 +449,7 @@
             this.ClientSize = new System.Drawing.Size(1796, 1100);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.pnMenu);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(1650, 1100);
             this.Name = "MainForm";
@@ -496,9 +459,6 @@
             this.pnMenu.ResumeLayout(false);
             this.pnMain.ResumeLayout(false);
             this.pnMain.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -546,8 +506,5 @@
         private Panel panel6;
         private Panel panel5;
         private Panel panel8;
-        private Panel panel9;
-        private Label label5;
-        private PictureBox pictureBox1;
     }
 }

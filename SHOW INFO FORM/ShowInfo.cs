@@ -48,22 +48,6 @@ namespace Project_OOP_Final
         {
 
         }
-
-        #endregion
-
-        private void btnRemove_Click(object sender, EventArgs e)
-        {
-            Remove fRemove = new Remove();
-
-            fRemove.Show();
-        }
-
-        private void btnAddnew_Click_1(object sender, EventArgs e)
-        {
-            AddNewMember fAddNew = new AddNewMember();
-            fAddNew.Show();
-        }
-
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             if (lbRole.Text == "MEMBER INFORMATION")
@@ -76,13 +60,13 @@ namespace Project_OOP_Final
             }
             else if (lbRole.Text == "MENTOR INFORMATION")
             {
-                dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone, FROM Info_Mentor WHERE Name like '%" + txbSearch.Text + "%'");
+                dtgvShowMember.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id, Name, Class, Phone FROM Info_Mentor WHERE Name like '%" + txbSearch.Text + "%'");
             }
         }
-        private void btnMentor_Click(object sender, EventArgs e)
+        private void btnMember_Click(object sender, EventArgs e)
         {
-            loadInfoMentor();
-            lbRole.Text = "MENTOR INFORMATION";
+            loadInfoMember();
+            lbRole.Text = "MEMBER INFORMATION";
         }
 
         private void btnLeader_Click(object sender, EventArgs e)
@@ -91,12 +75,11 @@ namespace Project_OOP_Final
             lbRole.Text = "LEADER INFORMATION";
         }
 
-        private void btnMember_Click(object sender, EventArgs e)
+        private void btnMentor_Click(object sender, EventArgs e)
         {
-            loadInfoMember();
-            lbRole.Text = "MEMBER INFORMATION";
+            loadInfoMentor();
+            lbRole.Text = "MENTOR INFORMATION";
         }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -106,5 +89,22 @@ namespace Project_OOP_Final
         {
             txbSearch.Clear();
         }
+
+        private void btnAddnew_Click(object sender, EventArgs e)
+        {
+            AddNewMember fAddNew = new AddNewMember();
+            fAddNew.Show();
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            Remove fRemove = new Remove();
+
+            fRemove.Show();
+        }
+
+        #endregion
+
+        
     }
 }

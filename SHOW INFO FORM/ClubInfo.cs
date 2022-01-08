@@ -84,34 +84,20 @@ namespace Project_OOP_Final
         #endregion
 
         #region Event
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            AddNewActivity addNewActivity = new AddNewActivity();
-            this.Hide();
-            addNewActivity.ShowDialog();
-            
-        }
 
         private void ClubInfo_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void btnAdjust_Click(object sender, EventArgs e)
-        {
-            AdjustActivity adjustActivity = new AdjustActivity();
-            
-            adjustActivity.Show();
-        }
-        private void btnAddItem_Click(object sender, EventArgs e)
+        private void btnAddIteam_Click(object sender, EventArgs e)
         {
             try
             {
-            Activity activity = lsvDetailFinance.Tag as Activity;
-            string itemName = txbItemName.Text;
-            int price = Convert.ToInt32(txbPrice.Text);
-            int quantity = Convert.ToInt32(nmCount.Value);
-            
+                Activity activity = lsvDetailFinance.Tag as Activity;
+                string itemName = txbItemName.Text;
+                int price = Convert.ToInt32(txbPrice.Text);
+                int quantity = Convert.ToInt32(nmCount.Value);
+
                 FinanceDetailDAL.Instance.insertFinanceDetail(activity.Id, itemName, price, quantity);
                 showFinanceDetail(activity.Id);
             }
@@ -140,8 +126,22 @@ namespace Project_OOP_Final
         {
             Application.Exit();
         }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddNewActivity addNewActivity = new AddNewActivity();
+            this.Hide();
+            addNewActivity.ShowDialog();
+        }
+
+        private void btnAdjust_Click(object sender, EventArgs e)
+        {
+            AdjustActivity adjustActivity = new AdjustActivity();
+
+            adjustActivity.Show();
+        }
+
         #endregion
 
-
+        
     }
 }

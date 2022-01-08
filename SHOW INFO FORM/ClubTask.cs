@@ -33,26 +33,22 @@ namespace Project_OOP_Final
         {
 
         }
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnAddTask_Click(object sender, EventArgs e)
         {
             AddNewTask addTask = new AddNewTask();
-            
-            addTask.Show();
-            
-        }
 
-        private void btnRemove_Click(object sender, EventArgs e)
+            addTask.Show();
+        }
+        private void btnRemoveTask_Click(object sender, EventArgs e)
         {
             RemoveTask removeTask = new RemoveTask();
             removeTask.Show();
-            
         }
         private void btnRedo_Click(object sender, EventArgs e)
         {
             ReDoTask redotask = new ReDoTask();
             redotask.Show();
         }
-
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             dtgvClubTask.DataSource = DataProvider.Instance.ExecuteQuery("SELECT Id_Member, Name, Task_Id, Task_Name, Deadline, Status, Note, Priority FROM Info_Task WHERE Task_Name like '" + txbSearch.Text + "%'");
@@ -81,8 +77,11 @@ namespace Project_OOP_Final
         {
             Application.Exit();
         }
+
+
+
         #endregion
 
-
+        
     }
 }

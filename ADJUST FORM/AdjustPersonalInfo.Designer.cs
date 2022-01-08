@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdjustPersonalInfo));
-            this.btnAdjust = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.txbClass = new System.Windows.Forms.TextBox();
@@ -47,32 +46,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnUnderUserName = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btnAdjust = new Project_OOP_Final.Button_Designø.RJButton();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnAdjust
-            // 
-            this.btnAdjust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnAdjust.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdjust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnAdjust.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjust.Image")));
-            this.btnAdjust.Location = new System.Drawing.Point(866, 838);
-            this.btnAdjust.Name = "btnAdjust";
-            this.btnAdjust.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnAdjust.Size = new System.Drawing.Size(231, 191);
-            this.btnAdjust.TabIndex = 0;
-            this.btnAdjust.Text = "Adjust";
-            this.btnAdjust.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAdjust.UseVisualStyleBackColor = false;
-            this.btnAdjust.Click += new System.EventHandler(this.btnAdjust_Click);
             // 
             // panel4
             // 
@@ -80,7 +59,7 @@
             this.panel4.Controls.Add(this.panel7);
             this.panel4.Controls.Add(this.txbClass);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(492, 458);
+            this.panel4.Location = new System.Drawing.Point(249, 458);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(954, 166);
             this.panel4.TabIndex = 10;
@@ -103,7 +82,6 @@
             this.txbClass.Name = "txbClass";
             this.txbClass.Size = new System.Drawing.Size(500, 37);
             this.txbClass.TabIndex = 1;
-            this.txbClass.Text = "Enter new class";
             this.txbClass.Click += new System.EventHandler(this.txbClass_Click);
             // 
             // label4
@@ -123,7 +101,7 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.txbPhone);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(492, 630);
+            this.panel3.Location = new System.Drawing.Point(249, 630);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(954, 166);
             this.panel3.TabIndex = 9;
@@ -146,7 +124,6 @@
             this.txbPhone.Name = "txbPhone";
             this.txbPhone.Size = new System.Drawing.Size(500, 37);
             this.txbPhone.TabIndex = 1;
-            this.txbPhone.Text = "Enter new phone ";
             this.txbPhone.Click += new System.EventHandler(this.txbPhone_Click);
             this.txbPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhone_KeyPress);
             // 
@@ -167,7 +144,7 @@
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.txbName);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(492, 286);
+            this.panel2.Location = new System.Drawing.Point(249, 286);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(954, 166);
             this.panel2.TabIndex = 8;
@@ -190,7 +167,6 @@
             this.txbName.Name = "txbName";
             this.txbName.Size = new System.Drawing.Size(498, 37);
             this.txbName.TabIndex = 1;
-            this.txbName.Text = "Enter new name";
             this.txbName.Click += new System.EventHandler(this.txbName_Click);
             // 
             // label2
@@ -233,7 +209,7 @@
             this.panel1.Controls.Add(this.pnUnderUserName);
             this.panel1.Controls.Add(this.txbUserName);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(492, 114);
+            this.panel1.Location = new System.Drawing.Point(249, 114);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(954, 166);
             this.panel1.TabIndex = 12;
@@ -260,46 +236,36 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // panel8
+            // btnAdjust
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.panel8.Controls.Add(this.pictureBox1);
-            this.panel8.Controls.Add(this.label5);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(497, 1029);
-            this.panel8.TabIndex = 55;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(50, 186);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(396, 463);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.label5.Location = new System.Drawing.Point(24, 689);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(455, 76);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "WE DO - WE PLAY - WE SHINE\r\n              TOGETHER";
+            this.btnAdjust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAdjust.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAdjust.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAdjust.BorderRadius = 40;
+            this.btnAdjust.BorderSize = 0;
+            this.btnAdjust.FlatAppearance.BorderSize = 0;
+            this.btnAdjust.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdjust.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdjust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAdjust.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjust.Image")));
+            this.btnAdjust.Location = new System.Drawing.Point(616, 826);
+            this.btnAdjust.Name = "btnAdjust";
+            this.btnAdjust.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnAdjust.Size = new System.Drawing.Size(231, 191);
+            this.btnAdjust.TabIndex = 55;
+            this.btnAdjust.Text = "Adjust ";
+            this.btnAdjust.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAdjust.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAdjust.UseVisualStyleBackColor = false;
+            this.btnAdjust.Click += new System.EventHandler(this.btnAdjust_Click);
             // 
             // AdjustPersonalInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1445, 1029);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAdjust);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -316,15 +282,11 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Button btnAdjust;
         private Panel panel4;
         private TextBox txbClass;
         private Label label4;
@@ -342,8 +304,6 @@
         private Panel panel5;
         private Panel panel6;
         private Panel pnUnderUserName;
-        private Panel panel8;
-        private Label label5;
-        private PictureBox pictureBox1;
+        private Button_Designø.RJButton btnAdjust;
     }
 }

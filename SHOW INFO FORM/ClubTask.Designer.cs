@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClubTask));
             this.label1 = new System.Windows.Forms.Label();
             this.dtgvClubTask = new System.Windows.Forms.DataGridView();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnRemove = new System.Windows.Forms.Button();
-            this.btnRedo = new System.Windows.Forms.Button();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnAddTask = new Project_OOP_Final.Button_Designø.RJButton();
+            this.btnRemoveTask = new Project_OOP_Final.Button_Designø.RJButton();
+            this.btnRedo = new Project_OOP_Final.Button_Designø.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvClubTask)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,54 +66,6 @@
             this.dtgvClubTask.Size = new System.Drawing.Size(1421, 480);
             this.dtgvClubTask.TabIndex = 4;
             this.dtgvClubTask.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvClubTask_CellFormatting);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnAdd.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.Location = new System.Drawing.Point(335, 838);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnAdd.Size = new System.Drawing.Size(231, 191);
-            this.btnAdd.TabIndex = 8;
-            this.btnAdd.Text = "Add Task";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnRemove
-            // 
-            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnRemove.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.btnRemove.Image = ((System.Drawing.Image)(resources.GetObject("btnRemove.Image")));
-            this.btnRemove.Location = new System.Drawing.Point(614, 838);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnRemove.Size = new System.Drawing.Size(231, 191);
-            this.btnRemove.TabIndex = 9;
-            this.btnRemove.Text = "Remove Task";
-            this.btnRemove.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnRemove.UseVisualStyleBackColor = false;
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
-            // 
-            // btnRedo
-            // 
-            this.btnRedo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnRedo.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnRedo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnRedo.Image = ((System.Drawing.Image)(resources.GetObject("btnRedo.Image")));
-            this.btnRedo.Location = new System.Drawing.Point(892, 838);
-            this.btnRedo.Name = "btnRedo";
-            this.btnRedo.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnRedo.Size = new System.Drawing.Size(231, 191);
-            this.btnRedo.TabIndex = 10;
-            this.btnRedo.Text = "Re-Do";
-            this.btnRedo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnRedo.UseVisualStyleBackColor = false;
-            this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
             // 
             // txbSearch
             // 
@@ -151,17 +103,86 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnAddTask
+            // 
+            this.btnAddTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAddTask.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAddTask.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAddTask.BorderRadius = 40;
+            this.btnAddTask.BorderSize = 0;
+            this.btnAddTask.FlatAppearance.BorderSize = 0;
+            this.btnAddTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddTask.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddTask.ForeColor = System.Drawing.Color.White;
+            this.btnAddTask.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTask.Image")));
+            this.btnAddTask.Location = new System.Drawing.Point(277, 837);
+            this.btnAddTask.Name = "btnAddTask";
+            this.btnAddTask.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnAddTask.Size = new System.Drawing.Size(231, 191);
+            this.btnAddTask.TabIndex = 54;
+            this.btnAddTask.Text = "Add Task";
+            this.btnAddTask.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddTask.TextColor = System.Drawing.Color.White;
+            this.btnAddTask.UseVisualStyleBackColor = false;
+            this.btnAddTask.Click += new System.EventHandler(this.btnAddTask_Click);
+            // 
+            // btnRemoveTask
+            // 
+            this.btnRemoveTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnRemoveTask.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnRemoveTask.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRemoveTask.BorderRadius = 40;
+            this.btnRemoveTask.BorderSize = 0;
+            this.btnRemoveTask.FlatAppearance.BorderSize = 0;
+            this.btnRemoveTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveTask.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRemoveTask.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnRemoveTask.Image = ((System.Drawing.Image)(resources.GetObject("btnRemoveTask.Image")));
+            this.btnRemoveTask.Location = new System.Drawing.Point(577, 837);
+            this.btnRemoveTask.Name = "btnRemoveTask";
+            this.btnRemoveTask.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnRemoveTask.Size = new System.Drawing.Size(231, 191);
+            this.btnRemoveTask.TabIndex = 55;
+            this.btnRemoveTask.Text = "Remove Task";
+            this.btnRemoveTask.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRemoveTask.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnRemoveTask.UseVisualStyleBackColor = false;
+            this.btnRemoveTask.Click += new System.EventHandler(this.btnRemoveTask_Click);
+            // 
+            // btnRedo
+            // 
+            this.btnRedo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnRedo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnRedo.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRedo.BorderRadius = 40;
+            this.btnRedo.BorderSize = 0;
+            this.btnRedo.FlatAppearance.BorderSize = 0;
+            this.btnRedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRedo.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRedo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnRedo.Image = ((System.Drawing.Image)(resources.GetObject("btnRedo.Image")));
+            this.btnRedo.Location = new System.Drawing.Point(877, 837);
+            this.btnRedo.Name = "btnRedo";
+            this.btnRedo.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnRedo.Size = new System.Drawing.Size(231, 191);
+            this.btnRedo.TabIndex = 56;
+            this.btnRedo.Text = "Re-Do";
+            this.btnRedo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRedo.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnRedo.UseVisualStyleBackColor = false;
+            this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
+            // 
             // ClubTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1445, 1029);
+            this.Controls.Add(this.btnRedo);
+            this.Controls.Add(this.btnRemoveTask);
+            this.Controls.Add(this.btnAddTask);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnRedo);
             this.Controls.Add(this.txbSearch);
-            this.Controls.Add(this.btnRemove);
-            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgvClubTask);
             this.Name = "ClubTask";
@@ -178,12 +199,12 @@
         #endregion
         private Label label1;
         private DataGridView dtgvClubTask;
-        private Button btnAdd;
-        private Button btnRemove;
         private Button btnAdjust;
-        private Button btnRedo;
         private TextBox txbSearch;
         private PictureBox pictureBox1;
         private Button btnExit;
+        private Button_Designø.RJButton btnAddTask;
+        private Button_Designø.RJButton btnRemoveTask;
+        private Button_Designø.RJButton btnRedo;
     }
 }

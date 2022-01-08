@@ -33,38 +33,6 @@ namespace Project_OOP_Final
         }
         #endregion
         #region Event
-        private void btnAdjust_Click(object sender, EventArgs e)
-        {
-            string userName = txbUserName.Text;
-            string name = txbName.Text;
-            string clas = txbClass.Text;
-            string phone = txbPhone.Text;
-
-            try
-            {
-
-                    int i = AdjustDAL.Instance.adjustPersonalInfo(userName, name, clas, phone, rol);
-
-                    if (i != 0)
-                    {
-                        txbName.Text = string.Empty;
-                        txbPhone.Text = string.Empty;
-                        txbClass.Text = string.Empty;
-
-                        MessageBox.Show("Adjusted");
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("Failed");
-                    }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ERROR 404");
-            }
-        }
 
         private void txbPhone_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -90,6 +58,38 @@ namespace Project_OOP_Final
         private void txbPhone_Click(object sender, EventArgs e)
         {
             txbPhone.Clear();
+        }
+        private void btnAdjust_Click(object sender, EventArgs e)
+        {
+            string userName = txbUserName.Text;
+            string name = txbName.Text;
+            string clas = txbClass.Text;
+            string phone = txbPhone.Text;
+
+            try
+            {
+
+                int i = AdjustDAL.Instance.adjustPersonalInfo(userName, name, clas, phone, rol);
+
+                if (i != 0)
+                {
+                    txbName.Text = string.Empty;
+                    txbPhone.Text = string.Empty;
+                    txbClass.Text = string.Empty;
+
+                    MessageBox.Show("Adjusted");
+
+                }
+                else
+                {
+                    MessageBox.Show("Failed");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR 404");
+            }
         }
         #endregion
 

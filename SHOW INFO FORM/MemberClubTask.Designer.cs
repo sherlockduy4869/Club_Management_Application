@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberClubTask));
             this.dtgvMemberTask = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSubmitTask = new System.Windows.Forms.Button();
-            this.btnHistoryTask = new System.Windows.Forms.Button();
+            this.btnSubmitTask = new Project_OOP_Final.Button_Designø.RJButton();
+            this.btnHistoryTask = new Project_OOP_Final.Button_Designø.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMemberTask)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,32 +62,46 @@
             // btnSubmitTask
             // 
             this.btnSubmitTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnSubmitTask.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnSubmitTask.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSubmitTask.BorderRadius = 40;
+            this.btnSubmitTask.BorderSize = 0;
+            this.btnSubmitTask.FlatAppearance.BorderSize = 0;
+            this.btnSubmitTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmitTask.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSubmitTask.ForeColor = System.Drawing.Color.White;
             this.btnSubmitTask.Image = ((System.Drawing.Image)(resources.GetObject("btnSubmitTask.Image")));
-            this.btnSubmitTask.Location = new System.Drawing.Point(434, 840);
+            this.btnSubmitTask.Location = new System.Drawing.Point(410, 797);
             this.btnSubmitTask.Name = "btnSubmitTask";
             this.btnSubmitTask.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnSubmitTask.Size = new System.Drawing.Size(231, 191);
-            this.btnSubmitTask.TabIndex = 2;
+            this.btnSubmitTask.TabIndex = 5;
             this.btnSubmitTask.Text = "Submit Task";
             this.btnSubmitTask.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSubmitTask.TextColor = System.Drawing.Color.White;
             this.btnSubmitTask.UseVisualStyleBackColor = false;
-            this.btnSubmitTask.Click += new System.EventHandler(this.btnSubmitTask_Click);
+            this.btnSubmitTask.Click += new System.EventHandler(this.btnSubmitTask_Click_1);
             // 
             // btnHistoryTask
             // 
             this.btnHistoryTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnHistoryTask.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnHistoryTask.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnHistoryTask.BorderRadius = 40;
+            this.btnHistoryTask.BorderSize = 0;
+            this.btnHistoryTask.FlatAppearance.BorderSize = 0;
+            this.btnHistoryTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHistoryTask.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnHistoryTask.ForeColor = System.Drawing.Color.White;
+            this.btnHistoryTask.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnHistoryTask.Image = ((System.Drawing.Image)(resources.GetObject("btnHistoryTask.Image")));
-            this.btnHistoryTask.Location = new System.Drawing.Point(764, 840);
+            this.btnHistoryTask.Location = new System.Drawing.Point(770, 797);
             this.btnHistoryTask.Name = "btnHistoryTask";
             this.btnHistoryTask.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnHistoryTask.Size = new System.Drawing.Size(231, 191);
-            this.btnHistoryTask.TabIndex = 4;
+            this.btnHistoryTask.TabIndex = 6;
             this.btnHistoryTask.Text = "History Task";
             this.btnHistoryTask.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnHistoryTask.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnHistoryTask.UseVisualStyleBackColor = false;
             this.btnHistoryTask.Click += new System.EventHandler(this.btnHistoryTask_Click);
             // 
@@ -114,7 +128,7 @@
 
         private DataGridView dtgvMemberTask;
         private Label label1;
-        private Button btnSubmitTask;
-        private Button btnHistoryTask;
+        private Button_Designø.RJButton btnSubmitTask;
+        private Button_Designø.RJButton btnHistoryTask;
     }
 }

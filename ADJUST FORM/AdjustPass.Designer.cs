@@ -37,7 +37,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.txbNewPass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAdjust = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txbReEnterPass = new System.Windows.Forms.TextBox();
@@ -47,15 +46,11 @@
             this.txbCurrentPass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnAdjust = new Project_OOP_Final.Button_Designø.RJButton();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -64,7 +59,7 @@
             this.panel6.Controls.Add(this.pnUnderUserName);
             this.panel6.Controls.Add(this.txbUserName);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(492, 114);
+            this.panel6.Location = new System.Drawing.Point(252, 114);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(954, 166);
             this.panel6.TabIndex = 1;
@@ -87,7 +82,6 @@
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(495, 37);
             this.txbUserName.TabIndex = 1;
-            this.txbUserName.Text = "Enter user name";
             this.txbUserName.Click += new System.EventHandler(this.txbUserName_Click);
             // 
             // label5
@@ -107,7 +101,7 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.txbNewPass);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(492, 458);
+            this.panel1.Location = new System.Drawing.Point(252, 458);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(954, 166);
             this.panel1.TabIndex = 3;
@@ -124,13 +118,12 @@
             // 
             this.txbNewPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbNewPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbNewPass.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbNewPass.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbNewPass.ForeColor = System.Drawing.Color.White;
             this.txbNewPass.Location = new System.Drawing.Point(237, 84);
             this.txbNewPass.Name = "txbNewPass";
-            this.txbNewPass.Size = new System.Drawing.Size(495, 37);
+            this.txbNewPass.Size = new System.Drawing.Size(495, 31);
             this.txbNewPass.TabIndex = 1;
-            this.txbNewPass.Text = "Enter current ";
             this.txbNewPass.UseSystemPasswordChar = true;
             this.txbNewPass.Click += new System.EventHandler(this.txbNewPass_Click);
             // 
@@ -145,29 +138,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "New Password";
             // 
-            // btnAdjust
-            // 
-            this.btnAdjust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnAdjust.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdjust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnAdjust.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjust.Image")));
-            this.btnAdjust.Location = new System.Drawing.Point(866, 838);
-            this.btnAdjust.Name = "btnAdjust";
-            this.btnAdjust.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnAdjust.Size = new System.Drawing.Size(231, 191);
-            this.btnAdjust.TabIndex = 0;
-            this.btnAdjust.Text = "Adjust";
-            this.btnAdjust.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAdjust.UseVisualStyleBackColor = false;
-            this.btnAdjust.Click += new System.EventHandler(this.btnAdjust_Click);
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.panel7.Controls.Add(this.panel4);
             this.panel7.Controls.Add(this.txbReEnterPass);
             this.panel7.Controls.Add(this.label6);
-            this.panel7.Location = new System.Drawing.Point(492, 630);
+            this.panel7.Location = new System.Drawing.Point(252, 630);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(954, 166);
             this.panel7.TabIndex = 4;
@@ -184,13 +161,12 @@
             // 
             this.txbReEnterPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbReEnterPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbReEnterPass.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbReEnterPass.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbReEnterPass.ForeColor = System.Drawing.Color.White;
             this.txbReEnterPass.Location = new System.Drawing.Point(237, 87);
             this.txbReEnterPass.Name = "txbReEnterPass";
-            this.txbReEnterPass.Size = new System.Drawing.Size(495, 37);
+            this.txbReEnterPass.Size = new System.Drawing.Size(495, 31);
             this.txbReEnterPass.TabIndex = 1;
-            this.txbReEnterPass.Text = "Enter current ";
             this.txbReEnterPass.UseSystemPasswordChar = true;
             this.txbReEnterPass.Click += new System.EventHandler(this.txbReEnterPass_Click);
             // 
@@ -211,7 +187,7 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.txbCurrentPass);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(492, 286);
+            this.panel2.Location = new System.Drawing.Point(252, 286);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(954, 166);
             this.panel2.TabIndex = 2;
@@ -228,13 +204,12 @@
             // 
             this.txbCurrentPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbCurrentPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbCurrentPass.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbCurrentPass.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbCurrentPass.ForeColor = System.Drawing.Color.White;
             this.txbCurrentPass.Location = new System.Drawing.Point(237, 82);
             this.txbCurrentPass.Name = "txbCurrentPass";
-            this.txbCurrentPass.Size = new System.Drawing.Size(495, 37);
+            this.txbCurrentPass.Size = new System.Drawing.Size(495, 31);
             this.txbCurrentPass.TabIndex = 1;
-            this.txbCurrentPass.Text = "Enter current ";
             this.txbCurrentPass.UseSystemPasswordChar = true;
             this.txbCurrentPass.Click += new System.EventHandler(this.txbCurrentPass_Click);
             // 
@@ -263,47 +238,36 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // panel8
+            // btnAdjust
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.panel8.Controls.Add(this.pictureBox1);
-            this.panel8.Controls.Add(this.label3);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(497, 1029);
-            this.panel8.TabIndex = 56;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(50, 186);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(396, 463);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.label3.Location = new System.Drawing.Point(24, 689);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(455, 76);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "WE DO - WE PLAY - WE SHINE\r\n              TOGETHER";
+            this.btnAdjust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAdjust.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAdjust.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAdjust.BorderRadius = 40;
+            this.btnAdjust.BorderSize = 0;
+            this.btnAdjust.FlatAppearance.BorderSize = 0;
+            this.btnAdjust.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdjust.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdjust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAdjust.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjust.Image")));
+            this.btnAdjust.Location = new System.Drawing.Point(628, 814);
+            this.btnAdjust.Name = "btnAdjust";
+            this.btnAdjust.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnAdjust.Size = new System.Drawing.Size(231, 203);
+            this.btnAdjust.TabIndex = 53;
+            this.btnAdjust.Text = "Adjust ";
+            this.btnAdjust.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAdjust.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAdjust.UseVisualStyleBackColor = false;
+            this.btnAdjust.Click += new System.EventHandler(this.btnAdjust_Click);
             // 
             // AdjustPass
             // 
-            this.AcceptButton = this.btnAdjust;
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1445, 1029);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAdjust);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
@@ -320,9 +284,6 @@
             this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -335,7 +296,6 @@
         private Panel panel1;
         private TextBox txbNewPass;
         private Label label1;
-        private Button btnAdjust;
         private Panel panel7;
         private TextBox txbReEnterPass;
         private Label label6;
@@ -347,8 +307,6 @@
         private Panel panel5;
         private Panel panel4;
         private Panel panel3;
-        private Panel panel8;
-        private Label label3;
-        private PictureBox pictureBox1;
+        private Button_Designø.RJButton btnAdjust;
     }
 }

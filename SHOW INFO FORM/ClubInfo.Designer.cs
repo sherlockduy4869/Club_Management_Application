@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClubInfo));
             this.tcClubInfo = new System.Windows.Forms.TabControl();
             this.tpActivity = new System.Windows.Forms.TabPage();
+            this.btnAdjust = new Project_OOP_Final.Button_Designø.RJButton();
+            this.btnAdd = new Project_OOP_Final.Button_Designø.RJButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAdjust = new System.Windows.Forms.Button();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.dtgvActivity = new System.Windows.Forms.DataGridView();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.tpFinance = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -46,7 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.nmCount = new System.Windows.Forms.NumericUpDown();
-            this.btnAddItem = new System.Windows.Forms.Button();
             this.txbItemName = new System.Windows.Forms.TextBox();
             this.flpActivity = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -56,6 +55,7 @@
             this.Quantity = new System.Windows.Forms.ColumnHeader();
             this.TotalPrice = new System.Windows.Forms.ColumnHeader();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnAddIteam = new Project_OOP_Final.Button_Designø.RJButton();
             this.tcClubInfo.SuspendLayout();
             this.tpActivity.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,11 +80,11 @@
             // 
             // tpActivity
             // 
-            this.tpActivity.Controls.Add(this.pictureBox1);
             this.tpActivity.Controls.Add(this.btnAdjust);
+            this.tpActivity.Controls.Add(this.btnAdd);
+            this.tpActivity.Controls.Add(this.pictureBox1);
             this.tpActivity.Controls.Add(this.txbSearch);
             this.tpActivity.Controls.Add(this.dtgvActivity);
-            this.tpActivity.Controls.Add(this.btnAdd);
             this.tpActivity.Location = new System.Drawing.Point(8, 46);
             this.tpActivity.Name = "tpActivity";
             this.tpActivity.Padding = new System.Windows.Forms.Padding(3);
@@ -92,6 +92,52 @@
             this.tpActivity.TabIndex = 0;
             this.tpActivity.Text = "Activity";
             this.tpActivity.UseVisualStyleBackColor = true;
+            // 
+            // btnAdjust
+            // 
+            this.btnAdjust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAdjust.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAdjust.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAdjust.BorderRadius = 40;
+            this.btnAdjust.BorderSize = 0;
+            this.btnAdjust.FlatAppearance.BorderSize = 0;
+            this.btnAdjust.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdjust.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdjust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAdjust.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjust.Image")));
+            this.btnAdjust.Location = new System.Drawing.Point(767, 680);
+            this.btnAdjust.Name = "btnAdjust";
+            this.btnAdjust.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnAdjust.Size = new System.Drawing.Size(231, 191);
+            this.btnAdjust.TabIndex = 53;
+            this.btnAdjust.Text = "Adjust";
+            this.btnAdjust.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAdjust.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAdjust.UseVisualStyleBackColor = false;
+            this.btnAdjust.Click += new System.EventHandler(this.btnAdjust_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAdd.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAdd.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAdd.BorderRadius = 40;
+            this.btnAdd.BorderSize = 0;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.Location = new System.Drawing.Point(432, 680);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnAdd.Size = new System.Drawing.Size(231, 191);
+            this.btnAdd.TabIndex = 27;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAdd.TextColor = System.Drawing.Color.White;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // pictureBox1
             // 
@@ -102,22 +148,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnAdjust
-            // 
-            this.btnAdjust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnAdjust.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdjust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnAdjust.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjust.Image")));
-            this.btnAdjust.Location = new System.Drawing.Point(777, 686);
-            this.btnAdjust.Name = "btnAdjust";
-            this.btnAdjust.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnAdjust.Size = new System.Drawing.Size(231, 191);
-            this.btnAdjust.TabIndex = 2;
-            this.btnAdjust.Text = "Adjust";
-            this.btnAdjust.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAdjust.UseVisualStyleBackColor = false;
-            this.btnAdjust.Click += new System.EventHandler(this.btnAdjust_Click);
             // 
             // txbSearch
             // 
@@ -141,22 +171,6 @@
             this.dtgvActivity.RowTemplate.Height = 41;
             this.dtgvActivity.Size = new System.Drawing.Size(1396, 590);
             this.dtgvActivity.TabIndex = 1;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnAdd.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.Location = new System.Drawing.Point(413, 686);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnAdd.Size = new System.Drawing.Size(231, 191);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tpFinance
             // 
@@ -214,11 +228,11 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnAddIteam);
             this.panel2.Controls.Add(this.txbPrice);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.nmCount);
-            this.panel2.Controls.Add(this.btnAddItem);
             this.panel2.Controls.Add(this.txbItemName);
             this.panel2.Location = new System.Drawing.Point(391, 3);
             this.panel2.Name = "panel2";
@@ -269,20 +283,6 @@
             this.nmCount.Name = "nmCount";
             this.nmCount.Size = new System.Drawing.Size(80, 41);
             this.nmCount.TabIndex = 3;
-            // 
-            // btnAddItem
-            // 
-            this.btnAddItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnAddItem.FlatAppearance.BorderSize = 0;
-            this.btnAddItem.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnAddItem.Location = new System.Drawing.Point(699, 6);
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(177, 84);
-            this.btnAddItem.TabIndex = 4;
-            this.btnAddItem.Text = "ADD";
-            this.btnAddItem.UseVisualStyleBackColor = false;
-            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // txbItemName
             // 
@@ -360,10 +360,30 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnAddIteam
+            // 
+            this.btnAddIteam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAddIteam.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAddIteam.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAddIteam.BorderRadius = 40;
+            this.btnAddIteam.BorderSize = 0;
+            this.btnAddIteam.FlatAppearance.BorderSize = 0;
+            this.btnAddIteam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddIteam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAddIteam.Location = new System.Drawing.Point(703, 5);
+            this.btnAddIteam.Name = "btnAddIteam";
+            this.btnAddIteam.Size = new System.Drawing.Size(177, 84);
+            this.btnAddIteam.TabIndex = 53;
+            this.btnAddIteam.Text = "ADD";
+            this.btnAddIteam.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAddIteam.UseVisualStyleBackColor = false;
+            this.btnAddIteam.Click += new System.EventHandler(this.btnAddIteam_Click);
+            // 
             // ClubInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1445, 1029);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tcClubInfo);
@@ -392,8 +412,6 @@
 
         private TabControl tcClubInfo;
         private TabPage tpActivity;
-        private Button btnAdjust;
-        private Button btnAdd;
         private DataGridView dtgvActivity;
         private TabPage tpFinance;
         private Panel panel1;
@@ -405,7 +423,6 @@
         private ColumnHeader TotalPrice;
         private Panel panel2;
         private NumericUpDown nmCount;
-        private Button btnAddItem;
         private TextBox txbItemName;
         private Panel panel4;
         private Label label1;
@@ -417,5 +434,8 @@
         private TextBox txbSearch;
         private PictureBox pictureBox1;
         private Button btnExit;
+        private Button_Designø.RJButton btnAdjust;
+        private Button_Designø.RJButton btnAdd;
+        private Button_Designø.RJButton btnAddIteam;
     }
 }
