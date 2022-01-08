@@ -78,7 +78,7 @@
             // 
             this.btnClubMemberInfo.FlatAppearance.BorderSize = 0;
             this.btnClubMemberInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClubMemberInfo.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClubMemberInfo.Font = new System.Drawing.Font("Century Gothic", 10.875F);
             this.btnClubMemberInfo.ForeColor = System.Drawing.Color.White;
             this.btnClubMemberInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnClubMemberInfo.Image")));
             this.btnClubMemberInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -94,7 +94,7 @@
             // 
             this.btnAdjustPassword.FlatAppearance.BorderSize = 0;
             this.btnAdjustPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdjustPassword.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdjustPassword.Font = new System.Drawing.Font("Century Gothic", 10.875F);
             this.btnAdjustPassword.ForeColor = System.Drawing.Color.White;
             this.btnAdjustPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjustPassword.Image")));
             this.btnAdjustPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -110,7 +110,7 @@
             // 
             this.btnClubActivityInfo.FlatAppearance.BorderSize = 0;
             this.btnClubActivityInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClubActivityInfo.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClubActivityInfo.Font = new System.Drawing.Font("Century Gothic", 10.875F);
             this.btnClubActivityInfo.ForeColor = System.Drawing.Color.White;
             this.btnClubActivityInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnClubActivityInfo.Image")));
             this.btnClubActivityInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -126,7 +126,7 @@
             // 
             this.btnAdjustPersonalInfo.FlatAppearance.BorderSize = 0;
             this.btnAdjustPersonalInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdjustPersonalInfo.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdjustPersonalInfo.Font = new System.Drawing.Font("Century Gothic", 10.875F);
             this.btnAdjustPersonalInfo.ForeColor = System.Drawing.Color.White;
             this.btnAdjustPersonalInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjustPersonalInfo.Image")));
             this.btnAdjustPersonalInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -168,7 +168,7 @@
             // 
             this.btnTask.FlatAppearance.BorderSize = 0;
             this.btnTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTask.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTask.Font = new System.Drawing.Font("Century Gothic", 10.875F);
             this.btnTask.ForeColor = System.Drawing.Color.White;
             this.btnTask.Image = ((System.Drawing.Image)(resources.GetObject("btnTask.Image")));
             this.btnTask.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -184,7 +184,7 @@
             // 
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 10.875F);
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -236,7 +236,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.label5.Location = new System.Drawing.Point(24, 689);
             this.label5.Name = "label5";
@@ -248,7 +248,7 @@
             // 
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F);
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.Location = new System.Drawing.Point(1364, 0);
@@ -261,7 +261,7 @@
             // lbRole
             // 
             this.lbRole.AutoSize = true;
-            this.lbRole.Font = new System.Drawing.Font("Arial Narrow", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbRole.Font = new System.Drawing.Font("Arial Narrow", 16.125F);
             this.lbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.lbRole.Location = new System.Drawing.Point(695, 36);
             this.lbRole.Name = "lbRole";
@@ -292,7 +292,7 @@
             // 
             this.txbRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbRole.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbRole.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbRole.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txbRole.ForeColor = System.Drawing.Color.White;
             this.txbRole.Location = new System.Drawing.Point(247, 108);
             this.txbRole.Name = "txbRole";
@@ -303,7 +303,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 13.875F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.label7.Location = new System.Drawing.Point(245, 34);
             this.label7.Name = "label7";
@@ -334,7 +334,7 @@
             // 
             this.txbPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbPhone.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbPhone.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txbPhone.ForeColor = System.Drawing.Color.White;
             this.txbPhone.Location = new System.Drawing.Point(245, 102);
             this.txbPhone.Name = "txbPhone";
@@ -345,7 +345,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.875F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.label4.Location = new System.Drawing.Point(243, 41);
             this.label4.Name = "label4";
@@ -376,7 +376,7 @@
             // 
             this.txbClass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbClass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbClass.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbClass.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txbClass.ForeColor = System.Drawing.Color.White;
             this.txbClass.Location = new System.Drawing.Point(246, 102);
             this.txbClass.Name = "txbClass";
@@ -387,7 +387,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.875F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.label3.Location = new System.Drawing.Point(244, 32);
             this.label3.Name = "label3";
@@ -418,7 +418,7 @@
             // 
             this.txbName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbName.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txbName.ForeColor = System.Drawing.Color.White;
             this.txbName.Location = new System.Drawing.Point(244, 103);
             this.txbName.Name = "txbName";
@@ -429,7 +429,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.875F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.label2.Location = new System.Drawing.Point(242, 43);
             this.label2.Name = "label2";
@@ -460,7 +460,7 @@
             // 
             this.txbID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbID.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.txbID.ForeColor = System.Drawing.Color.White;
             this.txbID.Location = new System.Drawing.Point(245, 100);
             this.txbID.Name = "txbID";
@@ -471,7 +471,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.875F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.label1.Location = new System.Drawing.Point(245, 39);
             this.label1.Name = "label1";
@@ -486,7 +486,7 @@
             this.ClientSize = new System.Drawing.Size(1796, 1100);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.pnMenu);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(1650, 1100);
             this.Name = "MainForm";
