@@ -68,28 +68,41 @@ namespace Project_OOP_Final
 
             try
             {
-
-                int i = AdjustDAL.Instance.adjustPersonalInfo(userName, name, clas, phone, rol);
-
-                if (i != 0)
+                if(txbName.Text == String.Empty || txbClass.Text == String.Empty || txbPhone.Text == String.Empty)
                 {
-                    txbName.Text = string.Empty;
-                    txbPhone.Text = string.Empty;
-                    txbClass.Text = string.Empty;
-
-                    MessageBox.Show("Adjusted");
-
+                    MessageBox.Show("Please enter full your information");
                 }
                 else
                 {
-                    MessageBox.Show("Failed");
+                    int i = AdjustDAL.Instance.adjustPersonalInfo(userName, name, clas, phone, rol);
+
+                    if (i != 0)
+                    {
+                        txbName.Text = string.Empty;
+                        txbPhone.Text = string.Empty;
+                        txbClass.Text = string.Empty;
+
+                        MessageBox.Show("Adjusted");
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed");
+                    }
                 }
+                
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("ERROR 404");
             }
+        }
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txbName.Clear();
+            txbClass.Clear();
+            txbPhone.Clear();
         }
         #endregion
 

@@ -238,9 +238,9 @@
             this.panel7.Controls.Add(this.panel6);
             this.panel7.Controls.Add(this.txbRole);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(329, 630);
+            this.panel7.Location = new System.Drawing.Point(239, 630);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(864, 166);
+            this.panel7.Size = new System.Drawing.Size(954, 166);
             this.panel7.TabIndex = 49;
             // 
             // panel6

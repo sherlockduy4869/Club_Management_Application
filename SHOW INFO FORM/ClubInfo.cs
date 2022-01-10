@@ -33,7 +33,7 @@ namespace Project_OOP_Final
         {
             btnAdd.Visible = role == "Leader";
             btnAdjust.Visible = role == "Leader";
-            btnAddItem.Enabled = role == "Leader";
+            btnAdd.Enabled = role == "Leader";
             txbItemName.Enabled = role == "Leader";
             txbPrice.Enabled = role == "Leader";
             nmCount.Enabled = role == "Leader";

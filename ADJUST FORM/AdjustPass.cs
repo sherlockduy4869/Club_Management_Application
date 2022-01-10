@@ -76,40 +76,62 @@ namespace Project_OOP_Final
             string pass = passNow;
             try
             {
-                if (currentPass == pass)
+                if(userName != String.Empty)
                 {
-                    if (newPass == reNewPass)
+                    if (currentPass == pass)
                     {
-                        int i = AdjustDAL.Instance.adjustPass(userName, newPass);
-
-                        if (i != 0)
+                        if (txbNewPass.Text != String.Empty)
                         {
-                            txbCurrentPass.Text = string.Empty;
-                            txbNewPass.Text = string.Empty;
-                            txbReEnterPass.Text = string.Empty;
+                            if (newPass == reNewPass)
+                            {
+                                int i = AdjustDAL.Instance.adjustPass(userName, newPass);
 
-                            MessageBox.Show("Adjusted Pass");
+                                if (i != 0)
+                                {
+                                    txbCurrentPass.Text = string.Empty;
+                                    txbNewPass.Text = string.Empty;
+                                    txbReEnterPass.Text = string.Empty;
 
+                                    MessageBox.Show("Adjusted Pass");
+
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Failed");
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Please re enter new password");
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("Failed");
+                            MessageBox.Show("Please enter new password");
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Please re enter new password");
+                        MessageBox.Show("Please re enter current password");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Please re enter current password");
+                    MessageBox.Show("Please enter your UserName");
                 }
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show("ERROR 404");
             }
+        }
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txbUserName.Clear();
+            txbCurrentPass.Clear();
+            txbNewPass.Clear();
+            txbReEnterPass.Clear();
         }
         #endregion
 
