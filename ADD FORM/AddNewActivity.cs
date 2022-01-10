@@ -31,8 +31,7 @@ namespace Project_OOP_Final
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-            ClubInfo clubInfo = new ClubInfo();
-            clubInfo.ShowDialog();
+
         }
     
         private void btnAdd_Click(object sender, EventArgs e)

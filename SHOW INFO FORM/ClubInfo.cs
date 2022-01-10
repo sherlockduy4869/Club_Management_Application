@@ -129,8 +129,7 @@ namespace Project_OOP_Final
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddNewActivity addNewActivity = new AddNewActivity();
-            this.Hide();
-            addNewActivity.ShowDialog();
+            addNewActivity.Show();
         }
 
         private void btnAdjust_Click(object sender, EventArgs e)

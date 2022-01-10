@@ -251,7 +251,7 @@
             this.btnAdjust.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAdjust.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnAdjust.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjust.Image")));
-            this.btnAdjust.Location = new System.Drawing.Point(446, 814);
+            this.btnAdjust.Location = new System.Drawing.Point(781, 823);
             this.btnAdjust.Name = "btnAdjust";
             this.btnAdjust.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnAdjust.Size = new System.Drawing.Size(231, 203);
@@ -274,7 +274,7 @@
             this.btnClear.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
-            this.btnClear.Location = new System.Drawing.Point(731, 814);
+            this.btnClear.Location = new System.Drawing.Point(479, 823);
             this.btnClear.Name = "btnClear";
             this.btnClear.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnClear.Size = new System.Drawing.Size(231, 203);
