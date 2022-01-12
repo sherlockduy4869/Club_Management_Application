@@ -77,9 +77,6 @@ namespace Project_OOP_Final
         {
             Application.Exit();
         }
-
-
-
         #endregion
 
         

@@ -76,38 +76,35 @@ namespace Project_OOP_Final
             string pass = passNow;
             try
             {
-                if(userName != String.Empty)
+                if(userName == String.Empty || txbNewPass.Text == String.Empty)
+                {
+                    MessageBox.Show("Please fully enter your information");
+                }
+                else
                 {
                     if (currentPass == pass)
                     {
-                        if (txbNewPass.Text != String.Empty)
+                        if (newPass == reNewPass)
                         {
-                            if (newPass == reNewPass)
+                            int i = AdjustDAL.Instance.adjustPass(userName, newPass);
+
+                            if (i != 0)
                             {
-                                int i = AdjustDAL.Instance.adjustPass(userName, newPass);
+                                txbCurrentPass.Text = string.Empty;
+                                txbNewPass.Text = string.Empty;
+                                txbReEnterPass.Text = string.Empty;
 
-                                if (i != 0)
-                                {
-                                    txbCurrentPass.Text = string.Empty;
-                                    txbNewPass.Text = string.Empty;
-                                    txbReEnterPass.Text = string.Empty;
+                                MessageBox.Show("Adjusted Pass");
 
-                                    MessageBox.Show("Adjusted Pass");
-
-                                }
-                                else
-                                {
-                                    MessageBox.Show("Failed");
-                                }
                             }
                             else
                             {
-                                MessageBox.Show("Please re enter new password");
+                                MessageBox.Show("Failed");
                             }
                         }
                         else
                         {
-                            MessageBox.Show("Please enter new password");
+                            MessageBox.Show("Please re enter new password");
                         }
                     }
                     else
@@ -115,10 +112,7 @@ namespace Project_OOP_Final
                         MessageBox.Show("Please re enter current password");
                     }
                 }
-                else
-                {
-                    MessageBox.Show("Please enter your UserName");
-                }
+                
                 
             }
             catch (Exception ex)
@@ -134,7 +128,6 @@ namespace Project_OOP_Final
             txbReEnterPass.Clear();
         }
         #endregion
-
 
     }
 }
