@@ -23,7 +23,7 @@ namespace Project_OOP_Final
 
         }
         #region Method
-        public void changeAccount(string role)
+        public void changeAccount(string role) //Roles decentralization
         {
             btnAddnew.Visible = role == "Leader";
             btnRemove.Visible = role == "Leader";

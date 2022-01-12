@@ -455,7 +455,6 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Personal Information ";
-            this.Load += new System.EventHandler(this.PersonalInfo_Member_Load);
             this.pnMenu.ResumeLayout(false);
             this.pnMain.ResumeLayout(false);
             this.pnMain.PerformLayout();

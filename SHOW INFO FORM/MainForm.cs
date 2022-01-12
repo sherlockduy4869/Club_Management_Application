@@ -28,7 +28,7 @@ namespace Project_OOP_Final
             changeAccount(loginAccount.Role);
         }
         #region Method
-        void changeAccount (string role)
+        void changeAccount (string role) //Roles decentralization
         {
             lbRole.Text = role;
             btnTask.Enabled = role != "Mentor";
@@ -42,8 +42,9 @@ namespace Project_OOP_Final
             txbPhone.Text = phone;
             txbRole.Text = role;
         }
-        private Form activeForm = null;
-        private void openChildForm(Form childForm)
+
+        private Form activeForm = null; //UI design
+        private void openChildForm(Form childForm) //UI design
         {
             if(activeForm != null)
             {
@@ -62,10 +63,6 @@ namespace Project_OOP_Final
 
         #region Event
 
-        private void PersonalInfo_Member_Load(object sender, EventArgs e)
-        {
-            
-        }
         private void btnHome_Click(object sender, EventArgs e)
         {
             pnCick.Height = btnHome.Height;
@@ -77,50 +74,58 @@ namespace Project_OOP_Final
         }
         private void btnClubMemberInfo_Click_1(object sender, EventArgs e)
         {
-            pnCick.Height = btnClubMemberInfo.Height;
-            pnCick.Top = btnClubMemberInfo.Top;
-            ShowInfo fShow = new ShowInfo();
-            openChildForm(fShow);
+            pnCick.Height = btnClubMemberInfo.Height; //UI design
+            pnCick.Top = btnClubMemberInfo.Top; //UI design
 
+            ShowInfo fShow = new ShowInfo();
+            openChildForm(fShow); //UI design
+            
             fShow.changeAccount(loginAccount.Role);
         }
         private void btnTask_Click(object sender, EventArgs e)
         {
-            pnCick.Height = btnTask.Height;
-            pnCick.Top = btnTask.Top;
+            pnCick.Height = btnTask.Height; //UI design
+            pnCick.Top = btnTask.Top; //UI design
+
             if (loginAccount.Role == "Member")
             {
                 
-                openChildForm(new MemberClubTask(loginAccount.Id));
+                openChildForm(new MemberClubTask(loginAccount.Id)); //UI design
             }
             else
             {
 
-                openChildForm(new ClubTask());
+                openChildForm(new ClubTask()); //UI design
             }
         }
         private void btnClubActivityInfo_Click(object sender, EventArgs e)
         {
-            pnCick.Height = btnClubActivityInfo.Height;
-            pnCick.Top = btnClubActivityInfo.Top;
+            pnCick.Height = btnClubActivityInfo.Height; //UI design
+            pnCick.Top = btnClubActivityInfo.Top; //UI design
+
             ClubInfo clubInfo = new ClubInfo();
-            openChildForm(clubInfo);
+            openChildForm(clubInfo); //UI design
+
             clubInfo.changeAccount(loginAccount.Role);
         }
         private void btnAdjustPersonalInfo_Click(object sender, EventArgs e)
         {
-            pnCick.Height = btnAdjustPersonalInfo.Height;
-            pnCick.Top = btnAdjustPersonalInfo.Top;
+            pnCick.Height = btnAdjustPersonalInfo.Height; //UI design
+            pnCick.Top = btnAdjustPersonalInfo.Top; //UI design
+
             AdjustPersonalInfo fAdjustPersonalInfo = new AdjustPersonalInfo();
-            openChildForm(fAdjustPersonalInfo);
+            openChildForm(fAdjustPersonalInfo); //UI design
+
             fAdjustPersonalInfo.getUserNameAndRole(loginAccount.UserName, loginAccount.Role);
         }
         private void btnAdjustPassword_Click(object sender, EventArgs e)
         {
-            pnCick.Height = btnAdjustPassword.Height;
-            pnCick.Top = btnAdjustPassword.Top;
+            pnCick.Height = btnAdjustPassword.Height; //UI design
+            pnCick.Top = btnAdjustPassword.Top; //UI design
+
             AdjustPass fAdjustPass = new AdjustPass();
-            openChildForm(fAdjustPass);
+            openChildForm(fAdjustPass); //UI design
+
             fAdjustPass.getPassNow(loginAccount.Password);
         }
         private void btnExit_Click_1(object sender, EventArgs e)
