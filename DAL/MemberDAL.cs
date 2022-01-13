@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project_OOP_Final.DAL
 {
-    public class MemberDAL : IPersonDAL
+    public class MemberDAL : PersonDAL
     {
         private static MemberDAL instance;
         public static MemberDAL Instance
@@ -26,14 +26,14 @@ namespace Project_OOP_Final.DAL
             }
             return null;
         }
-        public int addNew(string name, string clas, string phone, string team)
+        public override int addNew(string name, string clas, string phone, string team)
         {
             string sql = "Insert into Info_Member(Name,Class,Phone,Team) VALUES('" + name + "','" + clas + "','" + phone + "', '" + team + "')";
 
             int i = DataProvider.Instance.ExecuteNonQuery(sql);
             return i;
         }
-        public int remove(string id, string role)
+        public override int remove(string id, string role)
         {
             string sql = "DELETE FROM Info_Member WHERE Id='" + id + "' and role='" + role + "'";
             int i = DataProvider.Instance.ExecuteNonQuery(sql);

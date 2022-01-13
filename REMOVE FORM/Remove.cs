@@ -37,10 +37,11 @@ namespace Project_OOP_Final
             string role = cbRole.Text;
 
             var roleObject = GettingRoleDAL.getRoleForRemoving(role);
+
             try
             {
-                int i = ImplementFunction.startRemoving(roleObject, id, role);
-                if(i != 0)
+                int i = roleObject.remove(id, role);
+                if (i != 0)
                 {
                     txbID.Text = string.Empty;
                     MessageBox.Show("Removed");
@@ -54,6 +55,7 @@ namespace Project_OOP_Final
             {
                 MessageBox.Show("ERROR 404");
             }
+
         }
         private void Remove_Load(object sender, EventArgs e)
         {

@@ -9,7 +9,7 @@ namespace Project_OOP_Final.DAL
 {
     class GettingRoleDAL
     {
-        public static IPersonDAL getRoleForRemoving(string role)
+        public static PersonDAL getRoleForRemoving(string role)
         {
             if(role == "Member")
             {
@@ -23,7 +23,7 @@ namespace Project_OOP_Final.DAL
             
                 return new MentorDAL();   
         }
-        public static IPersonDAL getRoleForAdding(string role)
+        public static PersonDAL getRoleForAdding(string role)
         {
             if (role == "Member")
             {

@@ -60,7 +60,7 @@ namespace Project_OOP_Final
             var roleObject = GettingRoleDAL.getRoleForAdding(role);
             try
             {
-                int i = ImplementFunction.startAdding(roleObject, name, clas, phone, team);
+                int i = roleObject.addNew(name, clas, phone, team);
                 if (i != 0)
                 {
                     reFresh();
