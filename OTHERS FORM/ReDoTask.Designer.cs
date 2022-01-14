@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cbTaskId = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbNote = new System.Windows.Forms.TextBox();
@@ -36,7 +37,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnRedo = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.cbTaskId = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -50,6 +50,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(679, 83);
             this.panel2.TabIndex = 4;
+            // 
+            // cbTaskId
+            // 
+            this.cbTaskId.FormattingEnabled = true;
+            this.cbTaskId.Location = new System.Drawing.Point(227, 27);
+            this.cbTaskId.Name = "cbTaskId";
+            this.cbTaskId.Size = new System.Drawing.Size(427, 40);
+            this.cbTaskId.TabIndex = 8;
             // 
             // label2
             // 
@@ -116,18 +124,11 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // cbTaskId
-            // 
-            this.cbTaskId.FormattingEnabled = true;
-            this.cbTaskId.Location = new System.Drawing.Point(227, 27);
-            this.cbTaskId.Name = "cbTaskId";
-            this.cbTaskId.Size = new System.Drawing.Size(427, 40);
-            this.cbTaskId.TabIndex = 8;
-            // 
             // ReDoTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(711, 380);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);

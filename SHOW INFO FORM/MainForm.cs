@@ -128,12 +128,13 @@ namespace Project_OOP_Final
 
             fAdjustPass.getPassNow(loginAccount.Password);
         }
-        private void btnExit_Click_1(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
         #endregion
+
 
     }
 }

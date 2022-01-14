@@ -42,6 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txbTotalPrice = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnAddIteam = new Project_OOP_Final.Button_Designø.RJButton();
             this.txbPrice = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@
             this.Quantity = new System.Windows.Forms.ColumnHeader();
             this.TotalPrice = new System.Windows.Forms.ColumnHeader();
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnAddIteam = new Project_OOP_Final.Button_Designø.RJButton();
             this.tcClubInfo.SuspendLayout();
             this.tpActivity.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,6 +72,7 @@
             // 
             this.tcClubInfo.Controls.Add(this.tpActivity);
             this.tcClubInfo.Controls.Add(this.tpFinance);
+            this.tcClubInfo.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tcClubInfo.Location = new System.Drawing.Point(22, 99);
             this.tcClubInfo.Name = "tcClubInfo";
             this.tcClubInfo.SelectedIndex = 0;
@@ -85,10 +86,10 @@
             this.tpActivity.Controls.Add(this.pictureBox1);
             this.tpActivity.Controls.Add(this.txbSearch);
             this.tpActivity.Controls.Add(this.dtgvActivity);
-            this.tpActivity.Location = new System.Drawing.Point(8, 46);
+            this.tpActivity.Location = new System.Drawing.Point(8, 45);
             this.tpActivity.Name = "tpActivity";
             this.tpActivity.Padding = new System.Windows.Forms.Padding(3);
-            this.tpActivity.Size = new System.Drawing.Size(1405, 877);
+            this.tpActivity.Size = new System.Drawing.Size(1405, 878);
             this.tpActivity.TabIndex = 0;
             this.tpActivity.Text = "Activity";
             this.tpActivity.UseVisualStyleBackColor = true;
@@ -175,10 +176,10 @@
             // tpFinance
             // 
             this.tpFinance.Controls.Add(this.panel1);
-            this.tpFinance.Location = new System.Drawing.Point(8, 46);
+            this.tpFinance.Location = new System.Drawing.Point(8, 45);
             this.tpFinance.Name = "tpFinance";
             this.tpFinance.Padding = new System.Windows.Forms.Padding(3);
-            this.tpFinance.Size = new System.Drawing.Size(1405, 877);
+            this.tpFinance.Size = new System.Drawing.Size(1405, 878);
             this.tpFinance.TabIndex = 1;
             this.tpFinance.Text = "Finance";
             this.tpFinance.UseVisualStyleBackColor = true;
@@ -238,6 +239,26 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1008, 96);
             this.panel2.TabIndex = 1;
+            // 
+            // btnAddIteam
+            // 
+            this.btnAddIteam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAddIteam.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAddIteam.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAddIteam.BorderRadius = 40;
+            this.btnAddIteam.BorderSize = 0;
+            this.btnAddIteam.FlatAppearance.BorderSize = 0;
+            this.btnAddIteam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddIteam.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddIteam.ForeColor = System.Drawing.Color.White;
+            this.btnAddIteam.Location = new System.Drawing.Point(703, 5);
+            this.btnAddIteam.Name = "btnAddIteam";
+            this.btnAddIteam.Size = new System.Drawing.Size(177, 84);
+            this.btnAddIteam.TabIndex = 53;
+            this.btnAddIteam.Text = "ADD";
+            this.btnAddIteam.TextColor = System.Drawing.Color.White;
+            this.btnAddIteam.UseVisualStyleBackColor = false;
+            this.btnAddIteam.Click += new System.EventHandler(this.btnAddIteam_Click);
             // 
             // txbPrice
             // 
@@ -360,30 +381,11 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnAddIteam
-            // 
-            this.btnAddIteam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnAddIteam.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnAddIteam.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAddIteam.BorderRadius = 40;
-            this.btnAddIteam.BorderSize = 0;
-            this.btnAddIteam.FlatAppearance.BorderSize = 0;
-            this.btnAddIteam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddIteam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnAddIteam.Location = new System.Drawing.Point(703, 5);
-            this.btnAddIteam.Name = "btnAddIteam";
-            this.btnAddIteam.Size = new System.Drawing.Size(177, 84);
-            this.btnAddIteam.TabIndex = 53;
-            this.btnAddIteam.Text = "ADD";
-            this.btnAddIteam.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnAddIteam.UseVisualStyleBackColor = false;
-            this.btnAddIteam.Click += new System.EventHandler(this.btnAddIteam_Click);
-            // 
             // ClubInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1445, 1029);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tcClubInfo);

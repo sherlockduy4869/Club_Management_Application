@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowInfo));
             this.dtgvShowMember = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMentor = new Project_OOP_Final.Button_Designø.RJButton();
+            this.btnLeader = new Project_OOP_Final.Button_Designø.RJButton();
+            this.btnMember = new Project_OOP_Final.Button_Designø.RJButton();
             this.lbRole = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAddnew = new Project_OOP_Final.Button_Designø.RJButton();
             this.btnRemove = new Project_OOP_Final.Button_Designø.RJButton();
-            this.btnMember = new Project_OOP_Final.Button_Designø.RJButton();
-            this.btnLeader = new Project_OOP_Final.Button_Designø.RJButton();
-            this.btnMentor = new Project_OOP_Final.Button_Designø.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvShowMember)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,6 +59,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnMentor);
             this.panel1.Controls.Add(this.btnLeader);
             this.panel1.Controls.Add(this.btnMember);
@@ -72,12 +73,69 @@
             this.panel1.Size = new System.Drawing.Size(1428, 286);
             this.panel1.TabIndex = 24;
             // 
+            // btnMentor
+            // 
+            this.btnMentor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnMentor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnMentor.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMentor.BorderRadius = 40;
+            this.btnMentor.BorderSize = 0;
+            this.btnMentor.FlatAppearance.BorderSize = 0;
+            this.btnMentor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMentor.ForeColor = System.Drawing.Color.White;
+            this.btnMentor.Location = new System.Drawing.Point(369, 208);
+            this.btnMentor.Name = "btnMentor";
+            this.btnMentor.Size = new System.Drawing.Size(173, 75);
+            this.btnMentor.TabIndex = 27;
+            this.btnMentor.Text = "Mentor";
+            this.btnMentor.TextColor = System.Drawing.Color.White;
+            this.btnMentor.UseVisualStyleBackColor = false;
+            this.btnMentor.Click += new System.EventHandler(this.btnMentor_Click);
+            // 
+            // btnLeader
+            // 
+            this.btnLeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnLeader.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnLeader.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnLeader.BorderRadius = 40;
+            this.btnLeader.BorderSize = 0;
+            this.btnLeader.FlatAppearance.BorderSize = 0;
+            this.btnLeader.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLeader.ForeColor = System.Drawing.Color.White;
+            this.btnLeader.Location = new System.Drawing.Point(190, 208);
+            this.btnLeader.Name = "btnLeader";
+            this.btnLeader.Size = new System.Drawing.Size(173, 75);
+            this.btnLeader.TabIndex = 54;
+            this.btnLeader.Text = "Leader";
+            this.btnLeader.TextColor = System.Drawing.Color.White;
+            this.btnLeader.UseVisualStyleBackColor = false;
+            this.btnLeader.Click += new System.EventHandler(this.btnLeader_Click);
+            // 
+            // btnMember
+            // 
+            this.btnMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnMember.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnMember.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMember.BorderRadius = 40;
+            this.btnMember.BorderSize = 0;
+            this.btnMember.FlatAppearance.BorderSize = 0;
+            this.btnMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMember.ForeColor = System.Drawing.Color.White;
+            this.btnMember.Location = new System.Drawing.Point(11, 208);
+            this.btnMember.Name = "btnMember";
+            this.btnMember.Size = new System.Drawing.Size(173, 75);
+            this.btnMember.TabIndex = 53;
+            this.btnMember.Text = "Member";
+            this.btnMember.TextColor = System.Drawing.Color.White;
+            this.btnMember.UseVisualStyleBackColor = false;
+            this.btnMember.Click += new System.EventHandler(this.btnMember_Click);
+            // 
             // lbRole
             // 
             this.lbRole.AutoSize = true;
             this.lbRole.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.lbRole.Location = new System.Drawing.Point(433, 60);
+            this.lbRole.Location = new System.Drawing.Point(467, 60);
             this.lbRole.Name = "lbRole";
             this.lbRole.Size = new System.Drawing.Size(568, 58);
             this.lbRole.TabIndex = 29;
@@ -131,7 +189,7 @@
             this.btnAddnew.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAddnew.ForeColor = System.Drawing.Color.White;
             this.btnAddnew.Image = ((System.Drawing.Image)(resources.GetObject("btnAddnew.Image")));
-            this.btnAddnew.Location = new System.Drawing.Point(423, 838);
+            this.btnAddnew.Location = new System.Drawing.Point(436, 838);
             this.btnAddnew.Name = "btnAddnew";
             this.btnAddnew.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnAddnew.Size = new System.Drawing.Size(231, 191);
@@ -154,7 +212,7 @@
             this.btnRemove.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnRemove.Image = ((System.Drawing.Image)(resources.GetObject("btnRemove.Image")));
-            this.btnRemove.Location = new System.Drawing.Point(770, 838);
+            this.btnRemove.Location = new System.Drawing.Point(804, 838);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnRemove.Size = new System.Drawing.Size(231, 191);
@@ -164,63 +222,6 @@
             this.btnRemove.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
-            // 
-            // btnMember
-            // 
-            this.btnMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnMember.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnMember.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnMember.BorderRadius = 40;
-            this.btnMember.BorderSize = 0;
-            this.btnMember.FlatAppearance.BorderSize = 0;
-            this.btnMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMember.ForeColor = System.Drawing.Color.White;
-            this.btnMember.Location = new System.Drawing.Point(11, 208);
-            this.btnMember.Name = "btnMember";
-            this.btnMember.Size = new System.Drawing.Size(173, 75);
-            this.btnMember.TabIndex = 53;
-            this.btnMember.Text = "Member";
-            this.btnMember.TextColor = System.Drawing.Color.White;
-            this.btnMember.UseVisualStyleBackColor = false;
-            this.btnMember.Click += new System.EventHandler(this.btnMember_Click);
-            // 
-            // btnLeader
-            // 
-            this.btnLeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnLeader.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnLeader.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnLeader.BorderRadius = 40;
-            this.btnLeader.BorderSize = 0;
-            this.btnLeader.FlatAppearance.BorderSize = 0;
-            this.btnLeader.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLeader.ForeColor = System.Drawing.Color.White;
-            this.btnLeader.Location = new System.Drawing.Point(190, 208);
-            this.btnLeader.Name = "btnLeader";
-            this.btnLeader.Size = new System.Drawing.Size(173, 75);
-            this.btnLeader.TabIndex = 54;
-            this.btnLeader.Text = "Leader";
-            this.btnLeader.TextColor = System.Drawing.Color.White;
-            this.btnLeader.UseVisualStyleBackColor = false;
-            this.btnLeader.Click += new System.EventHandler(this.btnLeader_Click);
-            // 
-            // btnMentor
-            // 
-            this.btnMentor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnMentor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnMentor.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnMentor.BorderRadius = 40;
-            this.btnMentor.BorderSize = 0;
-            this.btnMentor.FlatAppearance.BorderSize = 0;
-            this.btnMentor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMentor.ForeColor = System.Drawing.Color.White;
-            this.btnMentor.Location = new System.Drawing.Point(369, 208);
-            this.btnMentor.Name = "btnMentor";
-            this.btnMentor.Size = new System.Drawing.Size(173, 75);
-            this.btnMentor.TabIndex = 27;
-            this.btnMentor.Text = "Mentor";
-            this.btnMentor.TextColor = System.Drawing.Color.White;
-            this.btnMentor.UseVisualStyleBackColor = false;
-            this.btnMentor.Click += new System.EventHandler(this.btnMentor_Click);
             // 
             // ShowInfo
             // 

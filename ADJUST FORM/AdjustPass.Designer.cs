@@ -79,7 +79,7 @@
             this.txbUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbUserName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbUserName.ForeColor = System.Drawing.Color.White;
-            this.txbUserName.Location = new System.Drawing.Point(237, 87);
+            this.txbUserName.Location = new System.Drawing.Point(239, 87);
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(495, 37);
             this.txbUserName.TabIndex = 1;
@@ -90,7 +90,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label5.Location = new System.Drawing.Point(237, 29);
+            this.label5.Location = new System.Drawing.Point(227, 29);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(172, 43);
             this.label5.TabIndex = 0;
@@ -133,7 +133,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label1.Location = new System.Drawing.Point(237, 26);
+            this.label1.Location = new System.Drawing.Point(227, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(221, 43);
             this.label1.TabIndex = 0;
@@ -176,7 +176,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label6.Location = new System.Drawing.Point(237, 29);
+            this.label6.Location = new System.Drawing.Point(227, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(350, 43);
             this.label6.TabIndex = 0;
@@ -219,7 +219,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label2.Location = new System.Drawing.Point(237, 36);
+            this.label2.Location = new System.Drawing.Point(227, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(261, 43);
             this.label2.TabIndex = 0;
@@ -289,6 +289,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1445, 1029);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnAdjust);

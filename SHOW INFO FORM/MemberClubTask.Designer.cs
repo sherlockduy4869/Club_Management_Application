@@ -71,7 +71,7 @@
             this.btnSubmitTask.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSubmitTask.ForeColor = System.Drawing.Color.White;
             this.btnSubmitTask.Image = ((System.Drawing.Image)(resources.GetObject("btnSubmitTask.Image")));
-            this.btnSubmitTask.Location = new System.Drawing.Point(410, 797);
+            this.btnSubmitTask.Location = new System.Drawing.Point(428, 826);
             this.btnSubmitTask.Name = "btnSubmitTask";
             this.btnSubmitTask.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnSubmitTask.Size = new System.Drawing.Size(231, 191);
@@ -94,7 +94,7 @@
             this.btnHistoryTask.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnHistoryTask.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnHistoryTask.Image = ((System.Drawing.Image)(resources.GetObject("btnHistoryTask.Image")));
-            this.btnHistoryTask.Location = new System.Drawing.Point(770, 797);
+            this.btnHistoryTask.Location = new System.Drawing.Point(788, 826);
             this.btnHistoryTask.Name = "btnHistoryTask";
             this.btnHistoryTask.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnHistoryTask.Size = new System.Drawing.Size(231, 191);
@@ -109,6 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1445, 1029);
             this.Controls.Add(this.btnHistoryTask);
             this.Controls.Add(this.btnSubmitTask);

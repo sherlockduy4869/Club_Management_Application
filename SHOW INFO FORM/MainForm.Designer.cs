@@ -205,7 +205,7 @@
             this.pnMain.Location = new System.Drawing.Point(342, 0);
             this.pnMain.Name = "pnMain";
             this.pnMain.Size = new System.Drawing.Size(1454, 1100);
-            this.pnMain.TabIndex = 11;
+            this.pnMain.TabIndex = 12;
             // 
             // btnExit
             // 
@@ -219,7 +219,7 @@
             this.btnExit.Size = new System.Drawing.Size(90, 84);
             this.btnExit.TabIndex = 51;
             this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lbRole
             // 
@@ -268,7 +268,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label7.Location = new System.Drawing.Point(245, 34);
+            this.label7.Location = new System.Drawing.Point(239, 42);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 43);
             this.label7.TabIndex = 0;
@@ -310,7 +310,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label4.Location = new System.Drawing.Point(243, 41);
+            this.label4.Location = new System.Drawing.Point(239, 41);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 43);
             this.label4.TabIndex = 0;
@@ -352,7 +352,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label3.Location = new System.Drawing.Point(244, 32);
+            this.label3.Location = new System.Drawing.Point(239, 32);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 43);
             this.label3.TabIndex = 0;
@@ -394,7 +394,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label2.Location = new System.Drawing.Point(242, 43);
+            this.label2.Location = new System.Drawing.Point(239, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 43);
             this.label2.TabIndex = 0;
@@ -436,7 +436,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label1.Location = new System.Drawing.Point(245, 39);
+            this.label1.Location = new System.Drawing.Point(239, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 43);
             this.label1.TabIndex = 0;
@@ -446,6 +446,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1796, 1100);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.pnMenu);
@@ -479,31 +480,31 @@
         private Button btnClubActivityInfo;
         private Button btnAdjustPersonalInfo;
         private Panel pnMenu;
-        private Panel pnMain;
         private Button btnHome;
+        private Button btnTask;
+        private Panel pnCick;
+        private Panel pnMain;
+        private Button btnExit;
         private Label lbRole;
         private Panel panel7;
+        private Panel panel6;
         private TextBox txbRole;
         private Label label7;
         private Panel panel4;
+        private Panel panel5;
         private TextBox txbPhone;
         private Label label4;
         private Panel pnClass;
+        private Panel panel8;
         private TextBox txbClass;
         private Label label3;
         private Panel panel2;
+        private Panel panel1;
         private TextBox txbName;
         private Label label2;
         private Panel panel3;
+        private Panel pnUnderUserName;
         private TextBox txbID;
         private Label label1;
-        private Button btnExit;
-        private Button btnTask;
-        private Panel pnCick;
-        private Panel pnUnderUserName;
-        private Panel panel1;
-        private Panel panel6;
-        private Panel panel5;
-        private Panel panel8;
     }
 }

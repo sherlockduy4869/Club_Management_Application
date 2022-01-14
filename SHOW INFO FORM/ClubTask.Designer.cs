@@ -46,7 +46,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(486, 105);
+            this.label1.Location = new System.Drawing.Point(517, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(477, 58);
             this.label1.TabIndex = 5;
@@ -71,7 +71,7 @@
             // 
             this.txbSearch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txbSearch.Location = new System.Drawing.Point(370, 193);
+            this.txbSearch.Location = new System.Drawing.Point(376, 193);
             this.txbSearch.Name = "txbSearch";
             this.txbSearch.Size = new System.Drawing.Size(680, 44);
             this.txbSearch.TabIndex = 12;
@@ -82,7 +82,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1056, 193);
+            this.pictureBox1.Location = new System.Drawing.Point(1062, 193);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(52, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -115,7 +115,7 @@
             this.btnAddTask.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAddTask.ForeColor = System.Drawing.Color.White;
             this.btnAddTask.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTask.Image")));
-            this.btnAddTask.Location = new System.Drawing.Point(277, 837);
+            this.btnAddTask.Location = new System.Drawing.Point(320, 837);
             this.btnAddTask.Name = "btnAddTask";
             this.btnAddTask.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnAddTask.Size = new System.Drawing.Size(231, 191);
@@ -138,7 +138,7 @@
             this.btnRemoveTask.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRemoveTask.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnRemoveTask.Image = ((System.Drawing.Image)(resources.GetObject("btnRemoveTask.Image")));
-            this.btnRemoveTask.Location = new System.Drawing.Point(577, 837);
+            this.btnRemoveTask.Location = new System.Drawing.Point(620, 837);
             this.btnRemoveTask.Name = "btnRemoveTask";
             this.btnRemoveTask.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnRemoveTask.Size = new System.Drawing.Size(231, 191);
@@ -161,7 +161,7 @@
             this.btnRedo.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRedo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnRedo.Image = ((System.Drawing.Image)(resources.GetObject("btnRedo.Image")));
-            this.btnRedo.Location = new System.Drawing.Point(877, 837);
+            this.btnRedo.Location = new System.Drawing.Point(920, 837);
             this.btnRedo.Name = "btnRedo";
             this.btnRedo.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.btnRedo.Size = new System.Drawing.Size(231, 191);
@@ -176,6 +176,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1445, 1029);
             this.Controls.Add(this.btnRedo);
             this.Controls.Add(this.btnRemoveTask);

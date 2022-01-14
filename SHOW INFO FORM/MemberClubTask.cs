@@ -51,9 +51,8 @@ namespace Project_OOP_Final
         private void btnHistoryTask_Click(object sender, EventArgs e)
         {
             MemberHistoryTask memberHistoryTask = new MemberHistoryTask(_id);
-            this.Hide();
-            memberHistoryTask.ShowDialog();
-            this.Show();
+            memberHistoryTask.Show();
+
         }
         private void dtgvMemberTask_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbId = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txbTaskName = new System.Windows.Forms.TextBox();
@@ -45,7 +46,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbPriority = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbId = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -62,6 +62,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 85);
             this.panel1.TabIndex = 0;
+            // 
+            // cbId
+            // 
+            this.cbId.FormattingEnabled = true;
+            this.cbId.Location = new System.Drawing.Point(217, 27);
+            this.cbId.Name = "cbId";
+            this.cbId.Size = new System.Drawing.Size(540, 40);
+            this.cbId.TabIndex = 7;
             // 
             // label1
             // 
@@ -210,18 +218,11 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Priority";
             // 
-            // cbId
-            // 
-            this.cbId.FormattingEnabled = true;
-            this.cbId.Location = new System.Drawing.Point(217, 27);
-            this.cbId.Name = "cbId";
-            this.cbId.Size = new System.Drawing.Size(540, 40);
-            this.cbId.TabIndex = 7;
-            // 
             // AddNewTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 599);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel6);
