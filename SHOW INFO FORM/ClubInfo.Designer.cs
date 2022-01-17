@@ -172,7 +172,6 @@
             this.dtgvActivity.RowTemplate.Height = 41;
             this.dtgvActivity.Size = new System.Drawing.Size(1396, 590);
             this.dtgvActivity.TabIndex = 1;
-            this.dtgvActivity.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvActivity_CellFormatting);
             // 
             // tpFinance
             // 
@@ -236,9 +235,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.nmCount);
             this.panel2.Controls.Add(this.txbItemName);
-            this.panel2.Location = new System.Drawing.Point(414, 3);
+            this.panel2.Location = new System.Drawing.Point(434, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(985, 96);
+            this.panel2.Size = new System.Drawing.Size(965, 96);
             this.panel2.TabIndex = 1;
             // 
             // btnAddIteam
@@ -252,7 +251,7 @@
             this.btnAddIteam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddIteam.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAddIteam.ForeColor = System.Drawing.Color.White;
-            this.btnAddIteam.Location = new System.Drawing.Point(703, 5);
+            this.btnAddIteam.Location = new System.Drawing.Point(670, 3);
             this.btnAddIteam.Name = "btnAddIteam";
             this.btnAddIteam.Size = new System.Drawing.Size(177, 84);
             this.btnAddIteam.TabIndex = 53;
@@ -264,9 +263,9 @@
             // txbPrice
             // 
             this.txbPrice.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbPrice.Location = new System.Drawing.Point(186, 51);
+            this.txbPrice.Location = new System.Drawing.Point(191, 49);
             this.txbPrice.Name = "txbPrice";
-            this.txbPrice.Size = new System.Drawing.Size(502, 38);
+            this.txbPrice.Size = new System.Drawing.Size(459, 38);
             this.txbPrice.TabIndex = 2;
             this.txbPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPrice_KeyPress);
             // 
@@ -296,7 +295,7 @@
             // 
             this.nmCount.Font = new System.Drawing.Font("Arial Narrow", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nmCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.nmCount.Location = new System.Drawing.Point(894, 30);
+            this.nmCount.Location = new System.Drawing.Point(865, 26);
             this.nmCount.Minimum = new decimal(new int[] {
             100,
             0,
@@ -309,9 +308,9 @@
             // txbItemName
             // 
             this.txbItemName.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbItemName.Location = new System.Drawing.Point(186, 6);
+            this.txbItemName.Location = new System.Drawing.Point(191, 7);
             this.txbItemName.Name = "txbItemName";
-            this.txbItemName.Size = new System.Drawing.Size(502, 38);
+            this.txbItemName.Size = new System.Drawing.Size(459, 38);
             this.txbItemName.TabIndex = 1;
             // 
             // flpActivity
@@ -319,15 +318,15 @@
             this.flpActivity.AutoScroll = true;
             this.flpActivity.Location = new System.Drawing.Point(6, 3);
             this.flpActivity.Name = "flpActivity";
-            this.flpActivity.Size = new System.Drawing.Size(402, 749);
+            this.flpActivity.Size = new System.Drawing.Size(397, 749);
             this.flpActivity.TabIndex = 3;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.lsvDetailFinance);
-            this.panel3.Location = new System.Drawing.Point(414, 102);
+            this.panel3.Location = new System.Drawing.Point(434, 102);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(985, 653);
+            this.panel3.Size = new System.Drawing.Size(965, 653);
             this.panel3.TabIndex = 2;
             // 
             // lsvDetailFinance
@@ -338,9 +337,9 @@
             this.Quantity,
             this.TotalPrice});
             this.lsvDetailFinance.GridLines = true;
-            this.lsvDetailFinance.Location = new System.Drawing.Point(3, 3);
+            this.lsvDetailFinance.Location = new System.Drawing.Point(17, 3);
             this.lsvDetailFinance.Name = "lsvDetailFinance";
-            this.lsvDetailFinance.Size = new System.Drawing.Size(1005, 647);
+            this.lsvDetailFinance.Size = new System.Drawing.Size(928, 647);
             this.lsvDetailFinance.TabIndex = 0;
             this.lsvDetailFinance.UseCompatibleStateImageBehavior = false;
             this.lsvDetailFinance.View = System.Windows.Forms.View.Details;

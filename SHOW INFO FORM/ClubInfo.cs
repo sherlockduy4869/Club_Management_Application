@@ -138,13 +138,6 @@ namespace Project_OOP_Final
 
             adjustActivity.Show();
         }
-        private void dtgvActivity_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-            foreach (DataGridViewRow row in dtgvActivity.Rows)
-            {
-                row.DefaultCellStyle.ForeColor = Color.FromArgb(246, 174, 0);
-            }
-        }
         #endregion
 
 
