@@ -172,6 +172,7 @@
             this.dtgvActivity.RowTemplate.Height = 41;
             this.dtgvActivity.Size = new System.Drawing.Size(1396, 590);
             this.dtgvActivity.TabIndex = 1;
+            this.dtgvActivity.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvActivity_CellFormatting);
             // 
             // tpFinance
             // 
@@ -235,9 +236,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.nmCount);
             this.panel2.Controls.Add(this.txbItemName);
-            this.panel2.Location = new System.Drawing.Point(391, 3);
+            this.panel2.Location = new System.Drawing.Point(414, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1008, 96);
+            this.panel2.Size = new System.Drawing.Size(985, 96);
             this.panel2.TabIndex = 1;
             // 
             // btnAddIteam
@@ -318,15 +319,15 @@
             this.flpActivity.AutoScroll = true;
             this.flpActivity.Location = new System.Drawing.Point(6, 3);
             this.flpActivity.Name = "flpActivity";
-            this.flpActivity.Size = new System.Drawing.Size(382, 823);
+            this.flpActivity.Size = new System.Drawing.Size(402, 749);
             this.flpActivity.TabIndex = 3;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.lsvDetailFinance);
-            this.panel3.Location = new System.Drawing.Point(391, 102);
+            this.panel3.Location = new System.Drawing.Point(414, 102);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1008, 653);
+            this.panel3.Size = new System.Drawing.Size(985, 653);
             this.panel3.TabIndex = 2;
             // 
             // lsvDetailFinance
@@ -337,9 +338,9 @@
             this.Quantity,
             this.TotalPrice});
             this.lsvDetailFinance.GridLines = true;
-            this.lsvDetailFinance.Location = new System.Drawing.Point(0, 3);
+            this.lsvDetailFinance.Location = new System.Drawing.Point(3, 3);
             this.lsvDetailFinance.Name = "lsvDetailFinance";
-            this.lsvDetailFinance.Size = new System.Drawing.Size(1008, 647);
+            this.lsvDetailFinance.Size = new System.Drawing.Size(1005, 647);
             this.lsvDetailFinance.TabIndex = 0;
             this.lsvDetailFinance.UseCompatibleStateImageBehavior = false;
             this.lsvDetailFinance.View = System.Windows.Forms.View.Details;

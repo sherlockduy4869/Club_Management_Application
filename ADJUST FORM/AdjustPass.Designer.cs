@@ -124,7 +124,7 @@
             this.txbNewPass.Location = new System.Drawing.Point(237, 84);
             this.txbNewPass.Name = "txbNewPass";
             this.txbNewPass.Size = new System.Drawing.Size(495, 31);
-            this.txbNewPass.TabIndex = 1;
+            this.txbNewPass.TabIndex = 3;
             this.txbNewPass.UseSystemPasswordChar = true;
             this.txbNewPass.Click += new System.EventHandler(this.txbNewPass_Click);
             // 
@@ -167,7 +167,7 @@
             this.txbReEnterPass.Location = new System.Drawing.Point(237, 87);
             this.txbReEnterPass.Name = "txbReEnterPass";
             this.txbReEnterPass.Size = new System.Drawing.Size(495, 31);
-            this.txbReEnterPass.TabIndex = 1;
+            this.txbReEnterPass.TabIndex = 4;
             this.txbReEnterPass.UseSystemPasswordChar = true;
             this.txbReEnterPass.Click += new System.EventHandler(this.txbReEnterPass_Click);
             // 
@@ -210,7 +210,7 @@
             this.txbCurrentPass.Location = new System.Drawing.Point(237, 82);
             this.txbCurrentPass.Name = "txbCurrentPass";
             this.txbCurrentPass.Size = new System.Drawing.Size(495, 31);
-            this.txbCurrentPass.TabIndex = 1;
+            this.txbCurrentPass.TabIndex = 2;
             this.txbCurrentPass.UseSystemPasswordChar = true;
             this.txbCurrentPass.Click += new System.EventHandler(this.txbCurrentPass_Click);
             // 

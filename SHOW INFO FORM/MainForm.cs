@@ -35,12 +35,10 @@ namespace Project_OOP_Final
         }
         public void showPersonalInfor(string id, string role, string name, string clas, string phone)
         {
-
             txbID.Text = id;
             txbName.Text = name;
             txbClass.Text = clas;
             txbPhone.Text = phone;
-            txbRole.Text = role;
         }
 
         private Form activeForm = null; //UI design
@@ -133,8 +131,8 @@ namespace Project_OOP_Final
             Application.Exit();
         }
 
-        #endregion
 
+        #endregion
 
     }
 }
