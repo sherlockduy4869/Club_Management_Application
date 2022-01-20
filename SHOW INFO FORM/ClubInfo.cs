@@ -138,8 +138,8 @@ namespace Project_OOP_Final
 
             adjustActivity.Show();
         }
-        #endregion
 
+        #endregion
 
     }
 }

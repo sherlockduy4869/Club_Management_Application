@@ -318,7 +318,7 @@
             this.flpActivity.AutoScroll = true;
             this.flpActivity.Location = new System.Drawing.Point(6, 3);
             this.flpActivity.Name = "flpActivity";
-            this.flpActivity.Size = new System.Drawing.Size(397, 749);
+            this.flpActivity.Size = new System.Drawing.Size(422, 749);
             this.flpActivity.TabIndex = 3;
             // 
             // panel3

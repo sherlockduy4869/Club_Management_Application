@@ -37,34 +37,34 @@
             this.pnCick = new System.Windows.Forms.Panel();
             this.btnTask = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.pnMain = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pnUnderUserName = new System.Windows.Forms.Panel();
-            this.txbID = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbRole = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.txbPhone = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pnClass = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.txbClass = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pnClass = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.txbClass = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.txbPhone = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbRole = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnUnderUserName = new System.Windows.Forms.Panel();
+            this.txbID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnMain = new System.Windows.Forms.Panel();
             this.pnMenu.SuspendLayout();
-            this.pnMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.pnClass.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.pnClass.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnClubMemberInfo
@@ -189,152 +189,47 @@
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // pnMain
+            // panel2
             // 
-            this.pnMain.BackColor = System.Drawing.Color.White;
-            this.pnMain.Controls.Add(this.pictureBox1);
-            this.pnMain.Controls.Add(this.label5);
-            this.pnMain.Controls.Add(this.btnExit);
-            this.pnMain.Controls.Add(this.panel3);
-            this.pnMain.Controls.Add(this.lbRole);
-            this.pnMain.Controls.Add(this.panel4);
-            this.pnMain.Controls.Add(this.pnClass);
-            this.pnMain.Controls.Add(this.panel2);
-            this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnMain.Location = new System.Drawing.Point(342, 0);
-            this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(1454, 1100);
-            this.pnMain.TabIndex = 12;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.txbName);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(206, 444);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(508, 166);
+            this.panel2.TabIndex = 45;
             // 
-            // pictureBox1
+            // panel1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, 706);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1449, 393);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 53;
-            this.pictureBox1.TabStop = false;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(25, 137);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(450, 1);
+            this.panel1.TabIndex = 13;
             // 
-            // label5
+            // txbName
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(341, 90);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(790, 78);
-            this.label5.TabIndex = 52;
-            this.label5.Text = "WELCOME TO OUR CLUB";
+            this.txbName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.txbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbName.ForeColor = System.Drawing.Color.White;
+            this.txbName.Location = new System.Drawing.Point(22, 94);
+            this.txbName.Name = "txbName";
+            this.txbName.ReadOnly = true;
+            this.txbName.Size = new System.Drawing.Size(456, 37);
+            this.txbName.TabIndex = 1;
             // 
-            // btnExit
+            // label2
             // 
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1361, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(90, 84);
-            this.btnExit.TabIndex = 51;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panel3.Controls.Add(this.pnUnderUserName);
-            this.panel3.Controls.Add(this.txbID);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(206, 272);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(508, 166);
-            this.panel3.TabIndex = 44;
-            // 
-            // pnUnderUserName
-            // 
-            this.pnUnderUserName.BackColor = System.Drawing.Color.White;
-            this.pnUnderUserName.Location = new System.Drawing.Point(34, 137);
-            this.pnUnderUserName.Name = "pnUnderUserName";
-            this.pnUnderUserName.Size = new System.Drawing.Size(450, 1);
-            this.pnUnderUserName.TabIndex = 12;
-            // 
-            // txbID
-            // 
-            this.txbID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.txbID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbID.ForeColor = System.Drawing.Color.White;
-            this.txbID.Location = new System.Drawing.Point(32, 94);
-            this.txbID.Name = "txbID";
-            this.txbID.ReadOnly = true;
-            this.txbID.Size = new System.Drawing.Size(450, 37);
-            this.txbID.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label1.Location = new System.Drawing.Point(26, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 43);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID";
-            // 
-            // lbRole
-            // 
-            this.lbRole.AutoSize = true;
-            this.lbRole.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.lbRole.Location = new System.Drawing.Point(206, 208);
-            this.lbRole.Name = "lbRole";
-            this.lbRole.Size = new System.Drawing.Size(227, 57);
-            this.lbRole.TabIndex = 50;
-            this.lbRole.Text = "Role_name";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.txbPhone);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(734, 272);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(508, 166);
-            this.panel4.TabIndex = 47;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(31, 137);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(450, 1);
-            this.panel5.TabIndex = 14;
-            // 
-            // txbPhone
-            // 
-            this.txbPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.txbPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbPhone.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbPhone.ForeColor = System.Drawing.Color.White;
-            this.txbPhone.Location = new System.Drawing.Point(29, 94);
-            this.txbPhone.Name = "txbPhone";
-            this.txbPhone.ReadOnly = true;
-            this.txbPhone.Size = new System.Drawing.Size(448, 37);
-            this.txbPhone.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label4.Location = new System.Drawing.Point(23, 33);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 43);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Phone";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.label2.Location = new System.Drawing.Point(17, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 43);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Name";
             // 
             // pnClass
             // 
@@ -378,47 +273,153 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Class";
             // 
-            // panel2
+            // panel4
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.txbName);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(206, 444);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(508, 166);
-            this.panel2.TabIndex = 45;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.txbPhone);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Location = new System.Drawing.Point(734, 272);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(508, 166);
+            this.panel4.TabIndex = 47;
             // 
-            // panel1
+            // panel5
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(25, 137);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(450, 1);
-            this.panel1.TabIndex = 13;
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(31, 137);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(450, 1);
+            this.panel5.TabIndex = 14;
             // 
-            // txbName
+            // txbPhone
             // 
-            this.txbName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.txbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbName.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbName.ForeColor = System.Drawing.Color.White;
-            this.txbName.Location = new System.Drawing.Point(22, 94);
-            this.txbName.Name = "txbName";
-            this.txbName.ReadOnly = true;
-            this.txbName.Size = new System.Drawing.Size(456, 37);
-            this.txbName.TabIndex = 1;
+            this.txbPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.txbPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbPhone.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbPhone.ForeColor = System.Drawing.Color.White;
+            this.txbPhone.Location = new System.Drawing.Point(29, 94);
+            this.txbPhone.Name = "txbPhone";
+            this.txbPhone.ReadOnly = true;
+            this.txbPhone.Size = new System.Drawing.Size(448, 37);
+            this.txbPhone.TabIndex = 1;
             // 
-            // label2
+            // label4
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.label2.Location = new System.Drawing.Point(17, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 43);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Name";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.label4.Location = new System.Drawing.Point(23, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 43);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Phone";
+            // 
+            // lbRole
+            // 
+            this.lbRole.AutoSize = true;
+            this.lbRole.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.lbRole.Location = new System.Drawing.Point(206, 208);
+            this.lbRole.Name = "lbRole";
+            this.lbRole.Size = new System.Drawing.Size(227, 57);
+            this.lbRole.TabIndex = 50;
+            this.lbRole.Text = "Role_name";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel3.Controls.Add(this.pnUnderUserName);
+            this.panel3.Controls.Add(this.txbID);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(206, 272);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(508, 166);
+            this.panel3.TabIndex = 44;
+            // 
+            // pnUnderUserName
+            // 
+            this.pnUnderUserName.BackColor = System.Drawing.Color.White;
+            this.pnUnderUserName.Location = new System.Drawing.Point(34, 137);
+            this.pnUnderUserName.Name = "pnUnderUserName";
+            this.pnUnderUserName.Size = new System.Drawing.Size(450, 1);
+            this.pnUnderUserName.TabIndex = 12;
+            // 
+            // txbID
+            // 
+            this.txbID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.txbID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbID.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbID.ForeColor = System.Drawing.Color.White;
+            this.txbID.Location = new System.Drawing.Point(32, 94);
+            this.txbID.Name = "txbID";
+            this.txbID.ReadOnly = true;
+            this.txbID.Size = new System.Drawing.Size(450, 37);
+            this.txbID.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.label1.Location = new System.Drawing.Point(26, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 43);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID";
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1361, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(90, 84);
+            this.btnExit.TabIndex = 51;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label5.Location = new System.Drawing.Point(341, 90);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(790, 78);
+            this.label5.TabIndex = 52;
+            this.label5.Text = "WELCOME TO OUR CLUB";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(2, 706);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1449, 393);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 53;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pnMain
+            // 
+            this.pnMain.AutoSize = true;
+            this.pnMain.BackColor = System.Drawing.Color.White;
+            this.pnMain.Controls.Add(this.pictureBox1);
+            this.pnMain.Controls.Add(this.label5);
+            this.pnMain.Controls.Add(this.btnExit);
+            this.pnMain.Controls.Add(this.panel3);
+            this.pnMain.Controls.Add(this.lbRole);
+            this.pnMain.Controls.Add(this.panel4);
+            this.pnMain.Controls.Add(this.pnClass);
+            this.pnMain.Controls.Add(this.panel2);
+            this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnMain.Location = new System.Drawing.Point(342, 0);
+            this.pnMain.Name = "pnMain";
+            this.pnMain.Size = new System.Drawing.Size(1454, 1100);
+            this.pnMain.TabIndex = 12;
             // 
             // MainForm
             // 
@@ -435,18 +436,19 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Personal Information ";
             this.pnMenu.ResumeLayout(false);
-            this.pnMain.ResumeLayout(false);
-            this.pnMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.pnClass.ResumeLayout(false);
-            this.pnClass.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.pnClass.ResumeLayout(false);
+            this.pnClass.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnMain.ResumeLayout(false);
+            this.pnMain.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -460,26 +462,26 @@
         private Button btnHome;
         private Button btnTask;
         private Panel pnCick;
-        private Panel pnMain;
-        private Button btnExit;
-        private Label lbRole;
-        private Panel panel4;
-        private Panel panel5;
-        private TextBox txbPhone;
-        private Label label4;
-        private Panel pnClass;
-        private Panel panel8;
-        private TextBox txbClass;
-        private Label label3;
         private Panel panel2;
         private Panel panel1;
         private TextBox txbName;
         private Label label2;
+        private Panel pnClass;
+        private Panel panel8;
+        private TextBox txbClass;
+        private Label label3;
+        private Panel panel4;
+        private Panel panel5;
+        private TextBox txbPhone;
+        private Label label4;
+        private Label lbRole;
         private Panel panel3;
         private Panel pnUnderUserName;
         private TextBox txbID;
         private Label label1;
+        private Button btnExit;
         private Label label5;
         private PictureBox pictureBox1;
+        private Panel pnMain;
     }
 }
